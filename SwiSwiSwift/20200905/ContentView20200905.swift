@@ -1,18 +1,17 @@
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView20200905: View {
     var body: some View {
         Image("icon")
             .resizable()
-            .scaledToFill()
+            .aspectRatio(contentMode: .fit)
             .frame(width: 150, height: 200)
-            .clipped()
             .background(Color.red)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ContentView20200905_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView20200905()
     }
 }

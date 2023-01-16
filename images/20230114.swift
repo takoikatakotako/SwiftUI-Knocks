@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView20230114: View {
+struct ContentView: View {
     var body: some View {
         VStack {
             Button {
@@ -45,8 +45,8 @@ struct ContentView20230114: View {
     }
 }
 
-struct ContentView20230114_Previews: PreviewProvider {
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView20230114()
+        ContentView()
     }
 }
