@@ -1,0 +1,1108 @@
+{
+    "articles": [
+        {
+            "title": "画像をリサイズして表示（fit）",
+            "description": "150✖︎200サイズに画像をリサイズして表示させてください。\nアスペクト比が異なる場合は余白を赤色で表示してください。",
+            "directory": "2023-10-01",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "画像をリサイズして表示（clip）",
+            "description": "150✖︎200サイズに画像をリサイズして表示させてください。\nアスペクト比が異なる場合ははみ出た箇所を切り取って表示してください。",
+            "directory": "2023-10-02",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "画像を丸く切り取る",
+            "description": "150✖︎150サイズに画像をリサイズし、丸く切り取って表示させてください。",
+            "directory": "2023-10-03",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "画像を丸く切り取り、枠を付ける",
+            "description": "",
+            "directory": "2023-10-04",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "画像を等間隔で横に並べる",
+            "description": "",
+            "directory": "2023-10-05",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "NavigationViewを使いラージタイトルを表示する",
+            "description": "NavigationViewを使いラージタイトルを表示してください。",
+            "directory": "2023-10-06",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "Pickerを表示する",
+            "description": "Pickerを使いポケモンを表示してください。",
+            "directory": "2023-10-07",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "TabViewを使って画面を切り替える",
+            "description": "TabViewを使って画面を切り替えてください。",
+            "directory": "2023-10-08",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "Buttonが押されたら文字を変える",
+            "description": "Buttonが押されたら文字を変えてください。",
+            "directory": "2023-10-09",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "Listを使ってセクションごとに表示する",
+            "description": "Listを使ってセクションごとに表示する（groupedスタイル）",
+            "directory": "2023-10-10",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "画面遷移時に値を渡す",
+            "description": "画面遷移時に値を渡してください。",
+            "directory": "2023-10-11",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "NavigationViewの戻るボタンを非表示にする",
+            "description": "NavigationViewの戻るボタンを非表示にしてください。",
+            "directory": "2023-10-12",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "Listのスタイルを変更する",
+            "description": "ListのスタイルをPlainListStyleに変更してください。",
+            "directory": "2023-10-13",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "Alertを表示する",
+            "description": "アラートを表示させてください。",
+            "directory": "2023-10-14`",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "Alertを出し分ける",
+            "description": "ボタン1が押されたらアラート1を、ボタン2が押されたらアラート2を表示してください",
+            "directory": "2023-10-15",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "Button内の画像やテキストの色を変えない",
+            "description": "Buttonが押されたら文字を変えてください。\nButton内の画像やテキストの色を変えないでください。",
+            "directory": "2023-10-16",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "SwiftUIでアラートとシートを出し分ける",
+            "description": "数字が入力されたらシートを表示してください。\n数字以外が入力されたらアラートを表示してください。",
+            "directory": "2023-10-17",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "Buttonからプッシュ遷移をする（NavigationLinkを無効にする）",
+            "description": "Buttonからプッシュ遷移をする方法です。 この方法であれば、NavigationLink を擬似的に無効にすることができます。",
+            "directory": "2023-10-18",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "続きを読む。。。ボタンがあるViewを実装する",
+            "description": "SwiftUIで続きを読む。。。ボタンがあるViewを実装してください。",
+            "directory": "2023-10-19",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "Text中の文字の太さや色を変える",
+            "description": "Text中の文字の太さや色を変えてください。",
+            "directory": "2023-10-20",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "FunctionBuilderを使ってViewに影をつける",
+            "description": "FunctionBuilderを使ってViewに影をつけてください。",
+            "directory": "2023-10-21",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "ViewModifierを使ってViewに影をつける",
+            "description": "ViewModifierを使ってViewに影をつけてください。",
+            "directory": "2023-10-22",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "リストを編集する",
+            "description": "リストを編集してください。",
+            "directory": "2023-10-23",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "リストのセルをタップするとアラートが表示させる",
+            "description": "リストのセルをタップするとアラートが表示させてください。",
+            "directory": "2023-10-24",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "画面遷移先のViewから遷移元のメソッドを呼び出す",
+            "description": "画面遷移先の View から遷移元のメソッドを呼び出してください。",
+            "directory": "2023-10-25",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "ListViewからそれぞれ別のViewに遷移する",
+            "description": "ListViewからそれぞれ別のViewに遷移する",
+            "directory": "2023-10-26",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "複数行のPickerを作成する",
+            "description": "複数行のPickerを作成する",
+            "directory": "2023-10-27",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "Sheetを表示する",
+            "description": "全画面でSheetを表示する",
+            "directory": "2023-10-28",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-10-29",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-10-30",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-10-31",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-01",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-02",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-03",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-04",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-05",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-06",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-07",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-08",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-09",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-10",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-11",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-12",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-13",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-14",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-15",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-16",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-17",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-18",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-19",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-20",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-21",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-22",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-23",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-24",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-25",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-26",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-27",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-28",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-29",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-11-30",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-01",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-02",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-03",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-04",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-05",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-06",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-07",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-08",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-09",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-10",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-11",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-12",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-13",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-14",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-15",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-16",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-17",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-18",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-19",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-20",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-21",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-22",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-23",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-24",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-25",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-26",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-27",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-28",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-29",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-30",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "",
+            "description": "",
+            "directory": "2023-12-31",
+            "images": [
+              {
+                  "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        }
+    ]
+}
