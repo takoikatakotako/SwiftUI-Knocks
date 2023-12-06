@@ -18,7 +18,8 @@ struct ContentView: View {
                 }
                 .padding()
                 .border(Color.gray, width: 2)
-            }.buttonStyle(PlainButtonStyle())
+            }
+            .buttonStyle(PlainButtonStyle())
         }
     }
 }

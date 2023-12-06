@@ -27,13 +27,7 @@ struct ContentView: View {
         } message: { alertItem in
             Text(alertItem.message)
         }
-        
     }
-}
-
-struct AlertItem {
-    let buttonTitle: String
-    let message: String
 }
 
 #Preview {

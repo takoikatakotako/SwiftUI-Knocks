@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    var pokemons = ["Snorlax", "Pikachu", "Slowpoke", "Meowth"]
+    let pokemons = ["Snorlax", "Pikachu", "Slowpoke", "Meowth"]
     @State var selectedPokemon = 0
     
     var body: some View {
@@ -12,7 +12,7 @@ struct ContentView: View {
         }
         .pickerStyle(WheelPickerStyle())
         .onReceive([selectedPokemon].publisher.first()) { value in
-            print("selectedPokemon: \(value)")
+            print("SelectedPokemon: \(value)")
             print(pokemons[value])
         }
     }

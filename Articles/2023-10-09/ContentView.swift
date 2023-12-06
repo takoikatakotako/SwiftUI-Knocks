@@ -1,3 +1,5 @@
+import SwiftUI
+
 struct ContentView: View {
     @State var text = "Snorlax"
     
@@ -5,7 +7,7 @@ struct ContentView: View {
         VStack {
             Text(text)
             Button(action: {
-                self.text = "Forever"
+                text = "Forever"
             }) {
                 Text("Tap Me!!")
             }

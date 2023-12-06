@@ -2,7 +2,7 @@
     "articles": [
         {
             "title": "画像をリサイズして表示（fit）",
-            "description": "150✖︎200サイズに画像をリサイズして表示させてください。\nアスペクト比が異なる場合は余白を赤色で表示してください。",
+            "description": "150×200サイズに画像をリサイズして表示させてください。\nアスペクト比が異なる場合は余白を赤色で表示してください。",
             "directory": "2023-10-01",
             "images": [
               {
@@ -14,7 +14,7 @@
         },
         {
             "title": "画像をリサイズして表示（clip）",
-            "description": "150✖︎200サイズに画像をリサイズして表示させてください。\nアスペクト比が異なる場合ははみ出た箇所を切り取って表示してください。",
+            "description": "150×200サイズに画像をリサイズして表示させてください。\nアスペクト比が異なる場合ははみ出た箇所を切り取って表示してください。",
             "directory": "2023-10-02",
             "images": [
               {
@@ -337,8 +337,8 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "全画面でSheetを表示する",
+            "description": "全画面でSheetを表示してください。",
             "directory": "2023-10-29",
             "images": [
               {
@@ -349,8 +349,8 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "NavigationBarを隠す",
+            "description": "TextをNavigationViewの中に入れつつNavigationBarを表示しないでください",
             "directory": "2023-10-30",
             "images": [
               {
@@ -361,8 +361,8 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "Previewを横向きにする",
+            "description": "Previewを横向きにしてください。",
             "directory": "2023-10-31",
             "images": [
               {
@@ -373,8 +373,8 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "端末のシェイクを検知する",
+            "description": "端末のシェイクを検知して@Stateを更新してください",
             "directory": "2023-11-01",
             "images": [
               {
@@ -385,8 +385,8 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "UICollectionViewのようにViewを並べる",
+            "description": "UICollectionViewのようにViewを並べてください。",
             "directory": "2023-11-02",
             "images": [
               {
@@ -397,8 +397,8 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "スワイプで遷移するチュートリアル画面を作る",
+            "description": "画像のような良くあるウェークスルー画面を実装してください。",
             "directory": "2023-11-03",
             "images": [
               {
@@ -409,7 +409,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "閉じることができないモーダルを表示する",
             "description": "",
             "directory": "2023-11-04",
             "images": [
