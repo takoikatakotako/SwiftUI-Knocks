@@ -12,13 +12,11 @@ struct ContentView: View, MyProtocol {
             }
         }
     }
-    
+
     func myFunc() {
         text = "Changed Text"
     }
 }
-
-import SwiftUI
 
 struct SecondView: View {
     var delegate: MyProtocol

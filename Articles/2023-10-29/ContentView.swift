@@ -22,12 +22,9 @@ struct ContentView: View {
     ContentView()
 }
 
-
-import SwiftUI
-
 struct SecondView: View {
     @Environment(\.dismiss) var dismiss
-    
+
     var body: some View {
         VStack {
             Button(action: {

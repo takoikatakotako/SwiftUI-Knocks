@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentViewCell: View {
     let imageName: String
-    
+
     var body: some View {
         Image(imageName)
             .resizable()

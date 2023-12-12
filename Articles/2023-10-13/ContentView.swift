@@ -7,7 +7,7 @@ struct ContentView: View {
                 Text("Meowth")
                 Text("Ditto")
             }
-            
+
             Section("Fire") {
                 Text("Vulpix")
                 Text("Arcanine")

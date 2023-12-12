@@ -3,7 +3,7 @@ import SwiftUI
 struct ContentView: View {
     @State var showingAlert = false
     @State var alertItem: AlertItem?
-    
+
     var body: some View {
         VStack {
             Button {
@@ -12,7 +12,7 @@ struct ContentView: View {
             } label: {
                 Text("Pikachu")
             }
-            
+
             Button {
                 alertItem = AlertItem(buttonTitle: "Snorlax", message: "Snorlax is most popular Pokémon.")
                 showingAlert = true

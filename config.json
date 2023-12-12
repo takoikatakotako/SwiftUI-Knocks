@@ -159,7 +159,7 @@
         {
             "title": "Alertを表示する",
             "description": "アラートを表示させてください。",
-            "directory": "2023-10-14`",
+            "directory": "2023-10-14",
             "images": [
               {
                   "name": "image.png",
@@ -733,8 +733,8 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIでMapを表示する",
+            "description": "SwiftUIを使ってMapを表示してください。秋葉原UDX（35.7005° N, 139.7726° E）を中心として、300mの範囲を表示しています。",
             "directory": "2023-12-01",
             "images": [
               {
@@ -745,8 +745,8 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIでMapを表示し、自分の位置を中心にする",
+            "description": "SwiftUIでMapを表示し、自分の位置を中心にする方法です。",
             "directory": "2023-12-02",
             "images": [
               {
@@ -754,7 +754,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "ContentViewState.swift"]
         },
         {
             "title": "",

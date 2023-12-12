@@ -29,15 +29,12 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
- 
-
-import SwiftUI
 
 struct CardView<Content>: View where Content: View {
     let color: Color
     let radius: CGFloat
     let content: () -> Content
-    
+
     init(
         color: Color = Color.gray.opacity(0.4),
         radius: CGFloat = 8,
@@ -46,7 +43,7 @@ struct CardView<Content>: View where Content: View {
         self.color = color
         self.radius = radius
     }
-    
+
     var body: some View {
         content()
         .padding(16)

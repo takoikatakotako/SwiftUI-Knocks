@@ -7,7 +7,7 @@ struct ContentView: View {
                 Image(.icon)
                     .resizable()
                     .frame(width: 150, height: 150)
-                
+
                 Text("Snorlax is the most plpular Pokemon")
             }
             .navigationBarTitleDisplayMode(.large)

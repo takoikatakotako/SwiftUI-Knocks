@@ -3,7 +3,7 @@ import SwiftUI
 struct ContentView: View {
     @State var selectedHour = 8
     @State var selectedMinute = 30
-    
+
     var body: some View {
         GeometryReader { geometry in
             HStack {
@@ -18,7 +18,7 @@ struct ContentView: View {
                 }.labelsHidden()
                     .frame(width: geometry.size.width / 2, height: geometry.size.height)
                     .clipped()
-                
+
                 Picker(selection: $selectedMinute, label: EmptyView()) {
                     ForEach(0 ..< 60) {
                         Text("\($0)")

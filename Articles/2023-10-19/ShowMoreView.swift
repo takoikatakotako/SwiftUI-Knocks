@@ -5,8 +5,8 @@ struct ShowMoreView: View {
     @State var isFirst = true
     @State var isFold = false
     @State var needFoldButton = true
-    @State var textHeight: CGFloat? = nil
-    
+    @State var textHeight: CGFloat?
+
     var body: some View {
         VStack(alignment: .trailing) {
             HStack {
@@ -29,7 +29,7 @@ struct ShowMoreView: View {
                     }
                 Spacer()
             }
-            
+
             if needFoldButton {
                 Button(action: {
                     self.isFold.toggle()
@@ -46,7 +46,7 @@ struct ShowMoreView: View {
     }
 }
 
-fileprivate struct SizePreference: PreferenceKey {
+private struct SizePreference: PreferenceKey {
     static let defaultValue: CGSize = .zero
     static func reduce(value: inout CGSize, nextValue: () -> CGSize) {}
 }

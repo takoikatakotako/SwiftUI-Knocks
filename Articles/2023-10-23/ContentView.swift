@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var users = ["Paul", "Taylor", "Adele"]
-    
+
     var body: some View {
         NavigationView {
             List {
@@ -14,7 +14,7 @@ struct ContentView: View {
             .navigationBarItems(trailing: EditButton())
         }
     }
-    
+
     func delete(at offsets: IndexSet) {
         users.remove(atOffsets: offsets)
     }

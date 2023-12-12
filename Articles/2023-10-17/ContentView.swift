@@ -4,13 +4,13 @@ struct ContentView: View {
     @State var numberString: String = ""
     @State var showingAlert: Bool = false
     @State var showingSheet: Bool = false
-    
+
     var body: some View {
         VStack {
             TextField("Input Number", text: $numberString)
                 .padding()
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-            
+
             Button(action: {
                 // Can numberString convert to Double?
                 guard Double(numberString) != nil else {
