@@ -4,6 +4,6 @@ struct Article: Decodable {
     let title: String
     let description: String
     let directory: String
-    let images: [Image]
+    let resources: [Resource]
     let codes: [String]
 }

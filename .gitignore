@@ -107,3 +107,4 @@ xcuserdata
 # End of https://www.toptal.com/developers/gitignore/api/swift,swiftpackagemanager,xcode
 
 Outputs/*
+Temps/*
