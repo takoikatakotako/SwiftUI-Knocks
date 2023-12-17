@@ -104,8 +104,8 @@
             "directory": "2023-10-08",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -118,8 +118,8 @@
             "directory": "2023-10-09",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -146,13 +146,13 @@
             "directory": "2023-10-11",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
             "explanation": "",
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "SecondView.swift"]
         },
         {
             "title": "NavigationViewの戻るボタンを非表示にする",
@@ -160,13 +160,13 @@
             "directory": "2023-10-12",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
             "explanation": "",
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "SecondView.swift"]
         },
         {
             "title": "Listのスタイルを変更する",
@@ -187,8 +187,8 @@
             "directory": "2023-10-14",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -200,8 +200,8 @@
             "directory": "2023-10-15",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -213,8 +213,8 @@
             "directory": "2023-10-16",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -226,8 +226,8 @@
             "directory": "2023-10-17",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -239,8 +239,8 @@
             "directory": "2023-10-18",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -252,12 +252,12 @@
             "directory": "2023-10-19",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "ShowMoreView.swift"]
         },
         {
             "title": "Text中の文字の太さや色を変える",
@@ -283,7 +283,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "CardView.swift"]
         },
         {
             "title": "ViewModifierを使ってViewに影をつける",

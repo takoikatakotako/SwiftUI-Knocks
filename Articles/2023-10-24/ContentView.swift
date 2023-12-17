@@ -33,8 +33,3 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
-struct Pokemon: Identifiable {
-    let id: Int
-    let name: String
-}

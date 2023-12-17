@@ -37,11 +37,11 @@ func main() throws {
         for (resourceIndex, resource) in article.resources.enumerated() {
             let sourceResourceURL = articleDirectoryURL.appending(path: resource.name)
             if resource.type == "image" {
-                let outputImageName = "\(index)-\(resourceIndex).png"
+                let outputImageName = "\(article.directory)-\(resourceIndex).png"
                 try convertImage(sourceImageURL: sourceResourceURL, outputImageName: outputImageName)
                 output += "<img src=\"\(outputImageName)\" width=\"\(resource.width)px\" alt=\"\(article.title)\">\n"
             } else if resource.type == "movie" {
-                let outputMovieName = "\(index)-\(resourceIndex).gif"
+                let outputMovieName = "\(article.directory)-\(resourceIndex).gif"
                 try convertMovie(sourceMovieURL: sourceResourceURL, outputMovieName: outputMovieName)
                 output += "<img src=\"\(outputMovieName)\" width=\"\(resource.width)px\" alt=\"\(article.title)\">\n"
             }
