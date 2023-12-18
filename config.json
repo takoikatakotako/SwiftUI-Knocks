@@ -296,7 +296,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "CardViewModifier.swift", "View+Extension.swift"]
         },
         {
             "title": "リストを編集する",
@@ -304,8 +304,8 @@
             "directory": "2023-10-23",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -317,8 +317,8 @@
             "directory": "2023-10-24",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -330,8 +330,8 @@
             "directory": "2023-10-25",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -343,8 +343,8 @@
             "directory": "2023-10-26",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -356,8 +356,8 @@
             "directory": "2023-10-27",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -369,8 +369,8 @@
             "directory": "2023-10-28",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -382,8 +382,8 @@
             "directory": "2023-10-29",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -421,8 +421,8 @@
             "directory": "2023-11-01",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -434,8 +434,8 @@
             "directory": "2023-11-02",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -447,8 +447,8 @@
             "directory": "2023-11-03",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
