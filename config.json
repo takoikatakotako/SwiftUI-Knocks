@@ -460,16 +460,16 @@
             "directory": "2023-11-04",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "アプリ起動時に画面を遷移させる(yet)",
+            "description": "ロゴを表示した後に画面遷移を行なってください",
             "directory": "2023-11-05",
             "resources": [
               {
@@ -481,20 +481,20 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "ハーフモーダルを表示する",
             "description": "",
             "directory": "2023-11-06",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "マークダウンを表示する",
             "description": "",
             "directory": "2023-11-07",
             "resources": [
@@ -507,7 +507,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "文字列中にタップ可能なリンクを追加する",
             "description": "",
             "directory": "2023-11-08",
             "resources": [
@@ -520,7 +520,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "文字列中にタップ可能なリンクを追加し、リンクの色を変える",
             "description": "",
             "directory": "2023-11-09",
             "resources": [
@@ -533,7 +533,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "GithubのAPIを叩き、リポジトリの情報をリストに表示する（async, await）",
             "description": "",
             "directory": "2023-11-10",
             "resources": [
@@ -546,7 +546,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。",
             "description": "",
             "directory": "2023-11-11",
             "resources": [
@@ -559,7 +559,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。Indicator も表示してください。",
             "description": "",
             "directory": "2023-11-12",
             "resources": [
@@ -572,7 +572,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIのTextFieldで編集中と編集完了を検知する",
             "description": "",
             "directory": "2023-11-13",
             "resources": [
@@ -585,7 +585,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIでAppStorageを使ってUserDefaultの値を監視する",
             "description": "",
             "directory": "2023-11-14",
             "resources": [
@@ -598,7 +598,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIでViewの上にViewを重ねる",
             "description": "",
             "directory": "2023-11-15",
             "resources": [
@@ -611,7 +611,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIでMapを使う。Mapにピンを立てる",
             "description": "",
             "directory": "2023-11-16",
             "resources": [
@@ -624,7 +624,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIを使ったTODOアプリのサンプル",
             "description": "",
             "directory": "2023-11-17",
             "resources": [
@@ -637,7 +637,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIでAVAudioPlayerで音楽を再生し、再生終了を検知する",
             "description": "",
             "directory": "2023-11-18",
             "resources": [
@@ -650,7 +650,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIでモーダルを表示する時に値を渡す",
             "description": "",
             "directory": "2023-11-19",
             "resources": [
@@ -663,7 +663,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIでBMIを計算し、結果を別のViewで表示する",
             "description": "",
             "directory": "2023-11-20",
             "resources": [
@@ -676,7 +676,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIでボタンを押すとポップアップを表示する",
             "description": "",
             "directory": "2023-11-21",
             "resources": [
@@ -689,7 +689,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIでViewを横スクロールで表示する",
             "description": "",
             "directory": "2023-11-22",
             "resources": [
@@ -702,7 +702,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIでButtonを有効にしたり無効にしたりする",
             "description": "",
             "directory": "2023-11-23",
             "resources": [
@@ -715,7 +715,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIのTextFieldで表示するキーボードを指定する",
             "description": "",
             "directory": "2023-11-24",
             "resources": [
@@ -728,7 +728,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIでシートを表示し、プッシュ遷移後にシートを閉じる",
             "description": "",
             "directory": "2023-11-25",
             "resources": [
@@ -741,7 +741,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIでListをEditModeにして並び替える",
             "description": "",
             "directory": "2023-11-26",
             "resources": [
@@ -754,7 +754,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIのListでSpacerの部分にもタップ判定をつける",
             "description": "",
             "directory": "2023-11-27",
             "resources": [
@@ -767,7 +767,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIのListの中にボタンを複数設置する",
             "description": "",
             "directory": "2023-11-28",
             "resources": [
@@ -780,7 +780,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIでSearchBar(TextField)を使って検索する",
             "description": "",
             "directory": "2023-11-29",
             "resources": [
@@ -793,7 +793,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIでSearchBar(TextField)にクリアボタンをつける",
             "description": "",
             "directory": "2023-11-30",
             "resources": [
@@ -1001,7 +1001,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIでさまざまなデバイスのプレビューを確認する",
             "description": "",
             "directory": "2023-12-16",
             "resources": [
@@ -1014,7 +1014,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "Swiftのasync,awaitを使ってAPIと画像を取得し、全てが揃ってから表示する",
             "description": "",
             "directory": "2023-12-17",
             "resources": [
@@ -1027,7 +1027,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIでObservableObjectの@publishedなプロパティとBindingをする",
             "description": "",
             "directory": "2023-12-18",
             "resources": [
@@ -1040,7 +1040,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "iOSのファイルアプリ（UIDocumentPickerViewController）を開いてドキュメントフォルダに保存したファイルを開く",
             "description": "",
             "directory": "2023-12-19",
             "resources": [
@@ -1053,7 +1053,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIでUIActivityViewControllerを表示する",
             "description": "",
             "directory": "2023-12-20",
             "resources": [
@@ -1066,7 +1066,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIでActivityIndicatorを表示する",
             "description": "",
             "directory": "2023-12-21",
             "resources": [
@@ -1079,7 +1079,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIで少しカスタマイズしたActivityIndicatorを表示する",
             "description": "",
             "directory": "2023-12-22",
             "resources": [
@@ -1092,7 +1092,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIでListにButtonを設定してパラメーターの違う画面に遷移する",
             "description": "",
             "directory": "2023-12-23",
             "resources": [
@@ -1105,7 +1105,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIのTabViewのタブをコードから動的に切り替える",
             "description": "",
             "directory": "2023-12-24",
             "resources": [
@@ -1118,7 +1118,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": " Identifiableに適合していないStructでListを使う",
             "description": "",
             "directory": "2023-12-25",
             "resources": [
@@ -1131,7 +1131,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIでカメラを使う",
             "description": "",
             "directory": "2023-12-26",
             "resources": [
@@ -1144,7 +1144,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIでスライダーとスクロールを連動させる",
             "description": "",
             "directory": "2023-12-27",
             "resources": [
@@ -1157,7 +1157,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIでPHPickerViewControllerを使って画像を選択する",
             "description": "",
             "directory": "2023-12-28",
             "resources": [
@@ -1170,7 +1170,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIで画像をピンチで拡大する（MagnificationGesture）",
             "description": "",
             "directory": "2023-12-29",
             "resources": [
@@ -1183,7 +1183,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIで画像をピンチで拡大する（PDFView）",
             "description": "",
             "directory": "2023-12-30",
             "resources": [
@@ -1196,7 +1196,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIで画像をピンチで拡大する（UIImageView + UIScrollView）",
             "description": "",
             "directory": "2023-12-31",
             "resources": [
