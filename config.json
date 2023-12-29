@@ -1220,6 +1220,19 @@
               }
             ],
             "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "SwiftUIでシートを出し分ける",
+            "description": "",
+            "directory": "2024-12-02",
+            "resources": [
+              {
+                  "type": "movie",
+                  "name": "movie.mp4",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
         }
     ]
 }
