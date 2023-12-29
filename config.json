@@ -468,13 +468,13 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "アプリ起動時に画面を遷移させる(yet)",
+            "title": "アプリ起動時に画面を遷移させる",
             "description": "ロゴを表示した後に画面遷移を行なってください",
             "directory": "2023-11-05",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "move.mp4",
                   "width": 300
               }
             ],
@@ -507,7 +507,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "文字列中にタップ可能なリンクを追加する",
+            "title": "変数に格納したマークダウンを表示する",
             "description": "",
             "directory": "2023-11-08",
             "resources": [
@@ -520,7 +520,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "文字列中にタップ可能なリンクを追加し、リンクの色を変える",
+            "title": "マークダウンのリンクの色を赤色に変える",
             "description": "",
             "directory": "2023-11-09",
             "resources": [
@@ -538,8 +538,8 @@
             "directory": "2023-11-10",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -577,8 +577,8 @@
             "directory": "2023-11-13",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -590,8 +590,8 @@
             "directory": "2023-11-14",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -611,7 +611,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "SwiftUIでMapを使う。Mapにピンを立てる",
+            "title": "SwiftUIでMapを使う。Mapにピンを立てる(skip)",
             "description": "",
             "directory": "2023-11-16",
             "resources": [
@@ -1203,6 +1203,19 @@
               {
                   "type": "image",
                   "name": "image.png",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "SwiftMarkdownを使いマークダウンを表示する",
+            "description": "",
+            "directory": "2024-12-01",
+            "resources": [
+              {
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
