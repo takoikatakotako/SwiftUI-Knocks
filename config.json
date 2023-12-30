@@ -1001,7 +1001,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "SwiftUIでさまざまなデバイスのプレビューを確認する",
+            "title": "",
             "description": "",
             "directory": "2023-12-16",
             "resources": [
@@ -1027,13 +1027,13 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "SwiftUIでObservableObjectの@publishedなプロパティとBindingをする",
+            "title": "SwiftUIでObservableObjectの@publishedなプロパティとBindingする",
             "description": "",
             "directory": "2023-12-18",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.png",
                   "width": 300
               }
             ],
@@ -1058,15 +1058,15 @@
             "directory": "2023-12-20",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "SwiftUIでActivityIndicatorを表示する",
+            "title": "SwiftUIでActivityIndicatorを表示する(skip)",
             "description": "",
             "directory": "2023-12-21",
             "resources": [
@@ -1079,7 +1079,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "SwiftUIで少しカスタマイズしたActivityIndicatorを表示する",
+            "title": "SwiftUIで少しカスタマイズしたActivityIndicatorを表示する(skip)",
             "description": "",
             "directory": "2023-12-22",
             "resources": [
@@ -1175,8 +1175,8 @@
             "directory": "2023-12-29",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -1188,8 +1188,8 @@
             "directory": "2023-12-30",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -1201,8 +1201,8 @@
             "directory": "2023-12-31",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -1211,7 +1211,7 @@
         {
             "title": "SwiftMarkdownを使いマークダウンを表示する",
             "description": "",
-            "directory": "2024-12-01",
+            "directory": "2024-01-01",
             "resources": [
               {
                   "type": "movie",
@@ -1224,7 +1224,7 @@
         {
             "title": "SwiftUIでシートを出し分ける",
             "description": "",
-            "directory": "2024-12-02",
+            "directory": "2024-01-02",
             "resources": [
               {
                   "type": "movie",
