@@ -832,8 +832,8 @@
             "codes": ["ContentView.swift", "ContentViewState.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIでMapを表示し、自分の位置を赤丸でマークする",
+            "description": "SwiftUIでMapを表示し、自分の位置を赤丸でマークする方法です。",
             "directory": "2023-12-03",
             "resources": [
               {
@@ -845,7 +845,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
+            "title": "SwiftUIでMapを表示し、自分の位置を表示しつつコンパスを表示（yet）",
             "description": "",
             "directory": "2023-12-04",
             "resources": [

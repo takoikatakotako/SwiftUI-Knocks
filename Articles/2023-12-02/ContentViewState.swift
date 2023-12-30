@@ -4,7 +4,7 @@ import CoreLocation
 class ContentViewState: NSObject, ObservableObject {
     @Published var location: CLLocationCoordinate2D?
     private let locationManager = CLLocationManager()
-
+    
     func onAppear() {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
@@ -27,7 +27,7 @@ extension ContentViewState: CLLocationManagerDelegate {
             break
         }
     }
-
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         self.location = manager.location?.coordinate
     }
