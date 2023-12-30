@@ -707,8 +707,8 @@
             "directory": "2023-11-23",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.mp4",
                   "width": 300
               }
             ],
@@ -720,8 +720,8 @@
             "directory": "2023-11-24",
             "resources": [
               {
-                  "type": "image",
-                  "name": "image.png",
+                  "type": "movie",
+                  "name": "movie.png",
                   "width": 300
               }
             ],
@@ -793,7 +793,7 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "SwiftUIでSearchBar(TextField)にクリアボタンをつける",
+            "title": "SwiftUIでSearchBar(TextField)にクリアボタンをつける(skip)",
             "description": "",
             "directory": "2023-11-30",
             "resources": [
