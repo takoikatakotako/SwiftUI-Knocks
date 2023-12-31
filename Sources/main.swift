@@ -40,6 +40,10 @@ func main() throws {
                 let outputImageName = "\(article.directory)-\(resourceIndex).png"
                 try convertImage(sourceImageURL: sourceResourceURL, outputImageName: outputImageName)
                 output += "<img src=\"\(outputImageName)\" width=\"\(resource.width)px\" alt=\"\(article.title)\">\n"
+            } else if resource.type == "image-raw" {
+                let outputImageName = "\(article.directory)-\(resourceIndex).png"
+                try copyImage(sourceImageURL: sourceResourceURL, outputImageName: outputImageName)
+                output += "<img src=\"\(outputImageName)\" width=\"\(resource.width)px\" alt=\"\(article.title)\">\n"
             } else if resource.type == "movie" {
                 let outputMovieName = "\(article.directory)-\(resourceIndex).gif"
                 try convertMovie(sourceMovieURL: sourceResourceURL, outputMovieName: outputMovieName)
@@ -70,6 +74,7 @@ func main() throws {
     try output.write(to: outputsDirectoryURL.appending(path: "README.md"), atomically: false, encoding: .utf8)
 }
 
+// 画像に枠を付けて保存する
 func convertImage(sourceImageURL: URL, outputImageName: String) throws {
     // 角を丸くする
     let assertsMaskImageURL = assetsDirectoryURL.appending(path: "mask.png")
@@ -80,6 +85,13 @@ func convertImage(sourceImageURL: URL, outputImageName: String) throws {
     let phoneFrameImageURL = assetsDirectoryURL.appending(path: "phoneFrameForImage.png")
     let outputImageURL = outputsDirectoryURL.appending(path: outputImageName)
     try addPhoneFrameForImage(phoneImageURL: phoneFrameImageURL, sourceImageURL: maskedImageFileURL, outputImageURL: outputImageURL)
+}
+
+// 画像をそのまま保存する
+func copyImage(sourceImageURL: URL, outputImageName: String) throws {
+    let outputImageURL = outputsDirectoryURL.appending(path: outputImageName)
+    try? FileManager.default.removeItem(at: outputImageURL)
+    try FileManager.default.copyItem(at: sourceImageURL, to: outputImageURL)
 }
 
 // 画像に角丸をつける
