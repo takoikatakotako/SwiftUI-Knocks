@@ -2,7 +2,7 @@
 150×200サイズに画像をリサイズして表示させてください。
 アスペクト比が異なる場合は余白を赤色で表示してください。
 
-<img src="2023-10-01-0.png" width="300px" alt="画像をリサイズして表示（fit）">
+<img src="2023-10-01/2023-10-01.png" width="300px" alt="画像をリサイズして表示（fit）">
 
 <details><summary>解答例</summary>
 <div>
@@ -33,7 +33,7 @@ struct ContentView: View {
 150×200サイズに画像をリサイズして表示させてください。
 アスペクト比が異なる場合ははみ出た箇所を切り取って表示してください。
 
-<img src="2023-10-02-0.png" width="300px" alt="画像をリサイズして表示（clip）">
+<img src="2023-10-02/image.png" width="300px" alt="画像をリサイズして表示（clip）">
 
 <details><summary>解答例</summary>
 <div>
@@ -64,7 +64,7 @@ struct ContentView: View {
 ### 3. 画像を丸く切り取る
 150✖︎150サイズに画像をリサイズし、丸く切り取って表示させてください。
 
-<img src="2023-10-03-0.png" width="300px" alt="画像を丸く切り取る">
+<img src="2023-10-03/image.png" width="300px" alt="画像を丸く切り取る">
 
 <details><summary>解答例</summary>
 <div>
@@ -94,7 +94,7 @@ struct ContentView: View {
 ### 4. 画像を丸く切り取り、枠を付ける
 
 
-<img src="2023-10-04-0.png" width="300px" alt="画像を丸く切り取り、枠を付ける">
+<img src="2023-10-04/image.png" width="300px" alt="画像を丸く切り取り、枠を付ける">
 
 <details><summary>解答例</summary>
 <div>
@@ -127,7 +127,7 @@ struct ContentView: View {
 ### 5. 画像を等間隔で横に並べる
 画像を等間隔で並べてください。
 
-<img src="2023-10-05-0.png" width="300px" alt="画像を等間隔で横に並べる">
+<img src="2023-10-05/image.png" width="300px" alt="画像を等間隔で横に並べる">
 
 <details><summary>解答例</summary>
 <div>
@@ -174,7 +174,7 @@ struct ContentView: View {
 ### 6. NavigationViewを使いラージタイトルを表示する
 NavigationViewを使いラージタイトルを表示してください。
 
-<img src="2023-10-06-0.png" width="300px" alt="NavigationViewを使いラージタイトルを表示する">
+<img src="2023-10-06/image.png" width="300px" alt="NavigationViewを使いラージタイトルを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -210,7 +210,7 @@ struct ContentView: View {
 ### 7. Pickerを表示する
 Pickerを使いポケモンを表示してください。
 
-<img src="2023-10-07-0.gif" width="300px" alt="Pickerを表示する">
+<img src="2023-10-07/movie.mp4" width="300px" alt="Pickerを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -248,7 +248,7 @@ struct ContentView: View {
 ### 8. TabViewを使って画面を切り替える
 TabViewを使って画面を切り替えてください。
 
-<img src="2023-10-08-0.gif" width="300px" alt="TabViewを使って画面を切り替える">
+<img src="2023-10-08/movie.mp4" width="300px" alt="TabViewを使って画面を切り替える">
 
 <details><summary>解答例</summary>
 <div>
@@ -291,7 +291,7 @@ struct ContentView: View {
 ### 9. Buttonが押されたら文字を変える
 Buttonが押されたら文字を変えてください。
 
-<img src="2023-10-09-0.gif" width="300px" alt="Buttonが押されたら文字を変える">
+<img src="2023-10-09/movie.mp4" width="300px" alt="Buttonが押されたら文字を変える">
 
 <details><summary>解答例</summary>
 <div>
@@ -322,7 +322,7 @@ struct ContentView: View {
 ### 10. Listを使ってセクションごとに表示する
 Listを使ってセクションごとに表示する（groupedスタイル）
 
-<img src="2023-10-10-0.png" width="300px" alt="Listを使ってセクションごとに表示する">
+<img src="2023-10-10/image.png" width="300px" alt="Listを使ってセクションごとに表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -360,7 +360,7 @@ struct ContentView: View {
 ### 11. 画面遷移時に値を渡す
 画面遷移時に値を渡してください。
 
-<img src="2023-10-11-0.gif" width="300px" alt="画面遷移時に値を渡す">
+<img src="2023-10-11/movie.mp4" width="300px" alt="画面遷移時に値を渡す">
 
 <details><summary>解答例</summary>
 <div>
@@ -410,7 +410,7 @@ struct SecondView: View {
 ### 12. NavigationViewの戻るボタンを非表示にする
 NavigationViewの戻るボタンを非表示にしてください。
 
-<img src="2023-10-12-0.gif" width="300px" alt="NavigationViewの戻るボタンを非表示にする">
+<img src="2023-10-12/movie.mp4" width="300px" alt="NavigationViewの戻るボタンを非表示にする">
 
 <details><summary>解答例</summary>
 <div>
@@ -461,7 +461,7 @@ struct SecondView: View {
 ### 13. Listのスタイルを変更する
 ListのスタイルをPlainListStyleに変更してください。
 
-<img src="2023-10-13-0.png" width="300px" alt="Listのスタイルを変更する">
+<img src="2023-10-13/image.png" width="300px" alt="Listのスタイルを変更する">
 
 <details><summary>解答例</summary>
 <div>
@@ -499,7 +499,7 @@ struct ContentView: View {
 ### 14. Alertを表示する
 アラートを表示させてください。
 
-<img src="2023-10-14-0.gif" width="300px" alt="Alertを表示する">
+<img src="2023-10-14/movie.mp4" width="300px" alt="Alertを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -543,7 +543,7 @@ struct ContentView: View {
 ### 15. Alertを出し分ける
 ボタン1が押されたらアラート1を、ボタン2が押されたらアラート2を表示してください
 
-<img src="2023-10-15-0.gif" width="300px" alt="Alertを出し分ける">
+<img src="2023-10-15/movie.mp4" width="300px" alt="Alertを出し分ける">
 
 <details><summary>解答例</summary>
 <div>
@@ -594,7 +594,7 @@ struct ContentView: View {
 Buttonが押されたら文字を変えてください。
 Button内の画像やテキストの色を変えないでください。
 
-<img src="2023-10-16-0.gif" width="300px" alt="Button内の画像やテキストの色を変えない">
+<img src="2023-10-16/movie.mp4" width="300px" alt="Button内の画像やテキストの色を変えない">
 
 <details><summary>解答例</summary>
 <div>
@@ -639,7 +639,7 @@ struct ContentView: View {
 数字が入力されたらシートを表示してください。
 数字以外が入力されたらアラートを表示してください。
 
-<img src="2023-10-17-0.gif" width="300px" alt="SwiftUIでアラートとシートを出し分ける">
+<img src="2023-10-17/movie.mp4" width="300px" alt="SwiftUIでアラートとシートを出し分ける">
 
 <details><summary>解答例</summary>
 <div>
@@ -694,7 +694,7 @@ struct ContentView: View {
 ### 18. Buttonからプッシュ遷移をする（NavigationLinkを無効にする）
 Buttonからプッシュ遷移をする方法です。 この方法であれば、NavigationLink を擬似的に無効にすることができます。
 
-<img src="2023-10-18-0.gif" width="300px" alt="Buttonからプッシュ遷移をする（NavigationLinkを無効にする）">
+<img src="2023-10-18/movie.mp4" width="300px" alt="Buttonからプッシュ遷移をする（NavigationLinkを無効にする）">
 
 <details><summary>解答例</summary>
 <div>
@@ -733,7 +733,7 @@ struct ContentView: View {
 ### 19. 続きを読む。。。ボタンがあるViewを実装する
 SwiftUIで続きを読む。。。ボタンがあるViewを実装してください。
 
-<img src="2023-10-19-0.gif" width="300px" alt="続きを読む。。。ボタンがあるViewを実装する">
+<img src="2023-10-19/movie.mp4" width="300px" alt="続きを読む。。。ボタンがあるViewを実装する">
 
 <details><summary>解答例</summary>
 <div>
@@ -846,7 +846,7 @@ private struct SizePreference: PreferenceKey {
 ### 20. Text中の文字の太さや色を変える
 Text中の文字の太さや色を変えてください。
 
-<img src="2023-10-20-0.png" width="300px" alt="Text中の文字の太さや色を変える">
+<img src="2023-10-20/image.png" width="300px" alt="Text中の文字の太さや色を変える">
 
 <details><summary>解答例</summary>
 <div>
@@ -893,7 +893,7 @@ struct ContentView: View {
 ### 21. FunctionBuilderを使ってViewに影をつける
 FunctionBuilderを使ってViewに影をつけてください。
 
-<img src="2023-10-21-0.png" width="300px" alt="FunctionBuilderを使ってViewに影をつける">
+<img src="2023-10-21/image.png" width="300px" alt="FunctionBuilderを使ってViewに影をつける">
 
 <details><summary>解答例</summary>
 <div>
@@ -968,7 +968,7 @@ struct CardView<Content>: View where Content: View {
 ### 22. ViewModifierを使ってViewに影をつける
 ViewModifierを使ってViewに影をつけてください。
 
-<img src="2023-10-22-0.png" width="300px" alt="ViewModifierを使ってViewに影をつける">
+<img src="2023-10-22/image.png" width="300px" alt="ViewModifierを使ってViewに影をつける">
 
 <details><summary>解答例</summary>
 <div>
@@ -1039,7 +1039,7 @@ extension View {
 ### 23. リストを編集する
 リストを編集してください。
 
-<img src="2023-10-23-0.gif" width="300px" alt="リストを編集する">
+<img src="2023-10-23/movie.mp4" width="300px" alt="リストを編集する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1079,7 +1079,7 @@ struct ContentView: View {
 ### 24. リストのセルをタップするとアラートが表示させる
 リストのセルをタップするとアラートが表示させてください。
 
-<img src="2023-10-24-0.gif" width="300px" alt="リストのセルをタップするとアラートが表示させる">
+<img src="2023-10-24/movie.mp4" width="300px" alt="リストのセルをタップするとアラートが表示させる">
 
 <details><summary>解答例</summary>
 <div>
@@ -1129,7 +1129,7 @@ struct ContentView: View {
 ### 25. 画面遷移先のViewから遷移元のメソッドを呼び出す
 画面遷移先の View から遷移元のメソッドを呼び出してください。
 
-<img src="2023-10-25-0.gif" width="300px" alt="画面遷移先のViewから遷移元のメソッドを呼び出す">
+<img src="2023-10-25/movie.mp4" width="300px" alt="画面遷移先のViewから遷移元のメソッドを呼び出す">
 
 <details><summary>解答例</summary>
 <div>
@@ -1174,7 +1174,7 @@ struct SecondView: View {
 ### 26. ListViewからそれぞれ別のViewに遷移する
 ListViewからそれぞれ別のViewに遷移する
 
-<img src="2023-10-26-0.gif" width="300px" alt="ListViewからそれぞれ別のViewに遷移する">
+<img src="2023-10-26/movie.mp4" width="300px" alt="ListViewからそれぞれ別のViewに遷移する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1231,7 +1231,7 @@ struct ContentView: View {
 ### 27. 複数行のPickerを作成する
 複数行のPickerを作成する
 
-<img src="2023-10-27-0.gif" width="300px" alt="複数行のPickerを作成する">
+<img src="2023-10-27/movie.mp4" width="300px" alt="複数行のPickerを作成する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1267,7 +1267,7 @@ struct ContentView: View {
 ### 28. Sheetを表示する
 全画面でSheetを表示する
 
-<img src="2023-10-28-0.gif" width="300px" alt="Sheetを表示する">
+<img src="2023-10-28/movie.mp4" width="300px" alt="Sheetを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1303,7 +1303,7 @@ struct ContentView: View {
 ### 29. 全画面でSheetを表示する
 全画面でSheetを表示してください。
 
-<img src="2023-10-29-0.gif" width="300px" alt="全画面でSheetを表示する">
+<img src="2023-10-29/movie.mp4" width="300px" alt="全画面でSheetを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1342,7 +1342,7 @@ struct ContentView: View {
 ### 30. NavigationBarを隠す
 TextをNavigationViewの中に入れつつNavigationBarを表示しないでください
 
-<img src="2023-10-30-0.png" width="300px" alt="NavigationBarを隠す">
+<img src="2023-10-30/image.png" width="300px" alt="NavigationBarを隠す">
 
 <details><summary>解答例</summary>
 <div>
@@ -1372,7 +1372,7 @@ struct ContentView: View {
 ### 31. Previewを横向きにする
 Previewを横向きにしてください。
 
-<img src="2023-10-31-0.png" width="300px" alt="Previewを横向きにする">
+<img src="2023-10-31/image.png" width="300px" alt="Previewを横向きにする">
 
 <details><summary>解答例</summary>
 <div>
@@ -1401,7 +1401,7 @@ struct ContentView_Previews: PreviewProvider {
 ### 32. 端末のシェイクを検知する
 端末のシェイクを検知して@Stateを更新してください
 
-<img src="2023-11-01-0.gif" width="300px" alt="端末のシェイクを検知する">
+<img src="2023-11-01/movie.mp4" width="300px" alt="端末のシェイクを検知する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1432,7 +1432,7 @@ struct ContentView: View {
 ### 33. UICollectionViewのようにViewを並べる
 UICollectionViewのようにViewを並べてください。
 
-<img src="2023-11-02-0.gif" width="300px" alt="UICollectionViewのようにViewを並べる">
+<img src="2023-11-02/movie.mp4" width="300px" alt="UICollectionViewのようにViewを並べる">
 
 <details><summary>解答例</summary>
 <div>
@@ -1470,7 +1470,7 @@ struct ContentView: View {
 ### 34. スワイプで遷移するチュートリアル画面を作る
 画像のような良くあるウェークスルー画面を実装してください。
 
-<img src="2023-11-03-0.gif" width="300px" alt="スワイプで遷移するチュートリアル画面を作る">
+<img src="2023-11-03/movie.mp4" width="300px" alt="スワイプで遷移するチュートリアル画面を作る">
 
 <details><summary>解答例</summary>
 <div>
@@ -1506,7 +1506,7 @@ struct ContentView: View {
 ### 35. 閉じることができないモーダルを表示する
 
 
-<img src="2023-11-04-0.gif" width="300px" alt="閉じることができないモーダルを表示する">
+<img src="2023-11-04/movie.mp4" width="300px" alt="閉じることができないモーダルを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1541,7 +1541,7 @@ struct ContentView: View {
 ### 36. アプリ起動時に画面を遷移させる
 ロゴを表示した後に画面遷移を行なってください
 
-<img src="2023-11-05-0.gif" width="300px" alt="アプリ起動時に画面を遷移させる">
+<img src="2023-11-05/move.mp4" width="300px" alt="アプリ起動時に画面を遷移させる">
 
 <details><summary>解答例</summary>
 <div>
@@ -1589,7 +1589,7 @@ struct ContentView: View {
 ### 37. ハーフモーダルを表示する
 
 
-<img src="2023-11-06-0.gif" width="300px" alt="ハーフモーダルを表示する">
+<img src="2023-11-06/movie.mp4" width="300px" alt="ハーフモーダルを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1626,7 +1626,7 @@ struct ContentView: View {
 ### 38. マークダウンを表示する
 
 
-<img src="2023-11-07-0.png" width="300px" alt="マークダウンを表示する">
+<img src="2023-11-07/image.png" width="300px" alt="マークダウンを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1652,7 +1652,7 @@ struct ContentView: View {
 ### 39. 変数に格納したマークダウンを表示する
 
 
-<img src="2023-11-08-0.png" width="300px" alt="変数に格納したマークダウンを表示する">
+<img src="2023-11-08/image.png" width="300px" alt="変数に格納したマークダウンを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1681,7 +1681,7 @@ struct ContentView: View {
 ### 40. マークダウンのリンクの色を赤色に変える
 
 
-<img src="2023-11-09-0.png" width="300px" alt="マークダウンのリンクの色を赤色に変える">
+<img src="2023-11-09/image.png" width="300px" alt="マークダウンのリンクの色を赤色に変える">
 
 <details><summary>解答例</summary>
 <div>
@@ -1710,7 +1710,7 @@ struct ContentView: View {
 ### 41. GithubのAPIを叩き、リポジトリの情報をリストに表示する（async, await）
 
 
-<img src="2023-11-10-0.gif" width="300px" alt="GithubのAPIを叩き、リポジトリの情報をリストに表示する（async, await）">
+<img src="2023-11-10/movie.mp4" width="300px" alt="GithubのAPIを叩き、リポジトリの情報をリストに表示する（async, await）">
 
 <details><summary>解答例</summary>
 <div>
@@ -1767,7 +1767,7 @@ struct ContentView: View {
 ### 42. GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。
 
 
-<img src="2023-11-11-0.gif" width="300px" alt="GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。">
+<img src="2023-11-11/movie.png" width="300px" alt="GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。">
 
 <details><summary>解答例</summary>
 <div>
@@ -1839,7 +1839,7 @@ struct ContentView: View {
 ### 43. GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。Indicator も表示してください。
 
 
-<img src="2023-11-12-0.gif" width="300px" alt="GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。Indicator も表示してください。">
+<img src="2023-11-12/movie.mp4" width="300px" alt="GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。Indicator も表示してください。">
 
 <details><summary>解答例</summary>
 <div>
@@ -1921,7 +1921,7 @@ struct ContentView: View {
 ### 44. SwiftUIのTextFieldで編集中と編集完了を検知する
 
 
-<img src="2023-11-13-0.gif" width="300px" alt="SwiftUIのTextFieldで編集中と編集完了を検知する">
+<img src="2023-11-13/movie.mp4" width="300px" alt="SwiftUIのTextFieldで編集中と編集完了を検知する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1961,7 +1961,7 @@ struct ContentView : View {
 ### 45. SwiftUIでAppStorageを使ってUserDefaultの値を監視する
 
 
-<img src="2023-11-14-0.gif" width="300px" alt="SwiftUIでAppStorageを使ってUserDefaultの値を監視する">
+<img src="2023-11-14/movie.mp4" width="300px" alt="SwiftUIでAppStorageを使ってUserDefaultの値を監視する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1999,7 +1999,7 @@ struct ContentView: View {
 ### 46. SwiftUIでViewの上にViewを重ねる
 
 
-<img src="2023-11-15-0.png" width="300px" alt="SwiftUIでViewの上にViewを重ねる">
+<img src="2023-11-15/image.png" width="300px" alt="SwiftUIでViewの上にViewを重ねる">
 
 <details><summary>解答例</summary>
 <div>
@@ -2035,7 +2035,7 @@ struct ContentView: View {
 ### 47. SwiftUIでMapを使う。Mapにピンを立てる(skip)
 
 
-<img src="2023-11-16-0.png" width="300px" alt="SwiftUIでMapを使う。Mapにピンを立てる(skip)">
+<img src="2023-11-16/image.png" width="300px" alt="SwiftUIでMapを使う。Mapにピンを立てる(skip)">
 
 <details><summary>解答例</summary>
 <div>
@@ -2051,7 +2051,7 @@ import Foundation
 ### 48. SwiftUIを使ったTODOアプリのサンプル
 
 
-<img src="2023-11-17-0.gif" width="300px" alt="SwiftUIを使ったTODOアプリのサンプル">
+<img src="2023-11-17/image.png" width="300px" alt="SwiftUIを使ったTODOアプリのサンプル">
 
 <details><summary>解答例</summary>
 <div>
@@ -2117,7 +2117,7 @@ struct ContentView: View, InputViewDelegate {
 ### 49. SwiftUIでAVAudioPlayerで音楽を再生し、再生終了を検知する
 
 
-<img src="2023-11-18-0.png" width="300px" alt="SwiftUIでAVAudioPlayerで音楽を再生し、再生終了を検知する">
+<img src="2023-11-18/image.png" width="300px" alt="SwiftUIでAVAudioPlayerで音楽を再生し、再生終了を検知する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2148,7 +2148,7 @@ struct ContentView: View {
 ### 50. SwiftUIでモーダルを表示する時に値を渡す
 
 
-<img src="2023-11-19-0.gif" width="300px" alt="SwiftUIでモーダルを表示する時に値を渡す">
+<img src="2023-11-19/movie.png" width="300px" alt="SwiftUIでモーダルを表示する時に値を渡す">
 
 <details><summary>解答例</summary>
 <div>
@@ -2196,7 +2196,7 @@ struct ContentView: View {
 ### 51. SwiftUIでBMIを計算し、結果を別のViewで表示する
 
 
-<img src="2023-11-20-0.gif" width="300px" alt="SwiftUIでBMIを計算し、結果を別のViewで表示する">
+<img src="2023-11-20/movie.mp4" width="300px" alt="SwiftUIでBMIを計算し、結果を別のViewで表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2269,7 +2269,7 @@ struct ContentView: View {
 ### 52. SwiftUIでボタンを押すとポップアップを表示する
 
 
-<img src="2023-11-21-0.gif" width="300px" alt="SwiftUIでボタンを押すとポップアップを表示する">
+<img src="2023-11-21/movie.mp4" width="300px" alt="SwiftUIでボタンを押すとポップアップを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2314,7 +2314,7 @@ struct ContentView: View {
 ### 53. SwiftUIでViewを横スクロールで表示する
 
 
-<img src="2023-11-22-0.gif" width="300px" alt="SwiftUIでViewを横スクロールで表示する">
+<img src="2023-11-22/movie.mp4" width="300px" alt="SwiftUIでViewを横スクロールで表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2353,7 +2353,7 @@ struct ContentView: View {
 ### 54. SwiftUIでButtonを有効にしたり無効にしたりする
 
 
-<img src="2023-11-23-0.gif" width="300px" alt="SwiftUIでButtonを有効にしたり無効にしたりする">
+<img src="2023-11-23/movie.mp4" width="300px" alt="SwiftUIでButtonを有効にしたり無効にしたりする">
 
 <details><summary>解答例</summary>
 <div>
@@ -2395,7 +2395,7 @@ struct ContentView: View {
 ### 55. SwiftUIのTextFieldで表示するキーボードを指定する
 
 
-<img src="2023-11-24-0.gif" width="300px" alt="SwiftUIのTextFieldで表示するキーボードを指定する">
+<img src="2023-11-24/movie.mp4" width="300px" alt="SwiftUIのTextFieldで表示するキーボードを指定する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2426,7 +2426,7 @@ struct ContentView: View {
 ### 56. SwiftUIでシートを表示し、プッシュ遷移後にシートを閉じる
 
 
-<img src="2023-11-25-0.gif" width="300px" alt="SwiftUIでシートを表示し、プッシュ遷移後にシートを閉じる">
+<img src="2023-11-25/movie.mp4" width="300px" alt="SwiftUIでシートを表示し、プッシュ遷移後にシートを閉じる">
 
 <details><summary>解答例</summary>
 <div>
@@ -2461,7 +2461,7 @@ struct ContentView: View {
 ### 57. SwiftUIでListをEditModeにして並び替える
 
 
-<img src="2023-11-26-0.gif" width="300px" alt="SwiftUIでListをEditModeにして並び替える">
+<img src="2023-11-26/movie.mp4" width="300px" alt="SwiftUIでListをEditModeにして並び替える">
 
 <details><summary>解答例</summary>
 <div>
@@ -2503,7 +2503,7 @@ struct ContentView: View {
 ### 58. SwiftUIのListでSpacerの部分にもタップ判定をつける
 
 
-<img src="2023-11-27-0.png" width="300px" alt="SwiftUIのListでSpacerの部分にもタップ判定をつける">
+<img src="2023-11-27/image.png" width="300px" alt="SwiftUIのListでSpacerの部分にもタップ判定をつける">
 
 <details><summary>解答例</summary>
 <div>
@@ -2539,7 +2539,7 @@ struct ContentView: View {
 ### 59. SwiftUIのListの中にボタンを複数設置する
 
 
-<img src="2023-11-28-0.png" width="300px" alt="SwiftUIのListの中にボタンを複数設置する">
+<img src="2023-11-28/image.png" width="300px" alt="SwiftUIのListの中にボタンを複数設置する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2587,7 +2587,7 @@ struct ContentView: View {
 ### 60. SwiftUIでSearchBar(TextField)を使って検索する
 
 
-<img src="2023-11-29-0.gif" width="300px" alt="SwiftUIでSearchBar(TextField)を使って検索する">
+<img src="2023-11-29/movie.mp4" width="300px" alt="SwiftUIでSearchBar(TextField)を使って検索する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2636,7 +2636,7 @@ struct ContentView: View {
 ### 61. SwiftUIでSearchBar(TextField)にクリアボタンをつける(skip)
 
 
-<img src="2023-11-30-0.png" width="300px" alt="SwiftUIでSearchBar(TextField)にクリアボタンをつける(skip)">
+<img src="2023-11-30/image.png" width="300px" alt="SwiftUIでSearchBar(TextField)にクリアボタンをつける(skip)">
 
 <details><summary>解答例</summary>
 <div>
@@ -2652,7 +2652,7 @@ import Foundation
 ### 62. SwiftUIでMapを表示する
 SwiftUIを使ってMapを表示してください。秋葉原UDX（35.7005° N, 139.7726° E）を中心として、300mの範囲を表示しています。
 
-<img src="2023-12-01-0.png" width="300px" alt="SwiftUIでMapを表示する">
+<img src="2023-12-01/image.png" width="300px" alt="SwiftUIでMapを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2688,7 +2688,7 @@ struct ContentView: View {
 ### 63. SwiftUIでMapを表示し、自分の位置を中心にする
 SwiftUIでMapを表示し、自分の位置を中心にする方法です。
 
-<img src="2023-12-02-0.png" width="300px" alt="SwiftUIでMapを表示し、自分の位置を中心にする">
+<img src="2023-12-02/image.png" width="300px" alt="SwiftUIでMapを表示し、自分の位置を中心にする">
 
 <details><summary>解答例</summary>
 <div>
@@ -2772,7 +2772,7 @@ extension ContentViewState: CLLocationManagerDelegate {
 ### 64. SwiftUIでMapを表示し、自分の位置を赤丸でマークする
 SwiftUIでMapを表示し、自分の位置を赤丸でマークする方法です。
 
-<img src="2023-12-03-0.png" width="300px" alt="SwiftUIでMapを表示し、自分の位置を赤丸でマークする">
+<img src="2023-12-03/image.png" width="300px" alt="SwiftUIでMapを表示し、自分の位置を赤丸でマークする">
 
 <details><summary>解答例</summary>
 <div>
@@ -2823,7 +2823,7 @@ struct ContentView: View {
 ### 65. SwiftUIでMapを表示し、自分の位置を表示しつつコンパスを表示（yet）
 
 
-<img src="2023-12-04-0.png" width="300px" alt="SwiftUIでMapを表示し、自分の位置を表示しつつコンパスを表示（yet）">
+<img src="2023-12-04/image.png" width="300px" alt="SwiftUIでMapを表示し、自分の位置を表示しつつコンパスを表示（yet）">
 
 <details><summary>解答例</summary>
 <div>
@@ -2839,7 +2839,7 @@ import Foundation
 ### 66. 
 
 
-<img src="2023-12-05-0.png" width="300px" alt="">
+<img src="2023-12-05/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -2855,7 +2855,7 @@ import Foundation
 ### 67. 
 
 
-<img src="2023-12-06-0.png" width="300px" alt="">
+<img src="2023-12-06/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -2871,7 +2871,7 @@ import Foundation
 ### 68. 
 
 
-<img src="2023-12-07-0.png" width="300px" alt="">
+<img src="2023-12-07/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -2887,7 +2887,7 @@ import Foundation
 ### 69. 
 
 
-<img src="2023-12-08-0.png" width="300px" alt="">
+<img src="2023-12-08/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -2903,7 +2903,7 @@ import Foundation
 ### 70. 
 
 
-<img src="2023-12-09-0.png" width="300px" alt="">
+<img src="2023-12-09/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -2919,7 +2919,7 @@ import Foundation
 ### 71. 
 
 
-<img src="2023-12-10-0.png" width="300px" alt="">
+<img src="2023-12-10/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -2935,7 +2935,7 @@ import Foundation
 ### 72. 
 
 
-<img src="2023-12-11-0.png" width="300px" alt="">
+<img src="2023-12-11/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -2951,7 +2951,7 @@ import Foundation
 ### 73. 
 
 
-<img src="2023-12-12-0.png" width="300px" alt="">
+<img src="2023-12-12/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -2967,7 +2967,7 @@ import Foundation
 ### 74. 
 
 
-<img src="2023-12-13-0.png" width="300px" alt="">
+<img src="2023-12-13/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -2983,7 +2983,7 @@ import Foundation
 ### 75. 
 
 
-<img src="2023-12-14-0.png" width="300px" alt="">
+<img src="2023-12-14/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -2999,7 +2999,7 @@ import Foundation
 ### 76. 
 
 
-<img src="2023-12-15-0.png" width="300px" alt="">
+<img src="2023-12-15/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -3015,7 +3015,7 @@ import Foundation
 ### 77. 
 
 
-<img src="2023-12-16-0.png" width="300px" alt="">
+<img src="2023-12-16/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -3031,7 +3031,7 @@ import Foundation
 ### 78. Swiftのasync,awaitを使ってAPIと画像を取得し、全てが揃ってから表示する
 
 
-<img src="2023-12-17-0.png" width="300px" alt="Swiftのasync,awaitを使ってAPIと画像を取得し、全てが揃ってから表示する">
+<img src="2023-12-17/image.png" width="300px" alt="Swiftのasync,awaitを使ってAPIと画像を取得し、全てが揃ってから表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -3099,7 +3099,7 @@ struct ContentView: View {
 ### 79. SwiftUIでObservableObjectの@publishedなプロパティとBindingする
 
 
-<img src="2023-12-18-0.gif" width="300px" alt="SwiftUIでObservableObjectの@publishedなプロパティとBindingする">
+<img src="2023-12-18/movie.png" width="300px" alt="SwiftUIでObservableObjectの@publishedなプロパティとBindingする">
 
 <details><summary>解答例</summary>
 <div>
@@ -3135,7 +3135,7 @@ struct ContentView: View {
 ### 80. iOSのファイルアプリ（UIDocumentPickerViewController）を開いてドキュメントフォルダに保存したファイルを開く
 
 
-<img src="2023-12-19-0.png" width="300px" alt="iOSのファイルアプリ（UIDocumentPickerViewController）を開いてドキュメントフォルダに保存したファイルを開く">
+<img src="2023-12-19/image.png" width="300px" alt="iOSのファイルアプリ（UIDocumentPickerViewController）を開いてドキュメントフォルダに保存したファイルを開く">
 
 <details><summary>解答例</summary>
 <div>
@@ -3183,7 +3183,7 @@ struct ContentView: View {
 ### 81. SwiftUIでUIActivityViewControllerを表示する
 
 
-<img src="2023-12-20-0.gif" width="300px" alt="SwiftUIでUIActivityViewControllerを表示する">
+<img src="2023-12-20/movie.mp4" width="300px" alt="SwiftUIでUIActivityViewControllerを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -3215,7 +3215,7 @@ struct ContentView: View {
 ### 82. SwiftUIでActivityIndicatorを表示する(skip)
 
 
-<img src="2023-12-21-0.png" width="300px" alt="SwiftUIでActivityIndicatorを表示する(skip)">
+<img src="2023-12-21/image.png" width="300px" alt="SwiftUIでActivityIndicatorを表示する(skip)">
 
 <details><summary>解答例</summary>
 <div>
@@ -3231,7 +3231,7 @@ import Foundation
 ### 83. SwiftUIで少しカスタマイズしたActivityIndicatorを表示する(skip)
 
 
-<img src="2023-12-22-0.png" width="300px" alt="SwiftUIで少しカスタマイズしたActivityIndicatorを表示する(skip)">
+<img src="2023-12-22/image.png" width="300px" alt="SwiftUIで少しカスタマイズしたActivityIndicatorを表示する(skip)">
 
 <details><summary>解答例</summary>
 <div>
@@ -3247,7 +3247,7 @@ import Foundation
 ### 84. SwiftUIでListにButtonを設定してパラメーターの違う画面に遷移する
 
 
-<img src="2023-12-23-0.png" width="300px" alt="SwiftUIでListにButtonを設定してパラメーターの違う画面に遷移する">
+<img src="2023-12-23/image.png" width="300px" alt="SwiftUIでListにButtonを設定してパラメーターの違う画面に遷移する">
 
 <details><summary>解答例</summary>
 <div>
@@ -3263,7 +3263,7 @@ import Foundation
 ### 85. SwiftUIのTabViewのタブをコードから動的に切り替える
 
 
-<img src="2023-12-24-0.png" width="300px" alt="SwiftUIのTabViewのタブをコードから動的に切り替える">
+<img src="2023-12-24/image.png" width="300px" alt="SwiftUIのTabViewのタブをコードから動的に切り替える">
 
 <details><summary>解答例</summary>
 <div>
@@ -3279,7 +3279,7 @@ import Foundation
 ### 86.  Identifiableに適合していないStructでListを使う
 
 
-<img src="2023-12-25-0.png" width="300px" alt=" Identifiableに適合していないStructでListを使う">
+<img src="2023-12-25/image.png" width="300px" alt=" Identifiableに適合していないStructでListを使う">
 
 <details><summary>解答例</summary>
 <div>
@@ -3295,7 +3295,7 @@ import Foundation
 ### 87. SwiftUIでカメラを使う
 
 
-<img src="2023-12-26-0.png" width="300px" alt="SwiftUIでカメラを使う">
+<img src="2023-12-26/image.png" width="300px" alt="SwiftUIでカメラを使う">
 
 <details><summary>解答例</summary>
 <div>
@@ -3311,7 +3311,7 @@ import Foundation
 ### 88. SwiftUIでスライダーとスクロールを連動させる
 
 
-<img src="2023-12-27-0.png" width="300px" alt="SwiftUIでスライダーとスクロールを連動させる">
+<img src="2023-12-27/image.png" width="300px" alt="SwiftUIでスライダーとスクロールを連動させる">
 
 <details><summary>解答例</summary>
 <div>
@@ -3327,7 +3327,7 @@ import Foundation
 ### 89. SwiftUIでPHPickerViewControllerを使って画像を選択する
 
 
-<img src="2023-12-28-0.png" width="300px" alt="SwiftUIでPHPickerViewControllerを使って画像を選択する">
+<img src="2023-12-28/image.png" width="300px" alt="SwiftUIでPHPickerViewControllerを使って画像を選択する">
 
 <details><summary>解答例</summary>
 <div>
@@ -3343,7 +3343,7 @@ import Foundation
 ### 90. SwiftUIで画像をピンチで拡大する（MagnificationGesture）
 
 
-<img src="2023-12-29-0.gif" width="300px" alt="SwiftUIで画像をピンチで拡大する（MagnificationGesture）">
+<img src="2023-12-29/movie.mp4" width="300px" alt="SwiftUIで画像をピンチで拡大する（MagnificationGesture）">
 
 <details><summary>解答例</summary>
 <div>
@@ -3379,7 +3379,7 @@ struct ContentView: View {
 ### 91. SwiftUIで画像をピンチで拡大する（PDFView）
 
 
-<img src="2023-12-30-0.gif" width="300px" alt="SwiftUIで画像をピンチで拡大する（PDFView）">
+<img src="2023-12-30/movie.mp4" width="300px" alt="SwiftUIで画像をピンチで拡大する（PDFView）">
 
 <details><summary>解答例</summary>
 <div>
@@ -3405,7 +3405,7 @@ struct ContentView: View {
 ### 92. SwiftUIで画像をピンチで拡大する（UIImageView + UIScrollView）
 
 
-<img src="2023-12-31-0.gif" width="300px" alt="SwiftUIで画像をピンチで拡大する（UIImageView + UIScrollView）">
+<img src="2023-12-31/movie.mp4" width="300px" alt="SwiftUIで画像をピンチで拡大する（UIImageView + UIScrollView）">
 
 <details><summary>解答例</summary>
 <div>
@@ -3432,7 +3432,7 @@ struct ContentView: View {
 ### 93. SwiftMarkdownを使いマークダウンを表示する
 
 
-<img src="2024-01-01-0.gif" width="300px" alt="SwiftMarkdownを使いマークダウンを表示する">
+<img src="2024-01-01/movie.mp4" width="300px" alt="SwiftMarkdownを使いマークダウンを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -3522,7 +3522,7 @@ struct ContentView: View {
 ### 94. SwiftUIでシートを出し分ける
 
 
-<img src="2024-01-02-0.gif" width="300px" alt="SwiftUIでシートを出し分ける">
+<img src="2024-01-02/movie.mp4" width="300px" alt="SwiftUIでシートを出し分ける">
 
 <details><summary>解答例</summary>
 <div>
