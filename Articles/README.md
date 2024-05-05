@@ -33,7 +33,7 @@ struct ContentView: View {
 150×200サイズに画像をリサイズして表示させてください。
 アスペクト比が異なる場合ははみ出た箇所を切り取って表示してください。
 
-<img src="2023-10-02/image.png" width="300px" alt="画像をリサイズして表示（clip）">
+<img src="2023-10-02/2023-10-02.png" width="300px" alt="画像をリサイズして表示（clip）">
 
 <details><summary>解答例</summary>
 <div>
@@ -64,7 +64,7 @@ struct ContentView: View {
 ### 3. 画像を丸く切り取る
 150✖︎150サイズに画像をリサイズし、丸く切り取って表示させてください。
 
-<img src="2023-10-03/image.png" width="300px" alt="画像を丸く切り取る">
+<img src="2023-10-03/2023-10-03.png" width="300px" alt="画像を丸く切り取る">
 
 <details><summary>解答例</summary>
 <div>
@@ -94,7 +94,7 @@ struct ContentView: View {
 ### 4. 画像を丸く切り取り、枠を付ける
 
 
-<img src="2023-10-04/image.png" width="300px" alt="画像を丸く切り取り、枠を付ける">
+<img src="2023-10-04/2023-10-04.png" width="300px" alt="画像を丸く切り取り、枠を付ける">
 
 <details><summary>解答例</summary>
 <div>
@@ -127,7 +127,7 @@ struct ContentView: View {
 ### 5. 画像を等間隔で横に並べる
 画像を等間隔で並べてください。
 
-<img src="2023-10-05/image.png" width="300px" alt="画像を等間隔で横に並べる">
+<img src="2023-10-05/2023-10-05.png" width="300px" alt="画像を等間隔で横に並べる">
 
 <details><summary>解答例</summary>
 <div>
@@ -174,7 +174,7 @@ struct ContentView: View {
 ### 6. NavigationViewを使いラージタイトルを表示する
 NavigationViewを使いラージタイトルを表示してください。
 
-<img src="2023-10-06/image.png" width="300px" alt="NavigationViewを使いラージタイトルを表示する">
+<img src="2023-10-06/2023-10-06.png" width="300px" alt="NavigationViewを使いラージタイトルを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -210,7 +210,7 @@ struct ContentView: View {
 ### 7. Pickerを表示する
 Pickerを使いポケモンを表示してください。
 
-<img src="2023-10-07/movie.mp4" width="300px" alt="Pickerを表示する">
+<img src="2023-10-07/2023-10-07.gif" width="300px" alt="Pickerを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -248,7 +248,7 @@ struct ContentView: View {
 ### 8. TabViewを使って画面を切り替える
 TabViewを使って画面を切り替えてください。
 
-<img src="2023-10-08/movie.mp4" width="300px" alt="TabViewを使って画面を切り替える">
+<img src="2023-10-08/2023-10-08.gif" width="300px" alt="TabViewを使って画面を切り替える">
 
 <details><summary>解答例</summary>
 <div>
@@ -291,7 +291,7 @@ struct ContentView: View {
 ### 9. Buttonが押されたら文字を変える
 Buttonが押されたら文字を変えてください。
 
-<img src="2023-10-09/movie.mp4" width="300px" alt="Buttonが押されたら文字を変える">
+<img src="2023-10-09/2023-10-09.gif" width="300px" alt="Buttonが押されたら文字を変える">
 
 <details><summary>解答例</summary>
 <div>
@@ -322,7 +322,7 @@ struct ContentView: View {
 ### 10. Listを使ってセクションごとに表示する
 Listを使ってセクションごとに表示する（groupedスタイル）
 
-<img src="2023-10-10/image.png" width="300px" alt="Listを使ってセクションごとに表示する">
+<img src="2023-10-10/2023-10-10.png" width="300px" alt="Listを使ってセクションごとに表示する">
 
 <details><summary>解答例</summary>
 <div>
