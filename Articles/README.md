@@ -360,7 +360,7 @@ struct ContentView: View {
 ### 11. 画面遷移時に値を渡す
 画面遷移時に値を渡してください。
 
-<img src="2023-10-11/movie.mp4" width="300px" alt="画面遷移時に値を渡す">
+<img src="2023-10-11/2023-10-11.gif" width="300px" alt="画面遷移時に値を渡す">
 
 <details><summary>解答例</summary>
 <div>
@@ -410,7 +410,7 @@ struct SecondView: View {
 ### 12. NavigationViewの戻るボタンを非表示にする
 NavigationViewの戻るボタンを非表示にしてください。
 
-<img src="2023-10-12/movie.mp4" width="300px" alt="NavigationViewの戻るボタンを非表示にする">
+<img src="2023-10-12/2023-10-12.gif" width="300px" alt="NavigationViewの戻るボタンを非表示にする">
 
 <details><summary>解答例</summary>
 <div>
@@ -461,7 +461,7 @@ struct SecondView: View {
 ### 13. Listのスタイルを変更する
 ListのスタイルをPlainListStyleに変更してください。
 
-<img src="2023-10-13/image.png" width="300px" alt="Listのスタイルを変更する">
+<img src="2023-10-13/2023-10-13.png" width="300px" alt="Listのスタイルを変更する">
 
 <details><summary>解答例</summary>
 <div>
@@ -499,7 +499,7 @@ struct ContentView: View {
 ### 14. Alertを表示する
 アラートを表示させてください。
 
-<img src="2023-10-14/movie.mp4" width="300px" alt="Alertを表示する">
+<img src="2023-10-14/2023-10-14.gif" width="300px" alt="Alertを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -543,7 +543,7 @@ struct ContentView: View {
 ### 15. Alertを出し分ける
 ボタン1が押されたらアラート1を、ボタン2が押されたらアラート2を表示してください
 
-<img src="2023-10-15/movie.mp4" width="300px" alt="Alertを出し分ける">
+<img src="2023-10-15/2023-10-15.gif" width="300px" alt="Alertを出し分ける">
 
 <details><summary>解答例</summary>
 <div>
@@ -594,7 +594,7 @@ struct ContentView: View {
 Buttonが押されたら文字を変えてください。
 Button内の画像やテキストの色を変えないでください。
 
-<img src="2023-10-16/movie.mp4" width="300px" alt="Button内の画像やテキストの色を変えない">
+<img src="2023-10-16/2023-10-16.gif" width="300px" alt="Button内の画像やテキストの色を変えない">
 
 <details><summary>解答例</summary>
 <div>
@@ -639,7 +639,7 @@ struct ContentView: View {
 数字が入力されたらシートを表示してください。
 数字以外が入力されたらアラートを表示してください。
 
-<img src="2023-10-17/movie.mp4" width="300px" alt="SwiftUIでアラートとシートを出し分ける">
+<img src="2023-10-17/2023-10-17.gif" width="300px" alt="SwiftUIでアラートとシートを出し分ける">
 
 <details><summary>解答例</summary>
 <div>
@@ -694,7 +694,7 @@ struct ContentView: View {
 ### 18. Buttonからプッシュ遷移をする（NavigationLinkを無効にする）
 Buttonからプッシュ遷移をする方法です。 この方法であれば、NavigationLink を擬似的に無効にすることができます。
 
-<img src="2023-10-18/movie.mp4" width="300px" alt="Buttonからプッシュ遷移をする（NavigationLinkを無効にする）">
+<img src="2023-10-18/2023-10-18.gif" width="300px" alt="Buttonからプッシュ遷移をする（NavigationLinkを無効にする）">
 
 <details><summary>解答例</summary>
 <div>
@@ -733,7 +733,7 @@ struct ContentView: View {
 ### 19. 続きを読む。。。ボタンがあるViewを実装する
 SwiftUIで続きを読む。。。ボタンがあるViewを実装してください。
 
-<img src="2023-10-19/movie.mp4" width="300px" alt="続きを読む。。。ボタンがあるViewを実装する">
+<img src="2023-10-19/2023-10-19.gif" width="300px" alt="続きを読む。。。ボタンがあるViewを実装する">
 
 <details><summary>解答例</summary>
 <div>
@@ -846,7 +846,7 @@ private struct SizePreference: PreferenceKey {
 ### 20. Text中の文字の太さや色を変える
 Text中の文字の太さや色を変えてください。
 
-<img src="2023-10-20/image.png" width="300px" alt="Text中の文字の太さや色を変える">
+<img src="2023-10-20/2023-10-20.png" width="300px" alt="Text中の文字の太さや色を変える">
 
 <details><summary>解答例</summary>
 <div>
@@ -893,7 +893,7 @@ struct ContentView: View {
 ### 21. FunctionBuilderを使ってViewに影をつける
 FunctionBuilderを使ってViewに影をつけてください。
 
-<img src="2023-10-21/image.png" width="300px" alt="FunctionBuilderを使ってViewに影をつける">
+<img src="2023-10-21/2023-10-21.png" width="300px" alt="FunctionBuilderを使ってViewに影をつける">
 
 <details><summary>解答例</summary>
 <div>
@@ -968,7 +968,7 @@ struct CardView<Content>: View where Content: View {
 ### 22. ViewModifierを使ってViewに影をつける
 ViewModifierを使ってViewに影をつけてください。
 
-<img src="2023-10-22/image.png" width="300px" alt="ViewModifierを使ってViewに影をつける">
+<img src="2023-10-22/2023-10-22.png" width="300px" alt="ViewModifierを使ってViewに影をつける">
 
 <details><summary>解答例</summary>
 <div>
@@ -1039,7 +1039,7 @@ extension View {
 ### 23. リストを編集する
 リストを編集してください。
 
-<img src="2023-10-23/movie.mp4" width="300px" alt="リストを編集する">
+<img src="2023-10-23/2023-10-23.gif" width="300px" alt="リストを編集する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1079,7 +1079,7 @@ struct ContentView: View {
 ### 24. リストのセルをタップするとアラートが表示させる
 リストのセルをタップするとアラートが表示させてください。
 
-<img src="2023-10-24/movie.mp4" width="300px" alt="リストのセルをタップするとアラートが表示させる">
+<img src="2023-10-24/2023-10-24.gif" width="300px" alt="リストのセルをタップするとアラートが表示させる">
 
 <details><summary>解答例</summary>
 <div>
@@ -1129,7 +1129,7 @@ struct ContentView: View {
 ### 25. 画面遷移先のViewから遷移元のメソッドを呼び出す
 画面遷移先の View から遷移元のメソッドを呼び出してください。
 
-<img src="2023-10-25/movie.mp4" width="300px" alt="画面遷移先のViewから遷移元のメソッドを呼び出す">
+<img src="2023-10-25/2023-10-25.gif" width="300px" alt="画面遷移先のViewから遷移元のメソッドを呼び出す">
 
 <details><summary>解答例</summary>
 <div>
@@ -1174,7 +1174,7 @@ struct SecondView: View {
 ### 26. ListViewからそれぞれ別のViewに遷移する
 ListViewからそれぞれ別のViewに遷移する
 
-<img src="2023-10-26/movie.mp4" width="300px" alt="ListViewからそれぞれ別のViewに遷移する">
+<img src="2023-10-26/2023-10-26.gif" width="300px" alt="ListViewからそれぞれ別のViewに遷移する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1231,7 +1231,7 @@ struct ContentView: View {
 ### 27. 複数行のPickerを作成する
 複数行のPickerを作成する
 
-<img src="2023-10-27/movie.mp4" width="300px" alt="複数行のPickerを作成する">
+<img src="2023-10-27/2023-10-27.gif" width="300px" alt="複数行のPickerを作成する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1267,7 +1267,7 @@ struct ContentView: View {
 ### 28. Sheetを表示する
 全画面でSheetを表示する
 
-<img src="2023-10-28/movie.mp4" width="300px" alt="Sheetを表示する">
+<img src="2023-10-28/2023-10-28.gif" width="300px" alt="Sheetを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1303,7 +1303,7 @@ struct ContentView: View {
 ### 29. 全画面でSheetを表示する
 全画面でSheetを表示してください。
 
-<img src="2023-10-29/movie.mp4" width="300px" alt="全画面でSheetを表示する">
+<img src="2023-10-29/2023-10-29.gif" width="300px" alt="全画面でSheetを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1342,7 +1342,7 @@ struct ContentView: View {
 ### 30. NavigationBarを隠す
 TextをNavigationViewの中に入れつつNavigationBarを表示しないでください
 
-<img src="2023-10-30/image.png" width="300px" alt="NavigationBarを隠す">
+<img src="2023-10-30/2023-10-30.png" width="300px" alt="NavigationBarを隠す">
 
 <details><summary>解答例</summary>
 <div>
@@ -1372,7 +1372,7 @@ struct ContentView: View {
 ### 31. Previewを横向きにする
 Previewを横向きにしてください。
 
-<img src="2023-10-31/image.png" width="300px" alt="Previewを横向きにする">
+<img src="2023-10-31/2023-10-31.png" width="300px" alt="Previewを横向きにする">
 
 <details><summary>解答例</summary>
 <div>

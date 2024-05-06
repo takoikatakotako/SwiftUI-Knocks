@@ -422,7 +422,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-11-01.gif",
                   "width": 300
               }
             ],
@@ -435,7 +435,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-11-02.gif",
                   "width": 300
               }
             ],
@@ -448,7 +448,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-11-03.gif",
                   "width": 300
               }
             ],
@@ -461,7 +461,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-11-04.gif",
                   "width": 300
               }
             ],
@@ -474,7 +474,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "move.mp4",
+                  "name": "2023-11-05.gif",
                   "width": 300
               }
             ],
@@ -487,7 +487,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-11-06.gif",
                   "width": 300
               }
             ],
@@ -500,7 +500,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-11-07.png",
                   "width": 300
               }
             ],
@@ -513,7 +513,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-11-08.png",
                   "width": 300
               }
             ],
@@ -526,7 +526,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-11-09.png",
                   "width": 300
               }
             ],
