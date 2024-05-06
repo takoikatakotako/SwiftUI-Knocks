@@ -1401,7 +1401,7 @@ struct ContentView_Previews: PreviewProvider {
 ### 32. 端末のシェイクを検知する
 端末のシェイクを検知して@Stateを更新してください
 
-<img src="2023-11-01/movie.mp4" width="300px" alt="端末のシェイクを検知する">
+<img src="2023-11-01/2023-11-01.gif" width="300px" alt="端末のシェイクを検知する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1432,7 +1432,7 @@ struct ContentView: View {
 ### 33. UICollectionViewのようにViewを並べる
 UICollectionViewのようにViewを並べてください。
 
-<img src="2023-11-02/movie.mp4" width="300px" alt="UICollectionViewのようにViewを並べる">
+<img src="2023-11-02/2023-11-02.gif" width="300px" alt="UICollectionViewのようにViewを並べる">
 
 <details><summary>解答例</summary>
 <div>
@@ -1470,7 +1470,7 @@ struct ContentView: View {
 ### 34. スワイプで遷移するチュートリアル画面を作る
 画像のような良くあるウェークスルー画面を実装してください。
 
-<img src="2023-11-03/movie.mp4" width="300px" alt="スワイプで遷移するチュートリアル画面を作る">
+<img src="2023-11-03/2023-11-03.gif" width="300px" alt="スワイプで遷移するチュートリアル画面を作る">
 
 <details><summary>解答例</summary>
 <div>
@@ -1506,7 +1506,7 @@ struct ContentView: View {
 ### 35. 閉じることができないモーダルを表示する
 
 
-<img src="2023-11-04/movie.mp4" width="300px" alt="閉じることができないモーダルを表示する">
+<img src="2023-11-04/2023-11-04.gif" width="300px" alt="閉じることができないモーダルを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1541,7 +1541,7 @@ struct ContentView: View {
 ### 36. アプリ起動時に画面を遷移させる
 ロゴを表示した後に画面遷移を行なってください
 
-<img src="2023-11-05/move.mp4" width="300px" alt="アプリ起動時に画面を遷移させる">
+<img src="2023-11-05/2023-11-05.gif" width="300px" alt="アプリ起動時に画面を遷移させる">
 
 <details><summary>解答例</summary>
 <div>
@@ -1589,7 +1589,7 @@ struct ContentView: View {
 ### 37. ハーフモーダルを表示する
 
 
-<img src="2023-11-06/movie.mp4" width="300px" alt="ハーフモーダルを表示する">
+<img src="2023-11-06/2023-11-06.gif" width="300px" alt="ハーフモーダルを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1626,7 +1626,7 @@ struct ContentView: View {
 ### 38. マークダウンを表示する
 
 
-<img src="2023-11-07/image.png" width="300px" alt="マークダウンを表示する">
+<img src="2023-11-07/2023-11-07.png" width="300px" alt="マークダウンを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1652,7 +1652,7 @@ struct ContentView: View {
 ### 39. 変数に格納したマークダウンを表示する
 
 
-<img src="2023-11-08/image.png" width="300px" alt="変数に格納したマークダウンを表示する">
+<img src="2023-11-08/2023-11-08.png" width="300px" alt="変数に格納したマークダウンを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1681,7 +1681,7 @@ struct ContentView: View {
 ### 40. マークダウンのリンクの色を赤色に変える
 
 
-<img src="2023-11-09/image.png" width="300px" alt="マークダウンのリンクの色を赤色に変える">
+<img src="2023-11-09/2023-11-09.png" width="300px" alt="マークダウンのリンクの色を赤色に変える">
 
 <details><summary>解答例</summary>
 <div>

@@ -104,7 +104,7 @@
             "directory": "2023-10-08",
             "resources": [
               {
-                  "type": "movie",
+                  "type": "image",
                   "name": "2023-10-08.gif",
                   "width": 300
               }
@@ -205,7 +205,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "AlertItem.swift"]
         },
         {
             "title": "Button内の画像やテキストの色を変えない",
@@ -322,7 +322,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "Pokemon.swift"]
         },
         {
             "title": "画面遷移先のViewから遷移元のメソッドを呼び出す",
@@ -335,7 +335,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "SecondView.swift", "MyProtocol.swift"]
         },
         {
             "title": "ListViewからそれぞれ別のViewに遷移する",
@@ -374,7 +374,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "SecondView.swift"]
         },
         {
             "title": "全画面でSheetを表示する",
@@ -387,7 +387,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "SecondView.swift"]
         },
         {
             "title": "NavigationBarを隠す",
