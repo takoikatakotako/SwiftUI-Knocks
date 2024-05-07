@@ -365,7 +365,7 @@
         },
         {
             "title": "Sheetを表示する",
-            "description": "全画面でSheetを表示する",
+            "description": "Sheetを表示する",
             "directory": "2023-10-28",
             "resources": [
               {
@@ -382,7 +382,7 @@
             "directory": "2023-10-29",
             "resources": [
               {
-                  "type": "movie",
+                  "type": "image",
                   "name": "2023-10-29.gif",
                   "width": 300
               }
@@ -408,9 +408,9 @@
             "directory": "2023-10-31",
             "resources": [
               {
-                  "type": "image-raw",
+                  "type": "image",
                   "name": "2023-10-31.png",
-                  "width": 300
+                  "width": 600
               }
             ],
             "codes": ["ContentView.swift"]
@@ -426,7 +426,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "NSNotification+Extension.swift", "UIWindow+Extension.swift"]
         },
         {
             "title": "UICollectionViewのようにViewを並べる",

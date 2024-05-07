@@ -586,6 +586,15 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import Foundation
+
+struct AlertItem {
+    let buttonTitle: String
+    let message: String
+}
+```
+
 </div>
 </details>
 
@@ -1122,6 +1131,15 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import Foundation
+
+struct Pokemon: Identifiable {
+    let id: Int
+    let name: String
+}
+```
+
 </div>
 </details>
 
@@ -1164,6 +1182,29 @@ struct SecondView: View {
             Text("ChangeText")
         }
     }
+}
+```
+
+```swift
+import SwiftUI
+
+struct SecondView: View {
+    var delegate: MyProtocol
+    var body: some View {
+        Button(action: {
+            delegate.myFunc()
+        }) {
+            Text("ChangeText")
+        }
+    }
+}
+```
+
+```swift
+import Foundation
+
+protocol MyProtocol {
+    func myFunc()
 }
 ```
 
@@ -1265,7 +1306,7 @@ struct ContentView: View {
 
 
 ### 28. Sheetを表示する
-全画面でSheetを表示する
+Sheetを表示する
 
 <img src="2023-10-28/2023-10-28.gif" width="300px" alt="Sheetを表示する">
 
@@ -1276,23 +1317,47 @@ struct ContentView: View {
 import SwiftUI
 
 struct ContentView: View {
-    @State var showingfullScreenCover = false
+    @State var showingSheet = false
     var body: some View {
         VStack {
             Button(action: {
-                showingfullScreenCover = true
+                showingSheet = true
             }) {
                 Text("Tap me!")
             }
         }
-        .fullScreenCover(isPresented: $showingfullScreenCover) {
-            SecondView()
+        .sheet(isPresented: $showingSheet) {
+            Text("Sheet!!")
         }
     }
 }
 
 #Preview {
     ContentView()
+}
+```
+
+```swift
+import SwiftUI
+
+struct SecondView: View {
+    @Environment(\.dismiss) var dismiss
+
+    var body: some View {
+        VStack {
+            Button(action: {
+                dismiss()
+            }) {
+                Text("Dismiss")
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.white)
+    }
+}
+
+#Preview {
+    SecondView()
 }
 ```
 
@@ -1335,6 +1400,30 @@ struct ContentView: View {
 
 ```
 
+```swift
+import SwiftUI
+
+struct SecondView: View {
+    @Environment(\.dismiss) var dismiss
+
+    var body: some View {
+        VStack {
+            Button(action: {
+                dismiss()
+            }) {
+                Text("Dismiss")
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.white)
+    }
+}
+
+#Preview {
+    SecondView()
+}
+```
+
 </div>
 </details>
 
@@ -1372,7 +1461,7 @@ struct ContentView: View {
 ### 31. Previewを横向きにする
 Previewを横向きにしてください。
 
-<img src="2023-10-31/2023-10-31.png" width="300px" alt="Previewを横向きにする">
+<img src="2023-10-31/2023-10-31.png" width="600px" alt="Previewを横向きにする">
 
 <details><summary>解答例</summary>
 <div>
@@ -1422,6 +1511,25 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+}
+```
+
+```swift
+import Foundation
+
+extension NSNotification.Name {
+    public static let deviceDidShakeNotification = NSNotification.Name("DeviceDidShakeNotification")
+}
+```
+
+```swift
+import Foundation
+
+extension UIWindow {
+    open override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        super.motionEnded(motion, with: event)
+        NotificationCenter.default.post(name: .deviceDidShakeNotification, object: event)
+    }
 }
 ```
 
