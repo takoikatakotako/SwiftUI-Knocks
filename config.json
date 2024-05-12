@@ -538,8 +538,8 @@
             "directory": "2023-11-10",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-11-10.gif",
                   "width": 300
               }
             ],
@@ -564,8 +564,8 @@
             "directory": "2023-11-12",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-11-12.gif",
                   "width": 300
               }
             ],
@@ -577,8 +577,8 @@
             "directory": "2023-11-13",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-11-13.gif",
                   "width": 300
               }
             ],
@@ -604,7 +604,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-11-15.png",
                   "width": 300
               }
             ],
@@ -630,7 +630,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "image.png",
+                  "name": "2023-11-17.png",
                   "width": 300
               }
             ],
@@ -643,7 +643,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-11-18.png",
                   "width": 300
               }
             ],
@@ -655,8 +655,8 @@
             "directory": "2023-11-19",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.png",
+                  "type": "image",
+                  "name": "2023-11-19.png",
                   "width": 300
               }
             ],
@@ -668,8 +668,8 @@
             "directory": "2023-11-20",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-11-20.gif",
                   "width": 300
               }
             ],
@@ -681,8 +681,8 @@
             "directory": "2023-11-21",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-11-21.gif",
                   "width": 300
               }
             ],
@@ -694,8 +694,8 @@
             "directory": "2023-11-22",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-11-22.gif",
                   "width": 300
               }
             ],
@@ -707,8 +707,8 @@
             "directory": "2023-11-23",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-11-23.gif",
                   "width": 300
               }
             ],
@@ -720,8 +720,8 @@
             "directory": "2023-11-24",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-11-24.gif",
                   "width": 300
               }
             ],
@@ -733,8 +733,8 @@
             "directory": "2023-11-25",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-11-25.gif",
                   "width": 300
               }
             ],
@@ -746,8 +746,8 @@
             "directory": "2023-11-26",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-11-26.gif",
                   "width": 300
               }
             ],
@@ -760,7 +760,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-11-27.png",
                   "width": 300
               }
             ],
@@ -773,7 +773,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-11-28.png",
                   "width": 300
               }
             ],
@@ -785,8 +785,8 @@
             "directory": "2023-11-29",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-11-29.gif",
                   "width": 300
               }
             ],

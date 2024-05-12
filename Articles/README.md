@@ -1818,7 +1818,7 @@ struct ContentView: View {
 ### 41. GithubのAPIを叩き、リポジトリの情報をリストに表示する（async, await）
 
 
-<img src="2023-11-10/movie.mp4" width="300px" alt="GithubのAPIを叩き、リポジトリの情報をリストに表示する（async, await）">
+<img src="2023-11-10/2023-11-10.gif" width="300px" alt="GithubのAPIを叩き、リポジトリの情報をリストに表示する（async, await）">
 
 <details><summary>解答例</summary>
 <div>
@@ -1947,7 +1947,7 @@ struct ContentView: View {
 ### 43. GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。Indicator も表示してください。
 
 
-<img src="2023-11-12/movie.mp4" width="300px" alt="GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。Indicator も表示してください。">
+<img src="2023-11-12/2023-11-12.gif" width="300px" alt="GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。Indicator も表示してください。">
 
 <details><summary>解答例</summary>
 <div>
@@ -2029,7 +2029,7 @@ struct ContentView: View {
 ### 44. SwiftUIのTextFieldで編集中と編集完了を検知する
 
 
-<img src="2023-11-13/movie.mp4" width="300px" alt="SwiftUIのTextFieldで編集中と編集完了を検知する">
+<img src="2023-11-13/2023-11-13.gif" width="300px" alt="SwiftUIのTextFieldで編集中と編集完了を検知する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2107,7 +2107,7 @@ struct ContentView: View {
 ### 46. SwiftUIでViewの上にViewを重ねる
 
 
-<img src="2023-11-15/image.png" width="300px" alt="SwiftUIでViewの上にViewを重ねる">
+<img src="2023-11-15/2023-11-15.png" width="300px" alt="SwiftUIでViewの上にViewを重ねる">
 
 <details><summary>解答例</summary>
 <div>
@@ -2159,7 +2159,7 @@ import Foundation
 ### 48. SwiftUIを使ったTODOアプリのサンプル
 
 
-<img src="2023-11-17/image.png" width="300px" alt="SwiftUIを使ったTODOアプリのサンプル">
+<img src="2023-11-17/2023-11-17.png" width="300px" alt="SwiftUIを使ったTODOアプリのサンプル">
 
 <details><summary>解答例</summary>
 <div>
@@ -2225,7 +2225,7 @@ struct ContentView: View, InputViewDelegate {
 ### 49. SwiftUIでAVAudioPlayerで音楽を再生し、再生終了を検知する
 
 
-<img src="2023-11-18/image.png" width="300px" alt="SwiftUIでAVAudioPlayerで音楽を再生し、再生終了を検知する">
+<img src="2023-11-18/2023-11-18.png" width="300px" alt="SwiftUIでAVAudioPlayerで音楽を再生し、再生終了を検知する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2256,7 +2256,7 @@ struct ContentView: View {
 ### 50. SwiftUIでモーダルを表示する時に値を渡す
 
 
-<img src="2023-11-19/movie.png" width="300px" alt="SwiftUIでモーダルを表示する時に値を渡す">
+<img src="2023-11-19/2023-11-19.png" width="300px" alt="SwiftUIでモーダルを表示する時に値を渡す">
 
 <details><summary>解答例</summary>
 <div>
@@ -2304,7 +2304,7 @@ struct ContentView: View {
 ### 51. SwiftUIでBMIを計算し、結果を別のViewで表示する
 
 
-<img src="2023-11-20/movie.mp4" width="300px" alt="SwiftUIでBMIを計算し、結果を別のViewで表示する">
+<img src="2023-11-20/2023-11-20.gif" width="300px" alt="SwiftUIでBMIを計算し、結果を別のViewで表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2377,7 +2377,7 @@ struct ContentView: View {
 ### 52. SwiftUIでボタンを押すとポップアップを表示する
 
 
-<img src="2023-11-21/movie.mp4" width="300px" alt="SwiftUIでボタンを押すとポップアップを表示する">
+<img src="2023-11-21/2023-11-21.gif" width="300px" alt="SwiftUIでボタンを押すとポップアップを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2422,7 +2422,7 @@ struct ContentView: View {
 ### 53. SwiftUIでViewを横スクロールで表示する
 
 
-<img src="2023-11-22/movie.mp4" width="300px" alt="SwiftUIでViewを横スクロールで表示する">
+<img src="2023-11-22/2023-11-22.gif" width="300px" alt="SwiftUIでViewを横スクロールで表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2461,7 +2461,7 @@ struct ContentView: View {
 ### 54. SwiftUIでButtonを有効にしたり無効にしたりする
 
 
-<img src="2023-11-23/movie.mp4" width="300px" alt="SwiftUIでButtonを有効にしたり無効にしたりする">
+<img src="2023-11-23/2023-11-23.gif" width="300px" alt="SwiftUIでButtonを有効にしたり無効にしたりする">
 
 <details><summary>解答例</summary>
 <div>
@@ -2503,7 +2503,7 @@ struct ContentView: View {
 ### 55. SwiftUIのTextFieldで表示するキーボードを指定する
 
 
-<img src="2023-11-24/movie.mp4" width="300px" alt="SwiftUIのTextFieldで表示するキーボードを指定する">
+<img src="2023-11-24/2023-11-24.gif" width="300px" alt="SwiftUIのTextFieldで表示するキーボードを指定する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2534,7 +2534,7 @@ struct ContentView: View {
 ### 56. SwiftUIでシートを表示し、プッシュ遷移後にシートを閉じる
 
 
-<img src="2023-11-25/movie.mp4" width="300px" alt="SwiftUIでシートを表示し、プッシュ遷移後にシートを閉じる">
+<img src="2023-11-25/2023-11-25.gif" width="300px" alt="SwiftUIでシートを表示し、プッシュ遷移後にシートを閉じる">
 
 <details><summary>解答例</summary>
 <div>
@@ -2569,7 +2569,7 @@ struct ContentView: View {
 ### 57. SwiftUIでListをEditModeにして並び替える
 
 
-<img src="2023-11-26/movie.mp4" width="300px" alt="SwiftUIでListをEditModeにして並び替える">
+<img src="2023-11-26/2023-11-26.gif" width="300px" alt="SwiftUIでListをEditModeにして並び替える">
 
 <details><summary>解答例</summary>
 <div>
@@ -2611,7 +2611,7 @@ struct ContentView: View {
 ### 58. SwiftUIのListでSpacerの部分にもタップ判定をつける
 
 
-<img src="2023-11-27/image.png" width="300px" alt="SwiftUIのListでSpacerの部分にもタップ判定をつける">
+<img src="2023-11-27/2023-11-27.png" width="300px" alt="SwiftUIのListでSpacerの部分にもタップ判定をつける">
 
 <details><summary>解答例</summary>
 <div>
@@ -2647,7 +2647,7 @@ struct ContentView: View {
 ### 59. SwiftUIのListの中にボタンを複数設置する
 
 
-<img src="2023-11-28/image.png" width="300px" alt="SwiftUIのListの中にボタンを複数設置する">
+<img src="2023-11-28/2023-11-28.png" width="300px" alt="SwiftUIのListの中にボタンを複数設置する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2695,7 +2695,7 @@ struct ContentView: View {
 ### 60. SwiftUIでSearchBar(TextField)を使って検索する
 
 
-<img src="2023-11-29/movie.mp4" width="300px" alt="SwiftUIでSearchBar(TextField)を使って検索する">
+<img src="2023-11-29/2023-11-29.gif" width="300px" alt="SwiftUIでSearchBar(TextField)を使って検索する">
 
 <details><summary>解答例</summary>
 <div>
