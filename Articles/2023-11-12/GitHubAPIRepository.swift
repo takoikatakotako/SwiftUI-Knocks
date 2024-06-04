@@ -18,7 +18,7 @@ struct Repository: Codable, Identifiable, Equatable {
     let name: String
     let description: String?
     let stargazersCount: Int
-    
+
     enum CodingKeys: String, CodingKey {
         case id
         case name

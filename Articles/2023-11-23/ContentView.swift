@@ -2,13 +2,13 @@ import SwiftUI
 
 struct ContentView: View {
     @State var enable: Bool = true
-    
+
     var body: some View {
         VStack {
             Toggle(isOn: $enable) {
                 Text("isEnable: \(enable.description)")
             }
-            
+
             Button {
                 print("Tapped!!")
             } label: {

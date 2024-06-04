@@ -14,7 +14,7 @@ struct ContentView: View {
                     .background(Color.white)
                     .cornerRadius(12)
             })
-            
+
             if showingPopUp {
                 PopupView(isPresent: $showingPopUp)
             }

@@ -44,7 +44,7 @@
         },
         {
             "title": "画像を丸く切り取り、枠を付ける",
-            "description": "",
+            "description": "150✖︎150サイズに画像をリサイズし、丸く切り枠をつけて表示させてください。",
             "directory": "2023-10-04",
             "resources": [
               {
@@ -86,7 +86,7 @@
         },
         {
             "title": "Pickerを表示する",
-            "description": "Pickerを使いポケモンを表示してください。",
+            "description": "Pickerを使いポケモンを選択してください。",
             "directory": "2023-10-07",
             "resources": [
               {
@@ -128,7 +128,7 @@
         },
         {
             "title": "Listを使ってセクションごとに表示する",
-            "description": "Listを使ってセクションごとに表示する（groupedスタイル）",
+            "description": "Listを使ってセクションごとに表示してください。（groupedスタイル）",
             "directory": "2023-10-10",
             "resources": [
               {
@@ -234,8 +234,8 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "Buttonからプッシュ遷移をする（NavigationLinkを無効にする）",
-            "description": "Buttonからプッシュ遷移をする方法です。 この方法であれば、NavigationLink を擬似的に無効にすることができます。",
+            "title": "NavigationLinkを使用せずにプッシュ遷移する（.navigationDestination）",
+            "description": "NavigationLinkを使用せずにプッシュ遷移してください。（.navigationDestination）",
             "directory": "2023-10-18",
             "resources": [
               {
@@ -1176,7 +1176,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-12-29.gif",
                   "width": 300
               }
             ],
@@ -1189,7 +1189,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-12-30.gif",
                   "width": 300
               }
             ],
@@ -1202,7 +1202,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-12-31.gif",
                   "width": 300
               }
             ],
@@ -1215,7 +1215,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2024-01-01.gif",
                   "width": 300
               }
             ],
@@ -1228,7 +1228,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2024-01-02.gif",
                   "width": 300
               }
             ],

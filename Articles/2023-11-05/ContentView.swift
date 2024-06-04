@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var viewType: ViewType = .launch
-    
+
     var body: some View {
         ZStack {
             switch viewType {
@@ -21,7 +21,7 @@ struct ContentView: View {
             }
         }
     }
-    
+
     func sleep() async throws {
         // sleep 2sec
         _ = try await Task.sleep(nanoseconds: 2_000_000_000)

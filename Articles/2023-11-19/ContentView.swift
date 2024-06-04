@@ -3,7 +3,7 @@ import SwiftUI
 struct ContentView: View {
     @State var name = ""
     @State var showingSheet = false
-    
+
     var body: some View {
         VStack(spacing: 16) {
             TextField("Input Name", text: $name)

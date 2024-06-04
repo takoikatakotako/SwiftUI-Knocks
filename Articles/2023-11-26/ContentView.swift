@@ -4,9 +4,9 @@ struct ContentView: View {
     @State var pokemons: [Pokemon] = [
         Pokemon(id: 143, name: "Snorlax"),
         Pokemon(id: 52, name: "Meowth"),
-        Pokemon(id: 25, name: "Pikachu"),
+        Pokemon(id: 25, name: "Pikachu")
     ]
-    
+
     var body: some View {
         NavigationStack {
             List {

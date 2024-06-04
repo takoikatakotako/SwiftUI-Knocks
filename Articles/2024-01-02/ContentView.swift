@@ -3,7 +3,7 @@ import SwiftUI
 struct ContentView: View {
     @State var showingSnorlaxView = false
     @State var showingSlowpokeView = false
-    
+
     var body: some View {
         VStack {
             Button(action: {
@@ -11,7 +11,7 @@ struct ContentView: View {
             }) {
                 Text("Show Snorlax")
             }
-            
+
             Button(action: {
                 showingSlowpokeView = true
             }) {

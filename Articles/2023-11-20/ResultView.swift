@@ -5,7 +5,7 @@ struct ResultView: View {
     var body: some View {
         VStack {
             Text("BMI: \(bmi)")
-            
+
             if bmi < 18.5 {
                 Text("You are thin")
                 Image(.bellsprout)

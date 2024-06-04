@@ -92,7 +92,7 @@ struct ContentView: View {
 
 
 ### 4. 画像を丸く切り取り、枠を付ける
-
+150✖︎150サイズに画像をリサイズし、丸く切り枠をつけて表示させてください。
 
 <img src="2023-10-04/2023-10-04.png" width="300px" alt="画像を丸く切り取り、枠を付ける">
 
@@ -208,7 +208,7 @@ struct ContentView: View {
 
 
 ### 7. Pickerを表示する
-Pickerを使いポケモンを表示してください。
+Pickerを使いポケモンを選択してください。
 
 <img src="2023-10-07/2023-10-07.gif" width="300px" alt="Pickerを表示する">
 
@@ -320,7 +320,7 @@ struct ContentView: View {
 
 
 ### 10. Listを使ってセクションごとに表示する
-Listを使ってセクションごとに表示する（groupedスタイル）
+Listを使ってセクションごとに表示してください。（groupedスタイル）
 
 <img src="2023-10-10/2023-10-10.png" width="300px" alt="Listを使ってセクションごとに表示する">
 
@@ -431,10 +431,6 @@ struct ContentView: View {
         }
     }
 }
-
-#Preview {
-    ContentView()
-}
 ```
 
 ```swift
@@ -447,10 +443,6 @@ struct SecondView: View {
         Text(fruit)
             .navigationBarBackButtonHidden(true)
     }
-}
-
-#Preview {
-    SecondView(fruit: "Apple")
 }
 ```
 
@@ -634,10 +626,6 @@ struct ContentView: View {
         }
     }
 }
-
-#Preview {
-    ContentView()
-}
 ```
 
 </div>
@@ -690,20 +678,16 @@ struct ContentView: View {
         }
     }
 }
-
-#Preview {
-    ContentView()
-}
 ```
 
 </div>
 </details>
 
 
-### 18. Buttonからプッシュ遷移をする（NavigationLinkを無効にする）
-Buttonからプッシュ遷移をする方法です。 この方法であれば、NavigationLink を擬似的に無効にすることができます。
+### 18. NavigationLinkを使用せずにプッシュ遷移する（.navigationDestination）
+NavigationLinkを使用せずにプッシュ遷移してください。（.navigationDestination）
 
-<img src="2023-10-18/2023-10-18.gif" width="300px" alt="Buttonからプッシュ遷移をする（NavigationLinkを無効にする）">
+<img src="2023-10-18/2023-10-18.gif" width="300px" alt="NavigationLinkを使用せずにプッシュ遷移する（.navigationDestination）">
 
 <details><summary>解答例</summary>
 <div>
@@ -939,7 +923,6 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
 ```
 
 ```swift
@@ -1397,7 +1380,6 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
 ```
 
 ```swift
@@ -1625,7 +1607,7 @@ import SwiftUI
 struct ContentView: View {
     @State var showingSheet = false
     var body: some View {
-        
+
         Button(action: {
             showingSheet = true
         }, label: {
@@ -1659,7 +1641,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var viewType: ViewType = .launch
-    
+
     var body: some View {
         ZStack {
             switch viewType {
@@ -1678,7 +1660,7 @@ struct ContentView: View {
             }
         }
     }
-    
+
     func sleep() async throws {
         // sleep 2sec
         _ = try await Task.sleep(nanoseconds: 2_000_000_000)
@@ -1708,7 +1690,7 @@ import SwiftUI
 struct ContentView: View {
     @State var showingSheet = false
     var body: some View {
-        
+
         Button(action: {
             showingSheet = true
         }, label: {
@@ -1717,7 +1699,7 @@ struct ContentView: View {
         .sheet(isPresented: $showingSheet) {
             Text("Half Modal")
                 .presentationDetents([.medium])
-            
+
         }
     }
 }
@@ -1770,7 +1752,7 @@ import SwiftUI
 
 struct ContentView: View {
     let markdownText: String = "**Snorlax** is the **most** cute pokemon!\n[About Snorlax](https://en.wikipedia.org/wiki/Snorlax)"
-    
+
     var body: some View {
         Text(LocalizedStringKey(markdownText))
     }
@@ -1779,7 +1761,6 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
 ```
 
 </div>
@@ -1799,7 +1780,7 @@ import SwiftUI
 
 struct ContentView: View {
     let markdownText: String = "**Snorlax** is the **most** cute pokemon!\n[About Snorlax](https://en.wikipedia.org/wiki/Snorlax)"
-    
+
     var body: some View {
         Text(LocalizedStringKey(markdownText))
             .tint(Color.red)
@@ -1829,9 +1810,9 @@ import SwiftUI
 struct ContentView: View {
     @State var repositories: [Repository] = []
     @State var showingErrorAlert = false
-    
+
     let gitHubAPIRepository = GitHubAPIRepository()
-    
+
     var body: some View {
             List(repositories) { repository in
                 VStack(alignment: .leading) {
@@ -1850,12 +1831,12 @@ struct ContentView: View {
             }
 
     }
-    
+
     @MainActor
     func fetchRepositories() {
         Task {
             do {
-                repositories = try await gitHubAPIRepository.searchRepos(page:1, perPage: 20)
+                repositories = try await gitHubAPIRepository.searchRepos(page: 1, perPage: 20)
             } catch {
                 showingErrorAlert = true
             }
@@ -1890,7 +1871,7 @@ struct ContentView: View {
     @State var showingErrorAlert = false
 
     let gitHubAPIRepository = GitHubAPIRepository()
-    
+
     var body: some View {
             List(repositories) { repository in
                 VStack(alignment: .leading) {
@@ -1914,14 +1895,14 @@ struct ContentView: View {
             }
 
     }
-    
+
     @MainActor
     func fetchRepositories() {
         if isFetching {
             return
         }
         isFetching = true
-        
+
         Task {
             do {
                 repositories += try await gitHubAPIRepository.searchRepos(page: page, perPage: 20)
@@ -1960,9 +1941,9 @@ struct ContentView: View {
     @State var page = 1
     @State var isFetching = false
     @State var showingErrorAlert = false
-    
+
     let gitHubAPIRepository = GitHubAPIRepository()
-    
+
     var body: some View {
         List {
             ForEach(repositories) { repository in
@@ -1978,7 +1959,7 @@ struct ContentView: View {
                     }
                 }
             }
-            
+
             HStack {
                 if isFetching {
                     Spacer()
@@ -1996,14 +1977,14 @@ struct ContentView: View {
             Text("Failed to Fetch repositories.")
         }
     }
-    
+
     @MainActor
     func fetchRepositories() {
         if isFetching {
             return
         }
         isFetching = true
-        
+
         Task {
             do {
                 repositories += try await gitHubAPIRepository.searchRepos(page: page, perPage: 20)
@@ -2037,14 +2018,14 @@ struct ContentView: View {
 ```swift
 import SwiftUI
 
-struct ContentView : View {
+struct ContentView: View {
     @State var userName: String = ""
     @State var onEditing: Bool = false
-    
+
     var body: some View {
         VStack {
             Text(onEditing ? "On Editing" : "Not On Editing")
-            
+
             TextField("Placeholder", text: $userName, onEditingChanged: { onEditing in
                 print("onEditingChanged: \(onEditing)")
                 self.onEditing = onEditing
@@ -2087,7 +2068,7 @@ struct ContentView: View {
             Button("Snorlax is my mavorite pokemon.") {
                 favoritePokemonName = "Snorlax"
             }
-            
+
             Button("Slowpoke is my mavorite pokemon.") {
                 UserDefaults.standard.set("Slowpoke", forKey: "FAVORITE_POKEMON_NAME")
             }
@@ -2169,7 +2150,7 @@ import SwiftUI
 
 struct ContentView: View, InputViewDelegate {
     @State var todos: [String] = []
-    
+
     var body: some View {
         NavigationView {
             ZStack(alignment: .bottomTrailing) {
@@ -2180,7 +2161,7 @@ struct ContentView: View, InputViewDelegate {
                     .onDelete(perform: delete)
                 }
                 .listStyle(.plain)
-                
+
                 NavigationLink(destination: InputView(delegate: self, text: "")) {
                     Text("Add")
                         .foregroundColor(Color.white)
@@ -2190,7 +2171,7 @@ struct ContentView: View, InputViewDelegate {
                 .background(Color.orange)
                 .cornerRadius(30)
                 .padding()
-                
+
             }
             .onAppear {
                 if let todos = UserDefaults.standard.array(forKey: "TODO") as? [String] {
@@ -2201,12 +2182,12 @@ struct ContentView: View, InputViewDelegate {
             .navigationBarItems(trailing: EditButton())
         }
     }
-    
+
     func delete(at offsets: IndexSet) {
         todos.remove(atOffsets: offsets)
         UserDefaults.standard.setValue(todos, forKey: "TODO")
     }
-    
+
     func addTodo(text: String) {
         todos.append(text)
         UserDefaults.standard.setValue(todos, forKey: "TODO")
@@ -2267,7 +2248,7 @@ import SwiftUI
 struct ContentView: View {
     @State var name = ""
     @State var showingSheet = false
-    
+
     var body: some View {
         VStack(spacing: 16) {
             TextField("Input Name", text: $name)
@@ -2317,7 +2298,7 @@ struct ContentView: View {
     @State var weight: String = ""
     @State var bmi: Double = 0
     @State var showingSheet = false
-    
+
     var body: some View {
         VStack {
             VStack(alignment: .leading) {
@@ -2328,7 +2309,7 @@ struct ContentView: View {
                     .border(Color.black, width: 1)
             }
             .padding()
-            
+
             VStack(alignment: .leading) {
                 Text("Height")
                 TextField("Input Your Weight", text: $weight)
@@ -2337,17 +2318,17 @@ struct ContentView: View {
                     .border(Color.black, width: 1)
             }
             .padding()
-            
+
             Button(action: {
                 guard let height = Double(self.height),
                       let weight = Double(self.weight) else {
                     print("Fail to Calc BMI")
                     return
                 }
-                
+
                 // Calc BMI
                 bmi = weight / (height / 100) / (height / 100)
-                
+
                 // Show Sheet
                 showingSheet = true
             }, label: {
@@ -2399,7 +2380,7 @@ struct ContentView: View {
                     .background(Color.white)
                     .cornerRadius(12)
             })
-            
+
             if showingPopUp {
                 PopupView(isPresent: $showingPopUp)
             }
@@ -2433,7 +2414,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         let pokemons = ["pikachu", "slowpoke", "bellsprout", "ditto", "snorlax", "eevee", "magikarp"]
-        
+
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack(spacing: 12) {
                 ForEach(pokemons, id: \.self) { pokemon in
@@ -2471,13 +2452,13 @@ import SwiftUI
 
 struct ContentView: View {
     @State var enable: Bool = true
-    
+
     var body: some View {
         VStack {
             Toggle(isOn: $enable) {
                 Text("isEnable: \(enable.description)")
             }
-            
+
             Button {
                 print("Tapped!!")
             } label: {
@@ -2513,7 +2494,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var numberString = ""
-    
+
     var body: some View {
         TextField("Input Number", text: $numberString)
             .keyboardType(.decimalPad)
@@ -2543,15 +2524,15 @@ struct ContentView: View {
 import SwiftUI
 
 struct ContentView: View {
-    @State var showingSheet : Bool = false
-    
+    @State var showingSheet: Bool = false
+
     var body: some View {
         Button(action: {
             showingSheet = true
         }, label: {
             Text("ShowSheet")
         })
-        .sheet(isPresented: $showingSheet){
+        .sheet(isPresented: $showingSheet) {
             FirstSheet(showingSheet: $showingSheet)
         }
     }
@@ -2581,9 +2562,9 @@ struct ContentView: View {
     @State var pokemons: [Pokemon] = [
         Pokemon(id: 143, name: "Snorlax"),
         Pokemon(id: 52, name: "Meowth"),
-        Pokemon(id: 25, name: "Pikachu"),
+        Pokemon(id: 25, name: "Pikachu")
     ]
-    
+
     var body: some View {
         NavigationStack {
             List {
@@ -2667,8 +2648,8 @@ struct ContentView: View {
     }
     var body: some View {
         ScrollView {
-            LazyVStack{
-                TextField("Type your search",text: $text)
+            LazyVStack {
+                TextField("Type your search", text: $text)
                     .padding(8)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 ForEach(filterdPokemons, id: \.self) { pokemon in
@@ -2716,8 +2697,8 @@ struct ContentView: View {
 
     var body: some View {
         ScrollView {
-            LazyVStack{
-                TextField("Type your search",text: $text)
+            LazyVStack {
+                TextField("Type your search", text: $text)
                     .padding(8)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 ForEach(filterdPokemons, id: \.self) { pokemon in
@@ -2807,7 +2788,7 @@ import MapKit
 
 struct ContentView: View {
     @StateObject var viewState: ContentViewState = ContentViewState()
-    
+
     var body: some View {
         ZStack {
             if let location = viewState.location {
@@ -2843,7 +2824,7 @@ import CoreLocation
 class ContentViewState: NSObject, ObservableObject {
     @Published var location: CLLocationCoordinate2D?
     private let locationManager = CLLocationManager()
-    
+
     func onAppear() {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
@@ -2866,7 +2847,7 @@ extension ContentViewState: CLLocationManagerDelegate {
             break
         }
     }
-    
+
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         self.location = manager.location?.coordinate
     }
@@ -3149,7 +3130,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var pokemons: [Pokemon] = []
-    
+
     var body: some View {
         VStack {
             ForEach(pokemons) { pokemon in
@@ -3176,13 +3157,13 @@ struct ContentView: View {
             }
         }
     }
-    
-    private func fetchPokemons() async throws -> [Pokemon]{
+
+    private func fetchPokemons() async throws -> [Pokemon] {
         let host = "https://swiswiswift.com/2022-06-16"
         let url = URL(string: "\(host)/pokemons.json")!
         let (data, _) = try await URLSession.shared.data(from: url)
         let pokemonResponses = try JSONDecoder().decode([PokemonResponse].self, from: data)
-        
+
         var pokemons: [Pokemon] = []
         for pokemonResponse in pokemonResponses {
             let imageUrl = URL(string: "\(host)/\(pokemonResponse.imageName)")!
@@ -3218,11 +3199,11 @@ import SwiftUI
 struct ContentView: View {
     @State var items: [String] = []
     @State var showingSheet: Bool = false
-    
+
     var body: some View {
         VStack {
             Text("Count: \(items.count)")
-            
+
             Button {
                 showingSheet = true
             } label: {
@@ -3254,7 +3235,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var fileUrl: URL?
     @State private var showingPicker = false
-    
+
     var body: some View {
         VStack {
             Button {
@@ -3264,13 +3245,13 @@ struct ContentView: View {
             } label: {
                 Text("Save File to Document")
             }
-            
+
             Button {
                 showingPicker = true
             } label: {
                 Text("Show File Picker")
             }
-            
+
             Text("FileUrl: \(fileUrl?.description ?? "nil")")
         }
         .sheet(isPresented: $showingPicker) {
@@ -3451,7 +3432,7 @@ import Foundation
 ### 90. SwiftUIで画像をピンチで拡大する（MagnificationGesture）
 
 
-<img src="2023-12-29/movie.mp4" width="300px" alt="SwiftUIで画像をピンチで拡大する（MagnificationGesture）">
+<img src="2023-12-29/2023-12-29.gif" width="300px" alt="SwiftUIで画像をピンチで拡大する（MagnificationGesture）">
 
 <details><summary>解答例</summary>
 <div>
@@ -3461,7 +3442,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var scale: CGFloat = 1.0
-    
+
     var body: some View {
         Image(.icon)
             .resizable()
@@ -3487,7 +3468,7 @@ struct ContentView: View {
 ### 91. SwiftUIで画像をピンチで拡大する（PDFView）
 
 
-<img src="2023-12-30/movie.mp4" width="300px" alt="SwiftUIで画像をピンチで拡大する（PDFView）">
+<img src="2023-12-30/2023-12-30.gif" width="300px" alt="SwiftUIで画像をピンチで拡大する（PDFView）">
 
 <details><summary>解答例</summary>
 <div>
@@ -3513,7 +3494,7 @@ struct ContentView: View {
 ### 92. SwiftUIで画像をピンチで拡大する（UIImageView + UIScrollView）
 
 
-<img src="2023-12-31/movie.mp4" width="300px" alt="SwiftUIで画像をピンチで拡大する（UIImageView + UIScrollView）">
+<img src="2023-12-31/2023-12-31.gif" width="300px" alt="SwiftUIで画像をピンチで拡大する（UIImageView + UIScrollView）">
 
 <details><summary>解答例</summary>
 <div>
@@ -3540,7 +3521,7 @@ struct ContentView: View {
 ### 93. SwiftMarkdownを使いマークダウンを表示する
 
 
-<img src="2024-01-01/movie.mp4" width="300px" alt="SwiftMarkdownを使いマークダウンを表示する">
+<img src="2024-01-01/2024-01-01.gif" width="300px" alt="SwiftMarkdownを使いマークダウンを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -3550,49 +3531,49 @@ import SwiftUI
 import Markdown
 
 struct ContentView: View {
-    
+
     let markdown = """
     # 東京タワー
-    
+
     東京タワー（とうきょうタワー、英: Tokyo Tower）は、東京都港区芝公園にある総合電波塔である。日本電波塔（にっぽんでんぱとう）とも呼ばれる。
     1958年（昭和33年）12月23日竣工。東京のシンボル、観光名所である。
     2018年度グッドデザイン賞受賞。
-    
+
     ## 概要
-    
+
     創設者は前田久吉で、日本の「塔博士」とも称される内藤多仲らが設計（詳細は設計を参照）。
     高さは333メートルと広報されており、海抜では351メートル。塔脚の中心を基準とした塔脚の間隔は88.0メートル。
     総工費約30億円、1年半（197万4,015時間/543日間）と延べ21万9,335人の人員を要して完成した。
     地上125メートル（海抜約150メートル）と223.55メートル（海抜約250メートル）に展望台を有するトラス構造の電波塔である。
-    
+
     昼間障害標識として、頂点より黄赤色（インターナショナルオレンジ）と白色を交互に配した塗装となっている。
     テレビおよびFMラジオのアンテナとして放送電波を送出（#送信周波数・出力を参照）、また東日本旅客鉄道（JR東日本）の防護無線用アンテナとして緊急信号を発信するほか、東京都環境局の各種測定器なども設置されている。
-    
+
     完成当初は日本一高い建造物だったが、高さが日本一だったのは1968年6月26日に小笠原諸島が日本に返還され南鳥島ロランタワーと硫黄島ロランタワーに抜かれるまでの約9年半と、対馬（長崎県）のオメガタワーが解体されてから東京スカイツリーに抜かれるまでの約11年間である。
     自立式鉄塔に限れば、東京スカイツリーに抜かれるまでの約51年半は日本一の高さだった。
     2020年現在は、東京スカイツリーに次ぐ日本で2番目に高い建造物である。
     なお、重量については約4,000トンとされる。
-    
+
     ## 運営会社
-    
+
     株式会社 TOKYO TOWER（英: TOKYO TOWER Co.,Ltd）は、東京都港区芝公園に本社を置く東京タワーの建主であり、管理ならびに運営を行っている。
-    
+
     ### 法人概要
-    
+
     1957年5月、「大阪の新聞王」と呼ばれ、当時、産業経済新聞社、大阪放送（ラジオ大阪）各社の社長を務め、後に関西テレビ放送の社長にも就く前田久吉が日本電波塔株式会社（にっぽんでんぱとう、英: NIPPON TELEVISION CITY CORPORATION）を設立。
     久吉はタワーの完成とほぼ同時の1958年、産経新聞社を国策パルプ工業（現・日本製紙）社長の水野成夫に譲渡してその経営から手を引いたが、日本電波塔（東京タワー）とラジオ大阪の経営には引き続き携わった。
     この結果、日本電波塔は当時の産経新聞グループはもちろん、その後のフジサンケイグループからも完全に切り離されて前田家主導の同族企業となった。
     その名残で産経新聞グループから離脱する直前の1957年10月、文化放送やニッポン放送などと共に発足した、中央ラジオ・テレビ健康保険組合に基幹会社の一社として2019年現在でも加入している。
     また、ラジオ大阪も2005年にフジサンケイグループ入りするまで、前田家主導で独自の経営をしていた。
     """
-    
+
     var body: some View {
         ScrollView {
             Text(getAttributedString(markdown: markdown))
                 .padding()
         }
     }
-    
+
     func getAttributedString(markdown: String) -> AttributedString {
         var attributedString = AttributedString()
         for block in Document(parsing: markdown).blockChildren {
@@ -3617,7 +3598,6 @@ struct ContentView: View {
     }
 }
 
-
 #Preview {
     ContentView()
 }
@@ -3630,7 +3610,7 @@ struct ContentView: View {
 ### 94. SwiftUIでシートを出し分ける
 
 
-<img src="2024-01-02/movie.mp4" width="300px" alt="SwiftUIでシートを出し分ける">
+<img src="2024-01-02/2024-01-02.gif" width="300px" alt="SwiftUIでシートを出し分ける">
 
 <details><summary>解答例</summary>
 <div>
@@ -3641,7 +3621,7 @@ import SwiftUI
 struct ContentView: View {
     @State var showingSnorlaxView = false
     @State var showingSlowpokeView = false
-    
+
     var body: some View {
         VStack {
             Button(action: {
@@ -3649,7 +3629,7 @@ struct ContentView: View {
             }) {
                 Text("Show Snorlax")
             }
-            
+
             Button(action: {
                 showingSlowpokeView = true
             }) {
