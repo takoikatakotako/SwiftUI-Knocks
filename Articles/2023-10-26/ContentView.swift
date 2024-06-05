@@ -1,42 +1,40 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var selectedHour = 8
-    @State var selectedMinute = 30
-
+    @State var pokemon: Pokemon?
     var body: some View {
-        GeometryReader { geometry in
-            HStack {
-                Picker(selection: $selectedHour, label: EmptyView()) {
-                    ForEach(0 ..< 24) {
-                        Text("\($0)")
+        NavigationStack {
+            List (Pokemon.allCases) { pokemon in
+                Button {
+                    self.pokemon = pokemon
+                } label: {
+                    Text(pokemon.description)
+                }
+            }
+            .navigationDestination(item: $pokemon) { pokemon in
+                switch pokemon {
+                case .snorlax:
+                    Image(.snorlax)
+                        .resizable()
+                        .scaledToFit()
+                case .slowpoke:
+                    VStack {
+                        Image(.slowpoke)
+                            .resizable()
+                            .scaledToFit()
+                        Text("Snorlax")
                     }
-                }
-                .pickerStyle(WheelPickerStyle())
-                .onReceive([selectedHour].publisher.first()) { (value) in
-                    print("hour: \(value)")
-                }.labelsHidden()
-                    .frame(width: geometry.size.width / 2, height: geometry.size.height)
-                    .clipped()
-
-                Picker(selection: $selectedMinute, label: EmptyView()) {
-                    ForEach(0 ..< 60) {
-                        Text("\($0)")
+                case .ditto:
+                    HStack {
+                        Image(.ditto)
+                            .resizable()
+                            .scaledToFit()
+                        Text("Ditto")
                     }
+                case .eevee:
+                    Text("Eevee")
                 }
-                .pickerStyle(WheelPickerStyle())
-                .onReceive([selectedMinute].publisher.first()) { value in
-                    print("minute: \(value)")
-                }
-                .labelsHidden()
-                .frame(width: geometry.size.width / 2, height: geometry.size.height)
-                .clipped()
             }
         }
-        .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }

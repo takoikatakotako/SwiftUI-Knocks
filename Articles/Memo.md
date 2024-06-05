@@ -103,13 +103,13 @@ ffmpeg -i 2023-10-19/movie-padding.mp4 -i phone-frame.png -filter_complex overla
 ffmpeg -i 2023-10-19/movie-frame.mp4 -crf 35 -vf scale=400:-1 2023-10-19/2023-10-19.gif
 
 # 2023-10-20
-convert -size 1326x2676 xc:none 2023-10-13/image.png -geometry +74+59 -composite phone-frame.png -geometry +0+0 -composite 2023-10-20/2023-10-20.png
+convert -size 1326x2676 xc:none 2023-10-20/image.png -geometry +74+59 -composite phone-frame.png -geometry +0+0 -composite 2023-10-20/2023-10-20.png
 
 # 2023-10-21
-convert -size 1326x2676 xc:none 2023-10-13/image.png -geometry +74+59 -composite phone-frame.png -geometry +0+0 -composite 2023-10-21/2023-10-21.png
+convert -size 1326x2676 xc:none 2023-10-21/image.png -geometry +74+59 -composite phone-frame.png -geometry +0+0 -composite 2023-10-21/2023-10-21.png
 
 # 2023-10-22
-convert -size 1326x2676 xc:none 2023-10-13/image.png -geometry +74+59 -composite phone-frame.png -geometry +0+0 -composite 2023-10-22/2023-10-22.png
+convert -size 1326x2676 xc:none 2023-10-22/image.png -geometry +74+59 -composite phone-frame.png -geometry +0+0 -composite 2023-10-22/2023-10-22.png
 
 # 2023-10-23
 ffmpeg -i 2023-10-23/movie.mp4 -vf pad=w=iw+148:h=ih+120:x=85:y=70:color=white 2023-10-23/movie-padding.mp4
@@ -127,7 +127,7 @@ ffmpeg -i 2023-10-25/movie-padding.mp4 -i phone-frame.png -filter_complex overla
 ffmpeg -i 2023-10-25/movie-frame.mp4 -crf 35 -vf scale=400:-1 2023-10-25/2023-10-25.gif
 
 # 2023-10-26
-ffmpeg -i 2023-10-26/movie.mp4 -vf pad=w=iw+148:h=ih+120:x=85:y=70:color=white 2023-10-26/movie-padding.mp4
+ffmpeg -i 2023-10-26/2023-10-26.mp4 -vf pad=w=iw+148:h=ih+120:x=85:y=70:color=white 2023-10-26/movie-padding.mp4
 ffmpeg -i 2023-10-26/movie-padding.mp4 -i phone-frame.png -filter_complex overlay=10:10 2023-10-26/movie-frame.mp4
 ffmpeg -i 2023-10-26/movie-frame.mp4 -crf 35 -vf scale=400:-1 2023-10-26/2023-10-26.gif
 
