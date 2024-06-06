@@ -348,7 +348,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "Pokemon.swift"]
         },
         {
             "title": "複数行のPickerを作成する",
