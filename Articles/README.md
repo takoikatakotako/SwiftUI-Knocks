@@ -1604,21 +1604,32 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            ContentViewCell(imageName: "snorlax")
-            ContentViewCell(imageName: "magnemite")
-            ContentViewCell(imageName: "psyduck")
-            ContentViewCell(imageName: "quagsire")
-            ContentViewCell(imageName: "slowpoke")
+            ContentViewCell(image: Image(.snorlax))
+            ContentViewCell(image: Image(.magnemite))
+            ContentViewCell(image: Image(.psyduck))
+            ContentViewCell(image: Image(.quagsire))
+            ContentViewCell(image: Image(.slowpoke))
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.gray)
         .tabViewStyle(.page)
         .menuIndicator(.visible)
     }
-}
+}```
 
-#Preview {
-    ContentView()
+```swift
+import SwiftUI
+
+struct ContentViewCell: View {
+    let image: Image
+    
+    var body: some View {
+        image
+            .resizable()
+            .scaledToFit()
+            .frame(width: 240, height: 240)
+            .background(Color.white)
+    }
 }
 ```
 
@@ -1654,6 +1665,23 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+}
+```
+
+```swift
+import SwiftUI
+
+struct ModalView: View {
+    @Environment(\.dismiss) var dismiss
+
+    var body: some View {
+        Button(action: {
+            dismiss()
+        }, label: {
+            Text("Close")
+        })
+        .interactiveDismissDisabled(true)
+    }
 }
 ```
 
@@ -1702,6 +1730,15 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+}
+```
+
+```swift
+import Foundation
+
+enum ViewType {
+    case launch
+    case home
 }
 ```
 
@@ -1882,6 +1919,37 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import Foundation
+
+struct GitHubAPIRepository {
+    func searchRepos(page: Int, perPage: Int) async throws -> [Repository] {
+        let url = URL(string: "https://api.github.com/search/repositories?q=swift&sort=stars&page=\(page)&per_page=\(perPage)")!
+        let (data, _) = try await URLSession.shared.data(from: url)
+        let response = try JSONDecoder().decode(GithubSearchResult.self, from: data)
+        return response.items
+    }
+}
+
+struct GithubSearchResult: Codable {
+    let items: [Repository]
+}
+
+struct Repository: Codable, Identifiable, Equatable {
+    let id: Int
+    let name: String
+    let description: String?
+    let stargazersCount: Int
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case description
+        case stargazersCount = "stargazers_count"
+    }
+}
+```
+
 </div>
 </details>
 
@@ -1889,7 +1957,7 @@ struct ContentView: View {
 ### 42. GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。
 
 
-<img src="2023-11-11/movie.png" width="300px" alt="GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。">
+<img src="2023-11-11/2023-11-11.gif" width="300px" alt="GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。">
 
 <details><summary>解答例</summary>
 <div>
@@ -1954,12 +2022,43 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import Foundation
+
+struct GitHubAPIRepository {
+    func searchRepos(page: Int, perPage: Int) async throws -> [Repository] {
+        let url = URL(string: "https://api.github.com/search/repositories?q=swift&sort=stars&page=\(page)&per_page=\(perPage)")!
+        let (data, _) = try await URLSession.shared.data(from: url)
+        let response = try JSONDecoder().decode(GithubSearchResult.self, from: data)
+        return response.items
+    }
+}
+
+struct GithubSearchResult: Codable {
+    let items: [Repository]
+}
+
+struct Repository: Codable, Identifiable, Equatable {
+    let id: Int
+    let name: String
+    let description: String?
+    let stargazersCount: Int
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case description
+        case stargazersCount = "stargazers_count"
+    }
+}
+```
+
 </div>
 </details>
 
 
 ### 43. GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。Indicator も表示してください。
-
+GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。Indicator も表示してください。
 
 <img src="2023-11-12/2023-11-12.gif" width="300px" alt="GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。Indicator も表示してください。">
 
@@ -2036,12 +2135,43 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import Foundation
+
+struct GitHubAPIRepository {
+    func searchRepos(page: Int, perPage: Int) async throws -> [Repository] {
+        let url = URL(string: "https://api.github.com/search/repositories?q=swift&sort=stars&page=\(page)&per_page=\(perPage)")!
+        let (data, _) = try await URLSession.shared.data(from: url)
+        let response = try JSONDecoder().decode(GithubSearchResult.self, from: data)
+        return response.items
+    }
+}
+
+struct GithubSearchResult: Codable {
+    let items: [Repository]
+}
+
+struct Repository: Codable, Identifiable, Equatable {
+    let id: Int
+    let name: String
+    let description: String?
+    let stargazersCount: Int
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case description
+        case stargazersCount = "stargazers_count"
+    }
+}
+```
+
 </div>
 </details>
 
 
 ### 44. SwiftUIのTextFieldで編集中と編集完了を検知する
-
+SwiftUIのTextFieldで編集中と編集完了を検知する
 
 <img src="2023-11-13/2023-11-13.gif" width="300px" alt="SwiftUIのTextFieldで編集中と編集完了を検知する">
 
@@ -2081,9 +2211,9 @@ struct ContentView: View {
 
 
 ### 45. SwiftUIでAppStorageを使ってUserDefaultの値を監視する
+SwiftUIでAppStorageを使ってUserDefaultの値を監視する
 
-
-<img src="2023-11-14/movie.mp4" width="300px" alt="SwiftUIでAppStorageを使ってUserDefaultの値を監視する">
+<img src="2023-11-14/2023-11-14.gif" width="300px" alt="SwiftUIでAppStorageを使ってUserDefaultの値を監視する">
 
 <details><summary>解答例</summary>
 <div>

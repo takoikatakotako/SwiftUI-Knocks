@@ -452,7 +452,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "ContentViewCell.swift"]
         },
         {
             "title": "閉じることができないモーダルを表示する",
@@ -465,7 +465,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "ModalView.swift"]
         },
         {
             "title": "アプリ起動時に画面を遷移させる",
@@ -478,7 +478,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "ViewType.swift"]
         },
         {
             "title": "ハーフモーダルを表示する",
@@ -543,7 +543,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "GitHubAPIRepository.swift"]
         },
         {
             "title": "GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。",
@@ -552,15 +552,15 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.png",
+                  "name": "2023-11-11.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "GitHubAPIRepository.swift"]
         },
         {
             "title": "GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。Indicator も表示してください。",
-            "description": "",
+            "description": "GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。Indicator も表示してください。",
             "directory": "2023-11-12",
             "resources": [
               {
@@ -569,11 +569,11 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "GitHubAPIRepository.swift"]
         },
         {
             "title": "SwiftUIのTextFieldで編集中と編集完了を検知する",
-            "description": "",
+            "description": "SwiftUIのTextFieldで編集中と編集完了を検知する",
             "directory": "2023-11-13",
             "resources": [
               {
@@ -586,12 +586,12 @@
         },
         {
             "title": "SwiftUIでAppStorageを使ってUserDefaultの値を監視する",
-            "description": "",
+            "description": "SwiftUIでAppStorageを使ってUserDefaultの値を監視する",
             "directory": "2023-11-14",
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-11-14.gif",
                   "width": 300
               }
             ],

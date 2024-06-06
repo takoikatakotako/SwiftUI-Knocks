@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct ContentViewCell: View {
-    let imageName: String
-
+    let image: Image
+    
     var body: some View {
-        Image(imageName)
+        image
             .resizable()
             .scaledToFit()
             .frame(width: 240, height: 240)
