@@ -604,13 +604,13 @@ Button内の画像やテキストの色を変えないでください。
 import SwiftUI
 
 struct ContentView: View {
-    @State var text = "Snorlax"
+    @State var bool = true
 
     var body: some View {
         VStack {
-            Text(text)
+            Text(bool ? "Snorlax" : "Forever")
             Button(action: {
-                text = "Forever"
+                bool.toggle()
             }) {
                 HStack {
                     Image(.icon)
@@ -873,10 +873,6 @@ struct ContentView: View {
         }
     }
 }
-
-#Preview {
-    ContentView()
-}
 ```
 
 </div>
@@ -918,10 +914,6 @@ struct ContentView: View {
             }
         }
     }
-}
-
-#Preview {
-    ContentView()
 }
 ```
 
@@ -988,10 +980,6 @@ struct ContentView: View {
                     radius: 24)
         }
     }
-}
-
-#Preview {
-    ContentView()
 }
 ```
 
@@ -1207,6 +1195,88 @@ ListViewからそれぞれ別のViewに遷移する
 import SwiftUI
 
 struct ContentView: View {
+    @State var pokemon: Pokemon?
+    var body: some View {
+        NavigationStack {
+            List (Pokemon.allCases) { pokemon in
+                Button {
+                    self.pokemon = pokemon
+                } label: {
+                    Text(pokemon.description)
+                }
+            }
+            .navigationDestination(item: $pokemon) { pokemon in
+                switch pokemon {
+                case .snorlax:
+                    Image(.snorlax)
+                        .resizable()
+                        .scaledToFit()
+                case .slowpoke:
+                    VStack {
+                        Image(.slowpoke)
+                            .resizable()
+                            .scaledToFit()
+                        Text("Snorlax")
+                    }
+                case .ditto:
+                    HStack {
+                        Image(.ditto)
+                            .resizable()
+                            .scaledToFit()
+                        Text("Ditto")
+                    }
+                case .eevee:
+                    Text("Eevee")
+                }
+            }
+        }
+    }
+}
+```
+
+```swift
+import Foundation
+
+enum Pokemon: Identifiable, CaseIterable, CustomStringConvertible {
+    var id: Int {
+        self.hashValue
+    }
+    case snorlax
+    case slowpoke
+    case ditto
+    case eevee
+    
+    var description : String {
+      switch self {
+      case .snorlax:
+          "Snorlax"
+      case .slowpoke:
+          "Slowpoke"
+      case .ditto:
+          "Ditto"
+      case .eevee:
+          "Eevee"
+      }
+    }
+}
+```
+
+</div>
+</details>
+
+
+### 27. 複数行のPickerを作成する
+複数行のPickerを作成する
+
+<img src="2023-10-27/2023-10-27.gif" width="300px" alt="複数行のPickerを作成する">
+
+<details><summary>解答例</summary>
+<div>
+
+```swift
+import SwiftUI
+
+struct ContentView: View {
     @State var selectedHour = 8
     @State var selectedMinute = 30
 
@@ -1245,44 +1315,7 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-}
-```
-
-</div>
-</details>
-
-
-### 27. 複数行のPickerを作成する
-複数行のPickerを作成する
-
-<img src="2023-10-27/2023-10-27.gif" width="300px" alt="複数行のPickerを作成する">
-
-<details><summary>解答例</summary>
-<div>
-
-```swift
-import SwiftUI
-
-struct ContentView: View {
-    @State var showingSheet = false
-    var body: some View {
-        VStack {
-            Button(action: {
-                showingSheet = true
-            }) {
-                Text("Tap me!")
-            }
-        }
-        .sheet(isPresented: $showingSheet) {
-            Text("Sheet!!")
-        }
-    }
-}
-
-#Preview {
-    ContentView()
-}
-```
+}```
 
 </div>
 </details>
