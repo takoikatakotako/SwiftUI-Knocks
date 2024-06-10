@@ -611,13 +611,13 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "SwiftUIでMapを使う。Mapにピンを立てる(skip)",
-            "description": "",
+            "title": "SwiftUIでMapを使う。Mapに画像や図形を表示する",
+            "description": "SwiftUIでMapを使う。Mapに画像や図形を表示する",
             "directory": "2023-11-16",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-11-16.gif",
                   "width": 300
               }
             ],
@@ -625,16 +625,16 @@
         },
         {
             "title": "SwiftUIを使ったTODOアプリのサンプル",
-            "description": "",
+            "description": "SwiftUIを使ったTODOアプリのサンプル",
             "directory": "2023-11-17",
             "resources": [
               {
                   "type": "movie",
-                  "name": "2023-11-17.png",
+                  "name": "2023-11-17.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "CalendarView.swift", "ContentViewSheetItem.swift", "InputScheduleView.swift", "InputView.swift", "ScheduleList.swift", "UserDefaultsManager.swift"]
         },
         {
             "title": "SwiftUIでAVAudioPlayerで音楽を再生し、再生終了を検知する",

@@ -2284,16 +2284,53 @@ struct ContentView: View {
 </details>
 
 
-### 47. SwiftUIでMapを使う。Mapにピンを立てる(skip)
+### 47. SwiftUIでMapを使う。Mapに画像や図形を表示する
+SwiftUIでMapを使う。Mapに画像や図形を表示する
 
-
-<img src="2023-11-16/image.png" width="300px" alt="SwiftUIでMapを使う。Mapにピンを立てる(skip)">
+<img src="2023-11-16/2023-11-16.gif" width="300px" alt="SwiftUIでMapを使う。Mapに画像や図形を表示する">
 
 <details><summary>解答例</summary>
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+import MapKit
+
+struct ContentView: View {
+    // Tokyo Station(35.6812° N, 139.7671° E)
+    let tokyoStation = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 35.6812, longitude: 139.7671), latitudinalMeters: 10000, longitudinalMeters: 10000)
+
+    var body: some View {
+        Map(initialPosition: .region(tokyoStation)) {
+            // Akihabara Station(35.6984° N, 139.7731° E)
+            MapCircle(center: CLLocationCoordinate2D(latitude: 35.6984, longitude: 139.7731), radius: CLLocationDistance(800))
+                .foregroundStyle(.orange.opacity(0.60))
+                .mapOverlayLevel(level: .aboveLabels)
+
+            // Snorlax at Akihabara Station(35.6984° N, 139.7731° E)
+            Annotation("Snorlax", coordinate: CLLocationCoordinate2D(latitude: 35.6984, longitude: 139.7731)) {
+                Image(.snorlax)
+                    .resizable()
+                    .frame(width: 60, height: 60)
+                    .scaledToFit()
+            }
+
+            // Polygon
+            MapPolygon(coordinates: [
+                // Shibuya Station(35.6580° N, 139.7016° E)
+                CLLocationCoordinate2D(latitude: 35.6580, longitude: 139.7016),
+
+                // Akihabara Station(35.6984° N, 139.7731° E)
+                CLLocationCoordinate2D(latitude: 35.6984, longitude: 139.7731),
+                
+                // Tokyo Station(35.6812° N, 139.139.7671° E)
+                CLLocationCoordinate2D(latitude: 35.6812, longitude: 139.7671)
+            ])
+            .foregroundStyle(.blue.opacity(0.60))
+            .mapOverlayLevel(level: .aboveLabels)
+        }
+    }
+}
 ```
 
 </div>
@@ -2301,9 +2338,9 @@ import Foundation
 
 
 ### 48. SwiftUIを使ったTODOアプリのサンプル
+SwiftUIを使ったTODOアプリのサンプル
 
-
-<img src="2023-11-17/2023-11-17.png" width="300px" alt="SwiftUIを使ったTODOアプリのサンプル">
+<img src="2023-11-17/2023-11-17.gif" width="300px" alt="SwiftUIを使ったTODOアプリのサンプル">
 
 <details><summary>解答例</summary>
 <div>
@@ -2311,54 +2348,202 @@ import Foundation
 ```swift
 import SwiftUI
 
-struct ContentView: View, InputViewDelegate {
-    @State var todos: [String] = []
-
+struct ContentView: View {
+    @State var showingSheet: ContentViewSheetItem?
+    
     var body: some View {
-        NavigationView {
-            ZStack(alignment: .bottomTrailing) {
-                List {
-                    ForEach(todos, id: \.self) { user in
-                        Text(user)
-                    }
-                    .onDelete(perform: delete)
+        VStack {
+            CalendarView { dateComponents in
+                guard let year = dateComponents.year,
+                      let month = dateComponents.month,
+                      let day = dateComponents.day else {
+                    return
                 }
-                .listStyle(.plain)
-
-                NavigationLink(destination: InputView(delegate: self, text: "")) {
-                    Text("Add")
-                        .foregroundColor(Color.white)
-                        .font(Font.system(size: 20))
-                }
-                .frame(width: 60, height: 60)
-                .background(Color.orange)
-                .cornerRadius(30)
-                .padding()
-
+                showingSheet = .showScheduleList(year: year, month: month, day: day)
             }
-            .onAppear {
-                if let todos = UserDefaults.standard.array(forKey: "TODO") as? [String] {
-                    self.todos = todos
-                }
+            .padding()
+            .navigationTitle("UICalendarView")
+            
+            Button {
+                showingSheet = .showInputSchedule
+            } label: {
+                Text("Add Schedule")
+                    .font(Font.system(size: 20))
+                    .fontWeight(.bold)
+                    .padding(16)
+                    .border(Color.black, width: 1)
             }
-            .navigationTitle("TODO")
-            .navigationBarItems(trailing: EditButton())
+        }
+        .sheet(item: $showingSheet, content: { item in
+            switch item {
+            case .showScheduleList(let year, let month, let day):
+                ScheduleList(year: year, month: month, day: day)
+            case .showInputSchedule:
+                InputScheduleView()
+            }
+        })
+    }
+}
+```
+
+```swift
+import SwiftUI
+
+struct CalendarView: UIViewRepresentable {
+    let didSelectDate: (_ dateComponents: DateComponents) -> Void
+    
+    final public class Coordinator: NSObject, UICalendarSelectionSingleDateDelegate {
+        let didSelectDate: (_ dateComponents: DateComponents) -> Void
+        
+        init(
+            didSelectDate: @escaping (_ dateComponents: DateComponents) -> Void
+        ) {
+            self.didSelectDate = didSelectDate
+        }
+        
+        public func dateSelection(_ selection: UICalendarSelectionSingleDate, didSelectDate dateComponents: DateComponents?) {
+            guard let dateComponents = dateComponents else {
+                return
+            }
+            didSelectDate(dateComponents)
         }
     }
-
-    func delete(at offsets: IndexSet) {
-        todos.remove(atOffsets: offsets)
-        UserDefaults.standard.setValue(todos, forKey: "TODO")
+    
+    public func makeCoordinator() -> Coordinator {
+        Coordinator(didSelectDate: didSelectDate)
     }
+    
+    func makeUIView(context: Context) -> some UIView {
+        let selection = UICalendarSelectionSingleDate(delegate: context.coordinator)
+        
+        let calendarView = UICalendarView()
+        calendarView.selectionBehavior = selection
+        return calendarView
+    }
+    
+    func updateUIView(_ uiView: UIViewType, context: Context) {}
+}
+```
 
-    func addTodo(text: String) {
-        todos.append(text)
-        UserDefaults.standard.setValue(todos, forKey: "TODO")
+```swift
+import Foundation
+
+enum ContentViewSheetItem: Hashable, Identifiable {
+    var id: Self {
+        return self
+    }
+    case showInputSchedule
+    case showScheduleList(year: Int, month: Int, day: Int)
+}
+```
+
+```swift
+import SwiftUI
+
+struct InputScheduleView: View {
+    @Environment(\.dismiss) private var dismiss
+    
+    @State var schedule = ""
+    @State var date = Date()
+    
+    var body: some View {
+        VStack {
+            TextField("Schedule", text: $schedule)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+            
+            DatePicker(selection: $date, label: { Text("") })
+                .environment(\.locale, Locale(identifier: "ja_JP"))
+            
+            Button {
+                let calendar = Calendar.current
+                let components = calendar.dateComponents([.year, .month, .day], from: date)
+                guard let year = components.year, let month = components.month, let day = components.day else {
+                    return
+                }
+                
+                // Add Schedules
+                var schedules = UserDefaultsManager.getSchedules(year: year, month: month, day: day)
+                schedules.append(schedule)
+                
+                UserDefaultsManager.setSchedules(year: year, month: month, day: day, schedules: schedules)
+                
+                dismiss()
+            } label: {
+                Text("Add")
+                    .font(Font.system(size: 20))
+                    .fontWeight(.bold)
+                    .padding(16)
+                    .border(Color.black, width: 1)
+            }
+        }
+        .padding()
+    }
+}
+```
+
+```swift
+import SwiftUI
+
+protocol InputViewDelegate {
+    func addTodo(text: String)
+}
+
+struct InputView: View {
+    @Environment(\.presentationMode) var presentation
+    let delegate: InputViewDelegate
+    @State var text: String
+
+    var body: some View {
+        VStack(spacing: 16) {
+            TextField("Input Your TODO", text: $text)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+            Button("Add") {
+                delegate.addTodo(text: text)
+                presentation.wrappedValue.dismiss()
+            }
+        }
+        .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    InputView()
+}
+```
+
+```swift
+import SwiftUI
+
+struct ScheduleList: View {
+    @State var year: Int
+    @State var month: Int
+    @State var day: Int
+    @State var schedules: [String] = []
+    
+    var body: some View {
+        List(schedules, id: \.self) { schedule in
+            Text(schedule)
+        }
+        .onAppear {
+            schedules = UserDefaultsManager.getSchedules(year: year, month: month, day: day)
+        }
+    }
+}
+```
+
+```swift
+import Foundation
+
+struct UserDefaultsManager {
+    static func getSchedules(year: Int, month: Int, day: Int) -> [String] {
+        if let schedules = UserDefaults.standard.object(forKey: "\(year)-\(month)-\(day)") as? [String] {
+            return schedules
+        }
+        return []
+    }
+    static func setSchedules(year: Int, month: Int, day: Int, schedules: [String]) {
+        UserDefaults.standard.set(schedules, forKey: "\(year)-\(month)-\(day)")
+    }
 }
 ```
 
