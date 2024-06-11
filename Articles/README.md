@@ -2552,7 +2552,7 @@ struct UserDefaultsManager {
 
 
 ### 49. SwiftUIでAVAudioPlayerで音楽を再生し、再生終了を検知する
-
+SwiftUIでAVAudioPlayerで音楽を再生し、再生終了を検知する
 
 <img src="2023-11-18/2023-11-18.png" width="300px" alt="SwiftUIでAVAudioPlayerで音楽を再生し、再生終了を検知する">
 
@@ -2578,14 +2578,36 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import SwiftUI
+import AVFoundation
+
+class ContentViewState: NSObject, ObservableObject {
+    var audioPlayer: AVAudioPlayer?
+
+    func playAudio() {
+        guard let url = Bundle.main.url(forResource: "melody", withExtension: "mp3") else { return }
+        audioPlayer = try? AVAudioPlayer(contentsOf: url)
+        audioPlayer?.delegate = self
+        audioPlayer?.play()
+    }
+}
+
+extension ContentViewState: AVAudioPlayerDelegate {
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        print("Did finish Playing")
+    }
+}
+```
+
 </div>
 </details>
 
 
 ### 50. SwiftUIでモーダルを表示する時に値を渡す
+SwiftUIでモーダルを表示する時に値を渡す
 
-
-<img src="2023-11-19/2023-11-19.png" width="300px" alt="SwiftUIでモーダルを表示する時に値を渡す">
+<img src="2023-11-19/2023-11-19.gif" width="300px" alt="SwiftUIでモーダルを表示する時に値を渡す">
 
 <details><summary>解答例</summary>
 <div>
@@ -2626,12 +2648,23 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import SwiftUI
+
+struct PokemonView: View {
+    let pokemonName: String
+    var body: some View {
+        Text("Name: \(pokemonName)")
+    }
+}
+```
+
 </div>
 </details>
 
 
 ### 51. SwiftUIでBMIを計算し、結果を別のViewで表示する
-
+SwiftUIでBMIを計算し、結果を別のViewで表示する
 
 <img src="2023-11-20/2023-11-20.gif" width="300px" alt="SwiftUIでBMIを計算し、結果を別のViewで表示する">
 
@@ -2699,12 +2732,42 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import SwiftUI
+
+struct ResultView: View {
+    @Binding var bmi: Double
+    var body: some View {
+        VStack {
+            Text("BMI: \(bmi)")
+
+            if bmi < 18.5 {
+                Text("You are thin")
+                Image(.bellsprout)
+                    .resizable()
+                    .frame(width: 200, height: 200)
+            } else if bmi > 25 {
+                Text("You are fat")
+                Image(.snorlax)
+                    .resizable()
+                    .frame(width: 200, height: 200)
+            } else {
+                Text("You are healthy")
+                Image(.pikachu)
+                    .resizable()
+                    .frame(width: 200, height: 200)
+            }
+        }
+    }
+}
+```
+
 </div>
 </details>
 
 
 ### 52. SwiftUIでボタンを押すとポップアップを表示する
-
+SwiftUIでボタンを押すとポップアップを表示する
 
 <img src="2023-11-21/2023-11-21.gif" width="300px" alt="SwiftUIでボタンを押すとポップアップを表示する">
 
@@ -2744,12 +2807,46 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import SwiftUI
+
+struct PopupView: View {
+    @Binding var isPresent: Bool
+
+    var body: some View {
+        VStack(spacing: 12) {
+            Text("Snorlax")
+                .font(Font.system(size: 18).bold())
+
+            Image("icon")
+                .resizable()
+                .frame(width: 80, height: 80)
+
+            Text("Snorlax (Japanese: カビゴン Kabigon) is a Normal-type Pokemon. Snorlax is most popular Pokemon.")
+                .font(Font.system(size: 18))
+
+            Button(action: {
+                withAnimation {
+                    isPresent = false
+                }
+            }, label: {
+                Text("Close")
+            })
+        }
+        .frame(width: 280, alignment: .center)
+        .padding()
+        .background(Color.white)
+        .cornerRadius(12)
+    }
+}
+```
+
 </div>
 </details>
 
 
 ### 53. SwiftUIでViewを横スクロールで表示する
-
+SwiftUIでViewを横スクロールで表示する
 
 <img src="2023-11-22/2023-11-22.gif" width="300px" alt="SwiftUIでViewを横スクロールで表示する">
 
@@ -2788,7 +2885,7 @@ struct ContentView: View {
 
 
 ### 54. SwiftUIでButtonを有効にしたり無効にしたりする
-
+SwiftUIでButtonを有効にしたり無効にしたりする
 
 <img src="2023-11-23/2023-11-23.gif" width="300px" alt="SwiftUIでButtonを有効にしたり無効にしたりする">
 
@@ -2830,7 +2927,7 @@ struct ContentView: View {
 
 
 ### 55. SwiftUIのTextFieldで表示するキーボードを指定する
-
+SwiftUIのTextFieldで表示するキーボードを指定する
 
 <img src="2023-11-24/2023-11-24.gif" width="300px" alt="SwiftUIのTextFieldで表示するキーボードを指定する">
 
@@ -2861,7 +2958,7 @@ struct ContentView: View {
 
 
 ### 56. SwiftUIでシートを表示し、プッシュ遷移後にシートを閉じる
-
+SwiftUIでシートを表示し、プッシュ遷移後にシートを閉じる
 
 <img src="2023-11-25/2023-11-25.gif" width="300px" alt="SwiftUIでシートを表示し、プッシュ遷移後にシートを閉じる">
 
@@ -2891,12 +2988,51 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import SwiftUI
+
+struct FirstSheet: View {
+    @Binding var showingSheet: Bool
+
+    var body: some View {
+        NavigationStack {
+            NavigationLink(
+                destination: SecondSheet(showingSheet: $showingSheet),
+                label: {
+                    Text("Go to SecondSheet")
+                }
+            )
+            .navigationTitle("FirstSheet")
+        }
+    }
+}
+```
+
+```swift
+import SwiftUI
+
+struct SecondSheet: View {
+    @Binding var showingSheet: Bool
+
+    var body: some View {
+        VStack {
+            Button(action: {
+                showingSheet = false
+            }) {
+                Text("Close Sheet")
+            }
+        }
+        .navigationBarTitle("SecondSheet")
+    }
+}
+```
+
 </div>
 </details>
 
 
 ### 57. SwiftUIでListをEditModeにして並び替える
-
+SwiftUIでListをEditModeにして並び替える
 
 <img src="2023-11-26/2023-11-26.gif" width="300px" alt="SwiftUIでListをEditModeにして並び替える">
 
@@ -2933,12 +3069,21 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import Foundation
+
+struct Pokemon: Identifiable {
+    var id: Int
+    let name: String
+}
+```
+
 </div>
 </details>
 
 
 ### 58. SwiftUIのListでSpacerの部分にもタップ判定をつける
-
+SwiftUIのListでSpacerの部分にもタップ判定をつける
 
 <img src="2023-11-27/2023-11-27.png" width="300px" alt="SwiftUIのListでSpacerの部分にもタップ判定をつける">
 
