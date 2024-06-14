@@ -812,11 +812,11 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-01.png",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "ContentViewState.swift"]
         },
         {
             "title": "SwiftUIでMapを表示し、自分の位置を中心にする",
@@ -825,7 +825,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-02.png",
                   "width": 300
               }
             ],
@@ -838,11 +838,11 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-03.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "ContentViewState.swift"]
         },
         {
             "title": "SwiftUIでMapを表示し、自分の位置を表示しつつコンパスを表示（yet）",
@@ -1015,20 +1015,20 @@
         },
         {
             "title": "Swiftのasync,awaitを使ってAPIと画像を取得し、全てが揃ってから表示する",
-            "description": "",
+            "description": "wiftのasync,awaitを使ってAPIと画像を取得し、全てが揃ってから表示する",
             "directory": "2023-12-17",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-17.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "Pokemon.swift"]
         },
         {
             "title": "SwiftUIでObservableObjectの@publishedなプロパティとBindingする",
-            "description": "",
+            "description": "SwiftUIでObservableObjectの@publishedなプロパティとBindingする",
             "directory": "2023-12-18",
             "resources": [
               {
@@ -1041,12 +1041,12 @@
         },
         {
             "title": "iOSのファイルアプリ（UIDocumentPickerViewController）を開いてドキュメントフォルダに保存したファイルを開く",
-            "description": "",
+            "description": "iOSのファイルアプリ（UIDocumentPickerViewController）を開いてドキュメントフォルダに保存したファイルを開く",
             "directory": "2023-12-19",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-19.gif",
                   "width": 300
               }
             ],
@@ -1054,12 +1054,12 @@
         },
         {
             "title": "SwiftUIでUIActivityViewControllerを表示する",
-            "description": "",
+            "description": "SwiftUIでUIActivityViewControllerを表示する",
             "directory": "2023-12-20",
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-12-20.gif",
                   "width": 300
               }
             ],
@@ -1210,7 +1210,7 @@
         },
         {
             "title": "SwiftMarkdownを使いマークダウンを表示する",
-            "description": "",
+            "description": "SwiftMarkdownを使いマークダウンを表示する",
             "directory": "2024-01-01",
             "resources": [
               {
@@ -1223,7 +1223,7 @@
         },
         {
             "title": "SwiftUIでシートを出し分ける",
-            "description": "",
+            "description": "SwiftUIでシートを出し分ける",
             "directory": "2024-01-02",
             "resources": [
               {
