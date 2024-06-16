@@ -793,13 +793,13 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "SwiftUIでSearchBar(TextField)にクリアボタンをつける(skip)",
-            "description": "",
+            "title": "SwiftUIでSearchBar(TextField)にクリアボタンをつける",
+            "description": "SwiftUIでSearchBar(TextField)にクリアボタンをつける",
             "directory": "2023-11-30",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-11-30.gif",
                   "width": 300
               }
             ],
@@ -1033,7 +1033,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.png",
+                  "name": "2023-12-18.gif",
                   "width": 300
               }
             ],
@@ -1050,7 +1050,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "DocumentPickerView.swift"]
         },
         {
             "title": "SwiftUIでUIActivityViewControllerを表示する",
