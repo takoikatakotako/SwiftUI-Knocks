@@ -3215,16 +3215,62 @@ struct ContentView: View {
 </details>
 
 
-### 61. SwiftUIでSearchBar(TextField)にクリアボタンをつける(skip)
+### 61. SwiftUIでSearchBar(TextField)にクリアボタンをつける
+SwiftUIでSearchBar(TextField)にクリアボタンをつける
 
-
-<img src="2023-11-30/image.png" width="300px" alt="SwiftUIでSearchBar(TextField)にクリアボタンをつける(skip)">
+<img src="2023-11-30/2023-11-30.gif" width="300px" alt="SwiftUIでSearchBar(TextField)にクリアボタンをつける">
 
 <details><summary>解答例</summary>
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+
+struct ContentView: View {
+    @State var text: String = ""
+    
+    let pokemons: [String] = ["Snorlax", "Slowpoke", "Pikachu", "Eevee"]
+    
+    var filterdPokemons: [String] {
+        if text.isEmpty {
+            return pokemons
+        } else {
+            return pokemons.filter {$0.uppercased().contains(text.uppercased())}
+        }
+    }
+    
+    var body: some View {
+        ScrollView {
+            LazyVStack{
+                ZStack(alignment: .trailing) {
+                    TextField("Type your search",text: $text)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    
+                    if !text.isEmpty{
+                        Button(action:
+                                {
+                            self.text = ""
+                        })
+                        {
+                            Image(systemName: "delete.left")
+                                .foregroundColor(Color(UIColor.opaqueSeparator))
+                        }
+                        .padding(.trailing, 8)
+                    }
+                }
+                .padding(8)
+                
+                ForEach(filterdPokemons, id: \.self) { pokemon in
+                    VStack(alignment: .leading) {
+                        Text(pokemon)
+                            .padding(.leading, 12)
+                        Divider()
+                    }
+                }
+            }
+        }
+    }
+}
 ```
 
 </div>
@@ -3234,7 +3280,7 @@ import Foundation
 ### 62. SwiftUIでMapを表示する
 SwiftUIを使ってMapを表示してください。秋葉原UDX（35.7005° N, 139.7726° E）を中心として、300mの範囲を表示しています。
 
-<img src="2023-12-01/image.png" width="300px" alt="SwiftUIでMapを表示する">
+<img src="2023-12-01/2023-12-01.png" width="300px" alt="SwiftUIでMapを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -3270,7 +3316,7 @@ struct ContentView: View {
 ### 63. SwiftUIでMapを表示し、自分の位置を中心にする
 SwiftUIでMapを表示し、自分の位置を中心にする方法です。
 
-<img src="2023-12-02/image.png" width="300px" alt="SwiftUIでMapを表示し、自分の位置を中心にする">
+<img src="2023-12-02/2023-12-02.png" width="300px" alt="SwiftUIでMapを表示し、自分の位置を中心にする">
 
 <details><summary>解答例</summary>
 <div>
@@ -3354,7 +3400,7 @@ extension ContentViewState: CLLocationManagerDelegate {
 ### 64. SwiftUIでMapを表示し、自分の位置を赤丸でマークする
 SwiftUIでMapを表示し、自分の位置を赤丸でマークする方法です。
 
-<img src="2023-12-03/image.png" width="300px" alt="SwiftUIでMapを表示し、自分の位置を赤丸でマークする">
+<img src="2023-12-03/2023-12-03.gif" width="300px" alt="SwiftUIでMapを表示し、自分の位置を赤丸でマークする">
 
 <details><summary>解答例</summary>
 <div>
@@ -3395,6 +3441,43 @@ struct ContentView: View {
 
 #Preview {
     ContentView(viewState: ContentViewState())
+}
+```
+
+```swift
+import Foundation
+import CoreLocation
+
+class ContentViewState: NSObject, ObservableObject {
+    @Published var location: CLLocationCoordinate2D?
+    private let locationManager = CLLocationManager()
+
+    func onAppear() {
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        let status = locationManager.authorizationStatus
+        switch status {
+        case .authorizedWhenInUse:
+            locationManager.startUpdatingLocation()
+        default:
+            break
+        }
+    }
+}
+
+extension ContentViewState: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        switch status {
+        case .authorizedWhenInUse:
+            locationManager.startUpdatingLocation()
+        default:
+            break
+        }
+    }
+
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        self.location = manager.location?.coordinate
+    }
 }
 ```
 
@@ -3611,9 +3694,9 @@ import Foundation
 
 
 ### 78. Swiftのasync,awaitを使ってAPIと画像を取得し、全てが揃ってから表示する
+wiftのasync,awaitを使ってAPIと画像を取得し、全てが揃ってから表示する
 
-
-<img src="2023-12-17/image.png" width="300px" alt="Swiftのasync,awaitを使ってAPIと画像を取得し、全てが揃ってから表示する">
+<img src="2023-12-17/2023-12-17.gif" width="300px" alt="Swiftのasync,awaitを使ってAPIと画像を取得し、全てが揃ってから表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -3674,14 +3757,31 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import SwiftUI
+
+struct Pokemon: Identifiable {
+    let id: Int
+    let name: String
+    let imageName: String
+    let image: UIImage
+}
+
+struct PokemonResponse: Decodable {
+    let id: Int
+    let name: String
+    let imageName: String
+}
+```
+
 </div>
 </details>
 
 
 ### 79. SwiftUIでObservableObjectの@publishedなプロパティとBindingする
+SwiftUIでObservableObjectの@publishedなプロパティとBindingする
 
-
-<img src="2023-12-18/movie.png" width="300px" alt="SwiftUIでObservableObjectの@publishedなプロパティとBindingする">
+<img src="2023-12-18/2023-12-18.gif" width="300px" alt="SwiftUIでObservableObjectの@publishedなプロパティとBindingする">
 
 <details><summary>解答例</summary>
 <div>
@@ -3715,9 +3815,9 @@ struct ContentView: View {
 
 
 ### 80. iOSのファイルアプリ（UIDocumentPickerViewController）を開いてドキュメントフォルダに保存したファイルを開く
+iOSのファイルアプリ（UIDocumentPickerViewController）を開いてドキュメントフォルダに保存したファイルを開く
 
-
-<img src="2023-12-19/image.png" width="300px" alt="iOSのファイルアプリ（UIDocumentPickerViewController）を開いてドキュメントフォルダに保存したファイルを開く">
+<img src="2023-12-19/2023-12-19.gif" width="300px" alt="iOSのファイルアプリ（UIDocumentPickerViewController）を開いてドキュメントフォルダに保存したファイルを開く">
 
 <details><summary>解答例</summary>
 <div>
@@ -3758,14 +3858,47 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import SwiftUI
+import UniformTypeIdentifiers
+
+struct DocumentPickerView: UIViewControllerRepresentable {
+    @Binding var fileUrl: URL?
+
+    class Coordinator: NSObject, UIDocumentPickerDelegate {
+        var parent: DocumentPickerView
+
+        init(_ parent: DocumentPickerView) {
+            self.parent = parent
+        }
+
+        func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentAt url: URL) {
+            self.parent.fileUrl = url
+        }
+    }
+
+    func makeUIViewController(context: Context) -> UIDocumentPickerViewController {
+        let documentPickerViewController =  UIDocumentPickerViewController(forOpeningContentTypes: [UTType.text])
+        documentPickerViewController.delegate = context.coordinator
+        return documentPickerViewController
+    }
+
+    func updateUIViewController(_ uiViewController: UIDocumentPickerViewController, context: Context) {}
+
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+}
+```
+
 </div>
 </details>
 
 
 ### 81. SwiftUIでUIActivityViewControllerを表示する
+SwiftUIでUIActivityViewControllerを表示する
 
-
-<img src="2023-12-20/movie.mp4" width="300px" alt="SwiftUIでUIActivityViewControllerを表示する">
+<img src="2023-12-20/2023-12-20.gif" width="300px" alt="SwiftUIでUIActivityViewControllerを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -4012,7 +4145,7 @@ struct ContentView: View {
 
 
 ### 93. SwiftMarkdownを使いマークダウンを表示する
-
+SwiftMarkdownを使いマークダウンを表示する
 
 <img src="2024-01-01/2024-01-01.gif" width="300px" alt="SwiftMarkdownを使いマークダウンを表示する">
 
@@ -4101,7 +4234,7 @@ struct ContentView: View {
 
 
 ### 94. SwiftUIでシートを出し分ける
-
+SwiftUIでシートを出し分ける
 
 <img src="2024-01-02/2024-01-02.gif" width="300px" alt="SwiftUIでシートを出し分ける">
 

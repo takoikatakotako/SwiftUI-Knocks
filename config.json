@@ -816,7 +816,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift", "ContentViewState.swift"]
+            "codes": ["ContentView.swift"]
         },
         {
             "title": "SwiftUIでMapを表示し、自分の位置を中心にする",
