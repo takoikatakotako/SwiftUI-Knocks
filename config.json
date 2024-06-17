@@ -1066,39 +1066,39 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "SwiftUIでActivityIndicatorを表示する(skip)",
-            "description": "",
+            "title": "SwiftUIでインディケーターを表示する",
+            "description": "SwiftUIでインディケーターを表示する",
             "directory": "2023-12-21",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-21.gif",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "SwiftUIで少しカスタマイズしたActivityIndicatorを表示する(skip)",
-            "description": "",
+            "title": "SwiftUIで少しカスタマイズしたインディケーターを表示する",
+            "description": "SwiftUIで少しカスタマイズしたインディケーターを表示する",
             "directory": "2023-12-22",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-22.gif",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "SwiftUIでListにButtonを設定してパラメーターの違う画面に遷移する",
-            "description": "",
+            "title": "SwiftUIでListにButtonを設定して異なる画面に遷移する",
+            "description": "SwiftUIでListにButtonを設定して異なる画面に遷移する",
             "directory": "2023-12-23",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-23.gif",
                   "width": 300
               }
             ],
@@ -1106,25 +1106,25 @@
         },
         {
             "title": "SwiftUIのTabViewのタブをコードから動的に切り替える",
-            "description": "",
+            "description": "SwiftUIのTabViewのタブをコードから動的に切り替える",
             "directory": "2023-12-24",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-24.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "FirstView.swift", "SecondView.swift"]
         },
         {
             "title": " Identifiableに適合していないStructでListを使う",
-            "description": "",
+            "description": "Identifiableに適合していないStructでListを使う",
             "directory": "2023-12-25",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-25.png",
                   "width": 300
               }
             ],
@@ -1145,12 +1145,12 @@
         },
         {
             "title": "SwiftUIでスライダーとスクロールを連動させる",
-            "description": "",
+            "description": "SwiftUIでスライダーとスクロールを連動させる",
             "directory": "2023-12-27",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-27.gif",
                   "width": 300
               }
             ],

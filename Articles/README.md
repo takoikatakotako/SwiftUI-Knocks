@@ -3927,48 +3927,143 @@ struct ContentView: View {
 </details>
 
 
-### 82. SwiftUIでActivityIndicatorを表示する(skip)
+### 82. SwiftUIでインディケーターを表示する
+SwiftUIでインディケーターを表示する
 
-
-<img src="2023-12-21/image.png" width="300px" alt="SwiftUIでActivityIndicatorを表示する(skip)">
+<img src="2023-12-21/2023-12-21.gif" width="300px" alt="SwiftUIでインディケーターを表示する">
 
 <details><summary>解答例</summary>
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+
+struct ContentView: View {
+    @State var showingIndicator = true
+    
+    var body: some View {
+        ZStack {
+            VStack {
+                Spacer()
+                Button {
+                    showingIndicator.toggle()
+                } label: {
+                    Text("Show or Hide Indicator")
+                        .foregroundColor(Color.white)
+                        .padding()
+                        .background(Color.gray)
+                        .clipped()
+                }
+            }
+            
+            if showingIndicator {
+                ProgressView()
+            }
+        }
+    }
+}
 ```
 
 </div>
 </details>
 
 
-### 83. SwiftUIで少しカスタマイズしたActivityIndicatorを表示する(skip)
+### 83. SwiftUIで少しカスタマイズしたインディケーターを表示する
+SwiftUIで少しカスタマイズしたインディケーターを表示する
 
-
-<img src="2023-12-22/image.png" width="300px" alt="SwiftUIで少しカスタマイズしたActivityIndicatorを表示する(skip)">
+<img src="2023-12-22/2023-12-22.gif" width="300px" alt="SwiftUIで少しカスタマイズしたインディケーターを表示する">
 
 <details><summary>解答例</summary>
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+
+struct ContentView: View {
+    @State var showingIndicator = true
+    
+    var body: some View {
+        ZStack {
+            VStack {
+                Spacer()
+                Button {
+                    showingIndicator.toggle()
+                } label: {
+                    Text("Show or Hide Indicator")
+                        .foregroundColor(Color.white)
+                        .padding()
+                        .background(Color.gray)
+                        .clipped()
+                }
+            }
+            
+            if showingIndicator {
+                ProgressView()
+                    .progressViewStyle(.circular)
+                    .padding(12)
+                    .tint(Color.white)
+                    .background(Color.gray.opacity(0.6))
+                    .cornerRadius(8)
+                    .scaleEffect(1.6)
+            }
+        }
+    }
+}
 ```
 
 </div>
 </details>
 
 
-### 84. SwiftUIでListにButtonを設定してパラメーターの違う画面に遷移する
+### 84. SwiftUIでListにButtonを設定して異なる画面に遷移する
+SwiftUIでListにButtonを設定して異なる画面に遷移する
 
-
-<img src="2023-12-23/image.png" width="300px" alt="SwiftUIでListにButtonを設定してパラメーターの違う画面に遷移する">
+<img src="2023-12-23/2023-12-23.gif" width="300px" alt="SwiftUIでListにButtonを設定して異なる画面に遷移する">
 
 <details><summary>解答例</summary>
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+
+struct ContentView: View {
+    @State var pokemon: Pokemon?
+    
+    var body: some View {
+        NavigationStack {
+            List {
+                Button {
+                    pokemon = .snorlax
+                } label: {
+                    Text("Snorlax")
+                }
+                Button {
+                    pokemon = .slowpoke
+                } label: {
+                    Text("Slowpoke")
+                }
+                Button {
+                    pokemon = .eevee
+                } label: {
+                    Text("Eevee")
+                }
+            }
+            .navigationDestination(item: $pokemon) { pokemon in
+                switch pokemon {
+                case .snorlax:
+                    VStack {
+                        Image(.snorlax)
+                        Text("Snorlax")
+                    }
+                case .slowpoke:
+                    Text("Slowpoke")
+                case .eevee:
+                    Image(.eevee)
+                }
+            }
+        }
+    }
+}
 ```
 
 </div>
@@ -3976,15 +4071,74 @@ import Foundation
 
 
 ### 85. SwiftUIのTabViewのタブをコードから動的に切り替える
+SwiftUIのTabViewのタブをコードから動的に切り替える
 
-
-<img src="2023-12-24/image.png" width="300px" alt="SwiftUIのTabViewのタブをコードから動的に切り替える">
+<img src="2023-12-24/2023-12-24.gif" width="300px" alt="SwiftUIのTabViewのタブをコードから動的に切り替える">
 
 <details><summary>解答例</summary>
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+
+struct ContentView: View {
+    @State var selection: Int = 0
+    
+    var body: some View {
+        TabView(selection: $selection) {
+            FirstView(selection: $selection)
+                .tabItem {
+                    Image(systemName: "house")
+                        .renderingMode(.template)
+                    Text("FirstView")
+                }
+                .tag(0)
+            SecondView(selection: $selection)
+                .tabItem {
+                    Image(systemName: "books.vertical")
+                        .renderingMode(.template)
+                    Text("SecondView")
+                }
+                .tag(1)
+        }
+    }
+}
+```
+
+```swift
+import SwiftUI
+
+struct FirstView: View {
+    @Binding var selection: Int
+    var body: some View {
+        VStack {
+            Text("FirstView")
+            Button {
+                selection = 1
+            } label: {
+                Text("Go to SecondView")
+            }
+        }
+    }
+}
+```
+
+```swift
+import SwiftUI
+
+struct SecondView: View {
+    @Binding var selection: Int
+    var body: some View {
+        VStack {
+            Text("SecondView")
+            Button {
+                selection = 0
+            } label: {
+                Text("Go to FirstView")
+            }
+        }
+    }
+}
 ```
 
 </div>
@@ -3992,9 +4146,9 @@ import Foundation
 
 
 ### 86.  Identifiableに適合していないStructでListを使う
+Identifiableに適合していないStructでListを使う
 
-
-<img src="2023-12-25/image.png" width="300px" alt=" Identifiableに適合していないStructでListを使う">
+<img src="2023-12-25/2023-12-25.png" width="300px" alt=" Identifiableに適合していないStructでListを使う">
 
 <details><summary>解答例</summary>
 <div>
@@ -4016,7 +4170,16 @@ import Foundation
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+
+struct ContentView: View {
+    let pokemons = [Pokemon(name: "Snorlax", type: "Normal"), Pokemon(name: "Eevee", type: "Normal")]
+    var body: some View {
+        List(pokemons, id: \.name) { pokemon in
+            Text(pokemon.name)
+        }
+    }
+}
 ```
 
 </div>
@@ -4024,15 +4187,44 @@ import Foundation
 
 
 ### 88. SwiftUIでスライダーとスクロールを連動させる
+SwiftUIでスライダーとスクロールを連動させる
 
-
-<img src="2023-12-27/image.png" width="300px" alt="SwiftUIでスライダーとスクロールを連動させる">
+<img src="2023-12-27/2023-12-27.gif" width="300px" alt="SwiftUIでスライダーとスクロールを連動させる">
 
 <details><summary>解答例</summary>
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+
+struct ContentView: View {
+    @State var percent: Double = 0
+    let text = """
+        Fly me to the moon
+        Let me sing among those stars
+        Let me see what spring is like
+        On jupiter and mars
+        
+        In other words, hold my hand
+        In other words, baby kiss me
+        
+        Fill my heart with song
+        And let me sing for ever more
+        You are all I long for
+        All I worship and adore
+        
+        In other words, please be true
+        In other words, I love you
+        """
+    
+    var body: some View {
+        VStack {
+            TextScrollView(text: text + text + text + text + text + text + text, percent: $percent)
+            Slider(value: $percent, in: 0...100)
+                .padding(.horizontal)
+        }
+    }
+}
 ```
 
 </div>

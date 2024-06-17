@@ -323,6 +323,38 @@ ffmpeg -i 2023-12-20/movie.mp4 -vf pad=w=iw+148:h=ih+120:x=85:y=70:color=white 2
 ffmpeg -i 2023-12-20/movie-padding.mp4 -i phone-frame.png -filter_complex overlay=10:10 2023-12-20/movie-frame.mp4
 ffmpeg -i 2023-12-20/movie-frame.mp4 -crf 35 -vf scale=400:-1 2023-12-20/2023-12-20.gif
 
+# 2023-12-21
+ffmpeg -i 2023-12-21/2023-12-21.mp4 -vf pad=w=iw+148:h=ih+120:x=85:y=70:color=white 2023-12-21/movie-padding.mp4
+ffmpeg -i 2023-12-21/movie-padding.mp4 -i phone-frame.png -filter_complex overlay=10:10 2023-12-21/movie-frame.mp4
+ffmpeg -i 2023-12-21/movie-frame.mp4 -crf 35 -vf scale=400:-1 2023-12-21/2023-12-21.gif
+
+# 2023-12-22
+ffmpeg -i 2023-12-22/2023-12-22.mp4 -vf pad=w=iw+148:h=ih+120:x=85:y=70:color=white 2023-12-22/movie-padding.mp4
+ffmpeg -i 2023-12-22/movie-padding.mp4 -i phone-frame.png -filter_complex overlay=10:10 2023-12-22/movie-frame.mp4
+ffmpeg -i 2023-12-22/movie-frame.mp4 -crf 35 -vf scale=400:-1 2023-12-22/2023-12-22.gif
+
+# 2023-12-23
+ffmpeg -i 2023-12-23/2023-12-23.mp4 -vf pad=w=iw+148:h=ih+120:x=85:y=70:color=white 2023-12-23/movie-padding.mp4
+ffmpeg -i 2023-12-23/movie-padding.mp4 -i phone-frame.png -filter_complex overlay=10:10 2023-12-23/movie-frame.mp4
+ffmpeg -i 2023-12-23/movie-frame.mp4 -crf 35 -vf scale=400:-1 2023-12-23/2023-12-23.gif
+
+# 2023-12-24
+ffmpeg -i 2023-12-24/2023-12-24.mp4 -vf pad=w=iw+148:h=ih+120:x=85:y=70:color=white 2023-12-24/movie-padding.mp4
+ffmpeg -i 2023-12-24/movie-padding.mp4 -i phone-frame.png -filter_complex overlay=10:10 2023-12-24/movie-frame.mp4
+ffmpeg -i 2023-12-24/movie-frame.mp4 -crf 35 -vf scale=400:-1 2023-12-24/2023-12-24.gif
+
+# 2023-12-26
+ffmpeg -i 2023-12-26/2023-12-26.mp4 -vf pad=w=iw+148:h=ih+120:x=85:y=70:color=white 2023-12-26/movie-padding.mp4
+ffmpeg -i 2023-12-26/movie-padding.mp4 -i phone-frame.png -filter_complex overlay=10:10 2023-12-26/movie-frame.mp4
+ffmpeg -i 2023-12-26/movie-frame.mp4 -crf 35 -vf scale=400:-1 2023-12-26/2023-12-26.gif
+
+# 2023-12-27
+ffmpeg -i 2023-12-27/2023-12-27.mp4 -vf pad=w=iw+148:h=ih+120:x=85:y=70:color=white 2023-12-27/movie-padding.mp4
+ffmpeg -i 2023-12-27/movie-padding.mp4 -i phone-frame.png -filter_complex overlay=10:10 2023-12-27/movie-frame.mp4
+ffmpeg -i 2023-12-27/movie-frame.mp4 -crf 35 -vf scale=400:-1 2023-12-27/2023-12-27.gif
+
+
+
 
 
 # 2023-12-29
