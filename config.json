@@ -456,7 +456,7 @@
         },
         {
             "title": "閉じることができないモーダルを表示する",
-            "description": "",
+            "description": "閉じることができないモーダルを表示する",
             "directory": "2023-11-04",
             "resources": [
               {
@@ -858,47 +858,47 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIでImageの色を反転させる",
+            "description": "SwiftUIでImageの色を反転させる",
             "directory": "2023-12-05",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-05.png",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIでカレンダーを作成する",
+            "description": "SwiftUIでカレンダーを作成する",
             "directory": "2023-12-06",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-06.png",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIでアラートのメッセージを出し分ける",
+            "description": "SwiftUIでアラートのメッセージを出し分ける",
             "directory": "2023-12-07",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-06.png",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIでローカル通知を送信する",
+            "description": "SwiftUIでローカル通知を送信する",
             "directory": "2023-12-08",
             "resources": [
               {
@@ -910,8 +910,8 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "Swiftで10進数を2進数に変換する",
+            "description": "Swiftで10進数を2進数に変換する",
             "directory": "2023-12-09",
             "resources": [
               {
@@ -1158,12 +1158,12 @@
         },
         {
             "title": "SwiftUIでPHPickerViewControllerを使って画像を選択する",
-            "description": "",
+            "description": "SwiftUIでPHPickerViewControllerを使って画像を選択する",
             "directory": "2023-12-28",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-28.gif",
                   "width": 300
               }
             ],
