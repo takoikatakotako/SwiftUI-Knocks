@@ -923,8 +923,8 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIでAppDelegateを使用する",
+            "description": "SwiftUIでAppDelegateを使用する方法です。アプリ終了時にUserDefaultsに値を保存しています。",
             "directory": "2023-12-10",
             "resources": [
               {
@@ -936,8 +936,8 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIでグラフを表示する",
+            "description": "SwiftUIでグラフを表示する方法です。",
             "directory": "2023-12-11",
             "resources": [
               {
