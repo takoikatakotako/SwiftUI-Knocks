@@ -949,8 +949,8 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIでdelegateを使用する",
+            "description": "SwiftUIでdelegateを使用する",
             "directory": "2023-12-12",
             "resources": [
               {
@@ -962,8 +962,8 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIで音楽を再生する",
+            "description": "SwiftUIで音楽を再生する",
             "directory": "2023-12-13",
             "resources": [
               {
@@ -975,8 +975,8 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIでテーブルのようなデータを表示する",
+            "description": "SwiftUIでテーブルのようなデータを表示する",
             "directory": "2023-12-14",
             "resources": [
               {
@@ -988,8 +988,8 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "NavigationStackのpathを使って画面遷移する",
+            "description": "NavigationStackのpathを使って画面遷移する",
             "directory": "2023-12-15",
             "resources": [
               {
@@ -1001,8 +1001,8 @@
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIでBadgeを表示する",
+            "description": "SwiftUIでBadgeを表示する方法です。",
             "directory": "2023-12-16",
             "resources": [
               {
@@ -1137,7 +1137,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-26.png",
                   "width": 300
               }
             ],
@@ -1229,6 +1229,19 @@
               {
                   "type": "movie",
                   "name": "2024-01-02.gif",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "SwiftUIでPageControlを使用する",
+            "description": "SwiftUIでPageControlを使用する",
+            "directory": "2024-01-03",
+            "resources": [
+              {
+                  "type": "movie",
+                  "name": "2024-01-03.gif",
                   "width": 300
               }
             ],

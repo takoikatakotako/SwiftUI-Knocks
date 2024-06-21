@@ -1638,7 +1638,7 @@ struct ContentViewCell: View {
 
 
 ### 35. 閉じることができないモーダルを表示する
-
+閉じることができないモーダルを表示する
 
 <img src="2023-11-04/2023-11-04.gif" width="300px" alt="閉じることができないモーダルを表示する">
 
@@ -3501,192 +3501,985 @@ import Foundation
 </details>
 
 
-### 66. 
+### 66. SwiftUIでImageの色を反転させる
+SwiftUIでImageの色を反転させる
 
-
-<img src="2023-12-05/image.png" width="300px" alt="">
+<img src="2023-12-05/2023-12-05.png" width="300px" alt="SwiftUIでImageの色を反転させる">
 
 <details><summary>解答例</summary>
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            Image(.snorlax)
+                .colorInvert()
+        }
+    }
+}
 ```
 
 </div>
 </details>
 
 
-### 67. 
+### 67. SwiftUIでカレンダーを作成する
+SwiftUIでカレンダーを作成する
 
-
-<img src="2023-12-06/image.png" width="300px" alt="">
+<img src="2023-12-06/2023-12-06.png" width="300px" alt="SwiftUIでカレンダーを作成する">
 
 <details><summary>解答例</summary>
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack(spacing: 0) {
+            HStack(spacing: 0) {
+                DayOfWeekText(text: "Sun")
+                DayOfWeekText(text: "Mon")
+                DayOfWeekText(text: "Tue")
+                DayOfWeekText(text: "Wed")
+                DayOfWeekText(text: "Thu")
+                DayOfWeekText(text: "Fri")
+                DayOfWeekText(text: "Sat")
+            }
+            
+            HStack(alignment: .top, spacing: 0) {
+                CalenderCell {
+                    NumberText(number: 1)
+                    ScheduleText(text: "美容院")
+                    ScheduleText(text: "病院")
+                }
+                CalenderCell {
+                    NumberText(number: 2)
+                }
+                CalenderCell {
+                    NumberText(number: 3)
+                }
+                CalenderCell {
+                    NumberText(number: 4)
+                    ScheduleText(text: "映画")
+                }
+                CalenderCell {
+                    NumberText(number: 5)
+                }
+                CalenderCell {
+                    NumberText(number: 6)
+                }
+                CalenderCell {
+                    NumberText(number: 7)
+                }
+            }
+            
+            HStack(alignment: .top, spacing: 0) {
+                CalenderCell {
+                    NumberText(number: 8)
+                }
+                CalenderCell {
+                    NumberText(number: 9)
+                }
+                CalenderCell {
+                    NumberText(number: 10)
+                }
+                CalenderCell {
+                    NumberText(number: 11)
+                }
+                CalenderCell {
+                    NumberText(number: 12)
+                    ScheduleText(text: "おやすみ")
+                }
+                CalenderCell {
+                    NumberText(number: 13)
+                }
+                CalenderCell {
+                    NumberText(number: 14)
+                }
+            }
+            
+            HStack(alignment: .top, spacing: 0) {
+                CalenderCell {
+                    NumberText(number: 15)
+                }
+                CalenderCell {
+                    NumberText(number: 16)
+                }
+                CalenderCell {
+                    NumberText(number: 17)
+                }
+                CalenderCell {
+                    NumberText(number: 18)
+                }
+                CalenderCell {
+                    NumberText(number: 19)
+                }
+                CalenderCell {
+                    NumberText(number: 20)
+                }
+                CalenderCell {
+                    NumberText(number: 21)
+                    ScheduleText(text: "お昼寝")
+                }
+            }
+            
+            HStack(alignment: .top, spacing: 0) {
+                CalenderCell {
+                    NumberText(number: 22)
+                    ScheduleText(text: "美容院")
+                }
+                CalenderCell {
+                    NumberText(number: 23)
+                }
+                CalenderCell {
+                    NumberText(number: 24)
+                }
+                CalenderCell {
+                    NumberText(number: 25)
+                    ScheduleText(text: "焼肉")
+                }
+                CalenderCell {
+                    NumberText(number: 26)
+                }
+                CalenderCell {
+                    NumberText(number: 27)
+                }
+                CalenderCell {
+                    NumberText(number: 28)
+                }
+            }
+        }
+        .border(Color.black, width: 1)
+    }
+}
 ```
 
 </div>
 </details>
 
 
-### 68. 
+### 68. SwiftUIでアラートのメッセージを出し分ける
+SwiftUIでアラートのメッセージを出し分ける
 
-
-<img src="2023-12-07/image.png" width="300px" alt="">
+<img src="2023-12-07/2023-12-06.png" width="300px" alt="SwiftUIでアラートのメッセージを出し分ける">
 
 <details><summary>解答例</summary>
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+
+struct ContentView: View {
+    @State var alertMessage: String = ""
+    @State var showingAlert: Bool = false
+    
+    var body: some View {
+        HStack(spacing: 20) {
+            Button {
+                alertMessage = "This is Ditto!!!"
+                showingAlert = true
+            } label: {
+                Image("ditto")
+                    .resizable()
+                    .frame(width: 120, height: 120)
+                    .border(Color.black, width: 2)
+            }
+            
+            Button {
+                alertMessage = "This is Snorlax!!!"
+                showingAlert = true
+            } label: {
+                Image("snorlax")
+                    .resizable()
+                    .frame(width: 120, height: 120)
+                    .border(Color.black, width: 2)
+            }
+        }
+        .alert(isPresented: $showingAlert) {
+            Alert(title: Text(alertMessage), dismissButton: .default(Text("Close")))
+        }
+    }
+}
 ```
 
 </div>
 </details>
 
 
-### 69. 
+### 69. SwiftUIでローカル通知を送信する
+SwiftUIでローカル通知を送信する
 
-
-<img src="2023-12-08/image.png" width="300px" alt="">
+<img src="2023-12-08/image.png" width="300px" alt="SwiftUIでローカル通知を送信する">
 
 <details><summary>解答例</summary>
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            Button {
+                requestAuthorization()
+            } label: {
+                Text("Request Authorization")
+                    .font(Font.system(size: 24).bold())
+            }
+            .padding()
+            
+            Button {
+                setNotification()
+            } label: {
+                Text("Set Notification")
+                    .font(Font.system(size: 24).bold())
+            }
+            .padding()
+        }
+    }
+    
+    func requestAuthorization() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            if let error = error {
+                print(error.localizedDescription)
+            }
+            
+            if granted {
+                print("Allowed!!")
+            }else{
+                print("Denied...")
+            }
+        }
+    }
+    
+    func setNotification() {
+        let content = UNMutableNotificationContent()
+        content.title = "Notification Title"
+        content.body = "Notification Body"
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let request = UNNotificationRequest(identifier: "Notification ID", content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request)
+    }
+}
 ```
 
 </div>
 </details>
 
 
-### 70. 
+### 70. Swiftで10進数を2進数に変換する
+Swiftで10進数を2進数に変換する
 
-
-<img src="2023-12-09/image.png" width="300px" alt="">
+<img src="2023-12-09/image.png" width="300px" alt="Swiftで10進数を2進数に変換する">
 
 <details><summary>解答例</summary>
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+
+struct ContentView: View {
+    @State var numberString = ""
+    @State var result = ""
+  
+    var body: some View {
+        VStack {
+            Text("Decimal Number -> Binary Number")
+            TextField("Input Number", text: $numberString)
+                .keyboardType(.decimalPad)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+            
+            Button(action: {
+                guard let number = Double(numberString) else {
+                    return
+                }
+                result = convert(number: number)
+            }, label: {
+                Text("Convert")
+                    .foregroundColor(Color.white)
+                    .padding()
+                    .background(Color(UIColor.lightGray))
+            })
+            
+            Text(result)
+        }
+    }
+    
+    func convert(number: Double) -> String {
+        let integer: Int = Int(number)
+        let fraction: Double = number.truncatingRemainder(dividingBy: 1)
+        return intToBinaryNumberString(number: integer) + "." + doubleToBinaryNumberString(number: fraction)
+    }
+
+    func intToBinaryNumberString(number: Int) -> String {
+         let remainder: Int = number % 2
+         return number / 2 == 0 ? String(remainder) : String(remainder) + intToBinaryNumberString(number: number / 2)
+        // or return String(num, radix: 2)
+    }
+    
+    func doubleToBinaryNumberString(number: Double) -> String {
+        var number = number
+        var result: String = ""
+        for _ in 0...6 {
+            number = number * 2
+            result += String(Int(number))
+            number = number.truncatingRemainder(dividingBy: 1)
+            if number == 0 {
+                return result
+            }
+        }
+        return result + "..."
+    }
+}
+
+
+
 ```
 
 </div>
 </details>
 
 
-### 71. 
+### 71. SwiftUIでAppDelegateを使用する
+SwiftUIでAppDelegateを使用する方法です。アプリ終了時にUserDefaultsに値を保存しています。
 
-
-<img src="2023-12-10/image.png" width="300px" alt="">
+<img src="2023-12-10/image.png" width="300px" alt="SwiftUIでAppDelegateを使用する">
 
 <details><summary>解答例</summary>
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+
+struct ContentView: View {
+    @State var pokemon = ""
+    var body: some View {
+        VStack {
+            Text("Pokemon Name is \(pokemon)")
+            
+            Button {
+                UserDefaults().setValue("Pikachu", forKey: "POKEMON")
+                getPokemon()
+            } label: {
+                Text("Set Pikachu")
+            }
+            
+            Button {
+                UserDefaults().setValue("Ditto", forKey: "POKEMON")
+                getPokemon()
+            } label: {
+                Text("Set Ditto")
+            }
+            
+            Button {
+                UserDefaults().setValue("Slowpoke", forKey: "POKEMON")
+                getPokemon()
+            } label: {
+                Text("Set Slowpoke")
+            }
+        }
+        .onAppear {
+            getPokemon()
+        }
+    }
+    
+    func getPokemon() {
+        if let pokemon = UserDefaults().value(forKey: "POKEMON") as? String {
+            self.pokemon = pokemon
+        }
+    }
+}
 ```
 
 </div>
 </details>
 
 
-### 72. 
+### 72. SwiftUIでグラフを表示する
+SwiftUIでグラフを表示する方法です。
 
-
-<img src="2023-12-11/image.png" width="300px" alt="">
+<img src="2023-12-11/image.png" width="300px" alt="SwiftUIでグラフを表示する">
 
 <details><summary>解答例</summary>
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+import Charts
+
+struct ContentView: View {
+    var body: some View {
+        ScrollView {
+            VStack {
+                // Vertical Graph
+                Chart {
+                    BarMark(
+                        x: .value("Name", "Snorlax"),
+                        y: .value("Weight", 460.0)
+                    )
+                    .foregroundStyle(Color.cyan)
+
+                    BarMark(
+                        x: .value("Name", "Psyduck"),
+                        y: .value("Weight", 19.6)
+                    )
+                    .foregroundStyle(Color.yellow)
+
+                    BarMark(
+                        x: .value("Name", "Arcanine"),
+                        y: .value("Weight", 155.0)
+                    )
+                    .foregroundStyle(Color.orange)
+                }
+                .frame(height: 300)
+                .padding()
+
+
+                // Horizontal Graph
+                Chart {
+                    BarMark(
+                        x: .value("Weight", 460.0),
+                        y: .value("Name", "Snorlax")
+                    )
+                    .foregroundStyle(Color.cyan)
+
+                    BarMark(
+                        x: .value("Weight", 19.6),
+                        y: .value("Name", "Psyduck")
+                    )
+                    .foregroundStyle(Color.yellow)
+
+                    BarMark(
+                        x: .value("Weight", 155.0),
+                        y: .value("Name", "Arcanine")
+                    )
+                    .foregroundStyle(Color.orange)
+                }
+                .frame(height: 300)
+                .padding()
+
+
+
+                // IT Slill
+                VStack {
+                    Chart {
+                        // Snorlax
+                        BarMark(
+                            x: .value("Name", "Snorlax"),
+                            y: .value("Value", 80)
+                        )
+                        .position(by: .value("Category", "AWS"))
+                        .foregroundStyle(Color.cyan)
+
+                        BarMark(
+                            x: .value("Name", "Snorlax"),
+                            y: .value("Value", 70)
+                        )
+                        .position(by: .value("Category", "iOS"))
+                        .foregroundStyle(Color.yellow)
+
+                        BarMark(
+                            x: .value("Name", "Snorlax"),
+                            y: .value("Value", 50)
+                        )
+                        .position(by: .value("Category", "Python"))
+                        .foregroundStyle(Color.orange)
+
+                        BarMark(
+                            x: .value("Name", "Snorlax"),
+                            y: .value("Value", 20)
+                        )
+                        .position(by: .value("Category", "SQL"))
+                        .foregroundStyle(Color.green)
+
+                        // Psyduck
+                        BarMark(
+                            x: .value("Name", "Psyduck"),
+                            y: .value("Value", 60)
+                        )
+                        .position(by: .value("Category", "AWS"))
+                        .foregroundStyle(Color.cyan)
+
+                        BarMark(
+                            x: .value("Name", "Psyduck"),
+                            y: .value("Value", 10)
+                        )
+                        .position(by: .value("Category", "iOS"))
+                        .foregroundStyle(Color.yellow)
+
+                        BarMark(
+                            x: .value("Name", "Psyduck"),
+                            y: .value("Value", 80)
+                        )
+                        .position(by: .value("Category", "Python"))
+                        .foregroundStyle(Color.orange)
+
+                        BarMark(
+                            x: .value("Name", "Psyduck"),
+                            y: .value("Value", 60)
+                        )
+                        .position(by: .value("Category", "SQL"))
+                        .foregroundStyle(Color.green)
+                    }
+                    .frame(height: 300)
+
+                    HStack(spacing: 12) {
+                        HStack(spacing: 4) {
+                            Circle()
+                                .frame(width: 16, height: 16)
+                                .foregroundColor(Color.cyan)
+                            Text("AWS")
+                        }
+
+                        HStack(spacing: 4) {
+                            Circle()
+                                .frame(width: 16, height: 16)
+                                .foregroundColor(Color.yellow)
+                            Text("iOS")
+                        }
+
+                        HStack(spacing: 4) {
+                            Circle()
+                                .frame(width: 16, height: 16)
+                                .foregroundColor(Color.orange)
+                            Text("Python")
+                        }
+
+                        HStack(spacing: 4) {
+                            Circle()
+                                .frame(width: 16, height: 16)
+                                .foregroundColor(Color.green)
+                            Text("SQL")
+                        }
+                    }
+
+                }
+                .padding()
+
+
+                // Stock Chart
+                Chart {
+                    LineMark(
+                        x: .value("Weak", "Mon"),
+                        y: .value("Sales", 2000)
+                    )
+
+                    AreaMark(x: .value("Weak", "Mon"),
+                             yStart: .value("MinSales", 1000),
+                             yEnd: .value("MaxSales", 3000)
+                    )
+                    .opacity(0.3)
+
+                    LineMark(
+                        x: .value("Weak", "Tue"),
+                        y: .value("Sales", 4000)
+                    )
+
+                    AreaMark(x: .value("Weak", "Tue"),
+                             yStart: .value("MinSales", 2500),
+                             yEnd: .value("MaxSales", 4300)
+                    )
+                    .opacity(0.3)
+
+
+                    LineMark(
+                        x: .value("Weak", "Wed"),
+                        y: .value("Sales", 3000)
+                    )
+
+                    AreaMark(x: .value("Weak", "Wed"),
+                             yStart: .value("MinSales", 2300),
+                             yEnd: .value("MaxSales", 3600)
+                    )
+                    .opacity(0.3)
+
+                    LineMark(
+                        x: .value("Weak", "Thu"),
+                        y: .value("Sales", 4500)
+                    )
+
+                    AreaMark(x: .value("Weak", "Thu"),
+                             yStart: .value("MinSales", 4000),
+                             yEnd: .value("MaxSales", 4800)
+                    )
+                    .opacity(0.3)
+
+                    LineMark(
+                        x: .value("Weak", "Fri"),
+                        y: .value("Sales", 3500)
+                    )
+
+                    AreaMark(x: .value("Weak", "Fri"),
+                             yStart: .value("MinSales", 2500),
+                             yEnd: .value("MaxSales", 4300)
+                    )
+                    .opacity(0.3)
+                }
+                .frame(height: 300)
+                .padding()
+            }
+        }
+    }
+}
+
+
 ```
 
 </div>
 </details>
 
 
-### 73. 
+### 73. SwiftUIでdelegateを使用する
+SwiftUIでdelegateを使用する
 
-
-<img src="2023-12-12/image.png" width="300px" alt="">
+<img src="2023-12-12/image.png" width="300px" alt="SwiftUIでdelegateを使用する">
 
 <details><summary>解答例</summary>
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+
+struct ContentView: View, MyProtocol {
+    @State var text: String = "My Text"
+    var body: some View {
+        NavigationView {
+            VStack {
+                Text(text)
+                NavigationLink(destination: SecondView(delegate: self)) {
+                    Text("2nd View")
+                }
+            }
+        }
+    }
+
+    func myFunc() {
+        text = "Changed Text"
+    }
+}
 ```
 
 </div>
 </details>
 
 
-### 74. 
+### 74. SwiftUIで音楽を再生する
+SwiftUIで音楽を再生する
 
-
-<img src="2023-12-13/image.png" width="300px" alt="">
+<img src="2023-12-13/image.png" width="300px" alt="SwiftUIで音楽を再生する">
 
 <details><summary>解答例</summary>
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+import AVFoundation
+
+struct ContentView: View {
+    @State var player: AVAudioPlayer?
+    var body: some View {
+        VStack {
+            Button {
+                let url = Bundle.main.url(forResource: "drum", withExtension: "mp3")!
+                do {
+                    player = try AVAudioPlayer(contentsOf: url)
+                    guard let player = player else { return }
+                    player.prepareToPlay()
+                    player.play()
+                } catch {
+                    print(error)
+                }
+            } label: {
+                Text("DrumRoll.mp3")
+                    .foregroundStyle(Color.white)
+                    .frame(width: 240, height: 60)
+                    .background(Color.gray)
+            }
+            
+            Button {
+                let url = Bundle.main.url(forResource: "drum-long", withExtension: "mp3")!
+                do {
+                    player = try AVAudioPlayer(contentsOf: url)
+                    guard let player = player else { return }
+                    player.prepareToPlay()
+                    player.play()
+                } catch {
+                    print(error)
+                }
+            } label: {
+                Text("DrumRollLong.mp3")
+                    .foregroundStyle(Color.white)
+                    .frame(width: 240, height: 60)
+                    .background(Color.gray)
+            }
+        }
+    }
+}
 ```
 
 </div>
 </details>
 
 
-### 75. 
+### 75. SwiftUIでテーブルのようなデータを表示する
+SwiftUIでテーブルのようなデータを表示する
 
-
-<img src="2023-12-14/image.png" width="300px" alt="">
+<img src="2023-12-14/image.png" width="300px" alt="SwiftUIでテーブルのようなデータを表示する">
 
 <details><summary>解答例</summary>
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+
+struct ContentView: View {
+    let pokemonData = [
+        Column(
+            title: "No",
+            rows: ["143", "1", "7", "50", "143", "1", "7", "50", "143", "1", "7", "50", "143", "1", "7", "50", "143", "1", "7", "50", "143", "1", "7", "50"]
+        ),
+        Column(
+            title: "Name",
+            rows: ["Snorlax", "Bulbasaur", "Squirtle", "Diglett", "Snorlax", "Bulbasaur", "Squirtle", "Diglett", "Snorlax", "Bulbasaur", "Squirtle", "Diglett", "Snorlax", "Bulbasaur", "Squirtle", "Diglett", "Snorlax", "Bulbasaur", "Squirtle", "Diglett", "Snorlax", "Bulbasaur", "Squirtle", "Diglett"]
+        ),
+        Column(
+            title: "Category",
+            rows: ["Sleeping", "Seed", "Tiny Turtle", "Mole", "Sleeping", "Seed", "Tiny Turtle", "Mole", "Sleeping", "Seed", "Tiny Turtle", "Mole", "Sleeping", "Seed", "Tiny Turtle", "Mole", "Sleeping", "Seed", "Tiny Turtle", "Mole", "Sleeping", "Seed", "Tiny Turtle", "Mole"]
+        ),
+        Column(
+            title: "Height",
+            rows: ["2.1", "0.7", "0.5", "0.2", "2.1", "0.7", "0.5", "0.2", "2.1", "0.7", "0.5", "0.2", "2.1", "0.7", "0.5", "0.2", "2.1", "0.7", "0.5", "0.2", "2.1", "0.7", "0.5", "0.2"]
+        ),
+        Column(
+            title: "Weight",
+            rows: ["460.0", "6.9", "9.0", "0.8", "460.0", "6.9", "9.0", "0.8", "460.0", "6.9", "9.0", "0.8", "460.0", "6.9", "9.0", "0.8", "460.0", "6.9", "9.0", "0.8", "460.0", "6.9", "9.0", "0.8"]
+        ),
+    ]
+    
+    var body: some View {
+        ScrollView {
+            VStack {
+                ScrollView(.horizontal) {
+                    HStack(alignment: .top, spacing: 8) {
+                        Divider()
+                        
+                        ForEach(0..<pokemonData.count, id: \.self) { columnIndex in
+                            VStack(alignment: .leading, spacing: 8) {
+                                Divider()
+                                
+                                Text(pokemonData[columnIndex].title)
+                                    .font(Font.system(size: 20).bold())
+                                
+                                Divider()
+                                
+                                ForEach(0..<pokemonData[columnIndex].rows.count, id: \.self) { rowIndex in
+                                    Text(pokemonData[columnIndex].rows[rowIndex])
+                                        .font(Font.system(size: 18))
+                                    Divider()
+                                }
+                            }
+                            .frame(minWidth: 80)
+                            
+                            
+                            Divider()
+                        }
+                    }
+                    .padding()
+                }
+            }
+        }
+    }
+}
 ```
 
 </div>
 </details>
 
 
-### 76. 
+### 76. NavigationStackのpathを使って画面遷移する
+NavigationStackのpathを使って画面遷移する
 
-
-<img src="2023-12-15/image.png" width="300px" alt="">
+<img src="2023-12-15/image.png" width="300px" alt="NavigationStackのpathを使って画面遷移する">
 
 <details><summary>解答例</summary>
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+
+struct ContentView: View {
+    @State var path: [ViewPath] = []
+
+    var body: some View {
+        NavigationStack(path: $path) {
+            VStack {
+                Text("ContentView")
+                    .font(.title)
+
+                NavigationLink(value: ViewPath.firstView) {
+                    Text("Go to FirstView")
+                }
+
+                NavigationLink(value: ViewPath.secondView) {
+                    Text("Go to SecondView")
+                }
+
+                NavigationLink(value: ViewPath.thirdView) {
+                    Text("Go to ThirdView")
+                }
+
+                NavigationLink(value: ViewPath.fourthView) {
+                    Text("Go to FourthView")
+                }
+
+                NavigationLink(value: ViewPath.fifthView) {
+                    Text("Go to FifthView")
+                }
+            }
+            .navigationDestination(for: ViewPath.self) { pathValue in
+                switch pathValue {
+                case .firstView:
+                    FirstView(path: self.$path)
+                case .secondView:
+                    FirstView(path: self.$path)
+                case .thirdView:
+                    ThirdView(path: self.$path)
+                case .fourthView:
+                    FourthView(path: self.$path)
+                case .fifthView:
+                    FifthView(path: self.$path)
+                }
+            }
+        }
+    }
+}
 ```
 
 </div>
 </details>
 
 
-### 77. 
+### 77. SwiftUIでBadgeを表示する
+SwiftUIでBadgeを表示する方法です。
 
-
-<img src="2023-12-16/image.png" width="300px" alt="">
+<img src="2023-12-16/image.png" width="300px" alt="SwiftUIでBadgeを表示する">
 
 <details><summary>解答例</summary>
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+
+struct ContentView: View {
+    @State var message = ""
+    @State var showingAlert = false
+    var body: some View{
+        VStack {
+            Button {
+                Task {
+                    do {
+                        let options: UNAuthorizationOptions = [.badge]
+                        try await UNUserNotificationCenter.current().requestAuthorization(options: options)
+                    } catch {
+                        print(error)
+                    }
+                }
+            } label: {
+                Text("Request Autorization")
+            }
+
+            Button {
+                Task { @MainActor in
+                    let settings = await UNUserNotificationCenter.current().notificationSettings()
+                    switch settings.authorizationStatus {
+                    case .notDetermined:
+                        print("NotDetermined")
+                        message = "NotDetermined"
+                    case .denied:
+                        print("Denied")
+                        message = "Denied"
+                    case .authorized:
+                        print("Authorized")
+                        message = "Authorized"
+                    case .provisional:
+                        print("Provisional")
+                        message = "Provisional"
+                    case .ephemeral:
+                        print("Ephemeral")
+                        message = "Ephemeral"
+                    @unknown default:
+                        print("default")
+                        message = "default"
+                    }
+
+                    showingAlert = true
+                }
+            } label: {
+                Text("Get Autorization Status")
+            }
+
+            Button {
+                Task { @MainActor in
+                    let settings = await UNUserNotificationCenter.current().notificationSettings()
+                    switch settings.badgeSetting {
+                    case .notSupported:
+                        print("NotSupported")
+                        message = "NotSupported"
+                    case .disabled:
+                        print("Disabled")
+                        message = "Disabled"
+                    case .enabled:
+                        print("Enabled")
+                        message = "Enabled"
+                    @unknown default:
+                        print("default")
+                        message = "default"
+                    }
+                    showingAlert = true
+                }
+            } label: {
+                Text("Get Badge Setting")
+            }
+
+            Button {
+                Task { @MainActor in
+                    do {
+                         try await UNUserNotificationCenter.current().setBadgeCount(5)
+                    } catch {
+                        print(error)
+                        message = error.localizedDescription
+                        showingAlert = true
+                    }
+                }
+            } label: {
+                Text("Set Badge Count 5")
+            }
+
+            Button {
+                Task { @MainActor in
+                    do {
+                         try await UNUserNotificationCenter.current().setBadgeCount(0)
+                    } catch {
+                        print(error)
+                        message = error.localizedDescription
+                        showingAlert = true
+                    }
+                }
+            } label: {
+                Text("Set Badge Count 0")
+            }
+        }
+        .alert("", isPresented: $showingAlert) {
+        } message: {
+            Text(message)
+        }
+    }
+}
 ```
 
 </div>
@@ -4164,7 +4957,7 @@ import Foundation
 ### 87. SwiftUIでカメラを使う
 
 
-<img src="2023-12-26/image.png" width="300px" alt="SwiftUIでカメラを使う">
+<img src="2023-12-26/2023-12-26.png" width="300px" alt="SwiftUIでカメラを使う">
 
 <details><summary>解答例</summary>
 <div>
@@ -4232,15 +5025,55 @@ struct ContentView: View {
 
 
 ### 89. SwiftUIでPHPickerViewControllerを使って画像を選択する
+SwiftUIでPHPickerViewControllerを使って画像を選択する
 
-
-<img src="2023-12-28/image.png" width="300px" alt="SwiftUIでPHPickerViewControllerを使って画像を選択する">
+<img src="2023-12-28/2023-12-28.gif" width="300px" alt="SwiftUIでPHPickerViewControllerを使って画像を選択する">
 
 <details><summary>解答例</summary>
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+
+struct ContentView: View {
+    @State var image: UIImage?
+    @State var showingAlert: Bool = false
+    
+    var body: some View {
+        VStack {
+            if let image = image {
+                Image(uiImage: image)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 200, height: 200)
+            } else {
+                Text("No Image")
+                    .font(Font.system(size: 24).bold())
+                    .foregroundColor(Color.white)
+                    .frame(width: 200, height: 200)
+                    .background(Color(UIColor.lightGray))
+            }
+            
+            Button {
+                showingAlert = true
+            } label: {
+                Text("Select Image")
+                    .font(Font.system(size:20).bold())
+                    .foregroundColor(Color.white)
+                    .padding(.horizontal, 100)
+                    .padding(.vertical, 16)
+                    .background(Color(UIColor.lightGray))
+            }
+            .padding(.top, 60)
+        }
+        .sheet(isPresented: $showingAlert) {
+            
+        } content: {
+            ImagePicker(image: $image)
+        }
+    }
+}
+
 ```
 
 </div>
@@ -4465,6 +5298,37 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+}
+```
+
+</div>
+</details>
+
+
+### 95. SwiftUIでPageControlを使用する
+SwiftUIでPageControlを使用する
+
+<img src="2024-01-03/2024-01-03.gif" width="300px" alt="SwiftUIでPageControlを使用する">
+
+<details><summary>解答例</summary>
+<div>
+
+```swift
+import SwiftUI
+
+struct ContentView: View {
+    @State var views = [
+        TutorialView(image: Image(.snorlax), text: "First"),
+        TutorialView(image: Image(.pikachu), text: "Second"),
+        TutorialView(image: Image(.slowpoke), text: "Third"),
+        TutorialView(image: Image(.magikarp), text: "Fourth"),
+    ]
+
+    var body: some View {
+        PageView(views)
+            .background(Color.gray)
+            .edgesIgnoringSafeArea(.all)
+    }
 }
 ```
 
