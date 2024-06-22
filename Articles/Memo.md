@@ -302,6 +302,12 @@ ffmpeg -i 2023-12-03/movie-frame.mp4 -crf 35 -vf scale=400:-1 2023-12-03/2023-12
 
 
 
+# 2023-12-05
+convert -size 1326x2676 xc:none 2023-12-05/image.png -geometry +74+59 -composite phone-frame.png -geometry +0+0 -composite 2023-12-05/2023-12-05.png
+
+# 2023-12-06
+convert -size 1326x2676 xc:none 2023-12-06/image.png -geometry +74+59 -composite phone-frame.png -geometry +0+0 -composite 2023-12-06/2023-12-06.png
+
 
 # 2023-12-12
 ffmpeg -i 2023-12-12/2023-12-12.mp4 -vf pad=w=iw+148:h=ih+120:x=85:y=70:color=white 2023-12-12/movie-padding.mp4
