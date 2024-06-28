@@ -30,7 +30,3 @@ struct ContentView: View {
         }
     }
 }
-
-#Preview {
-    ContentView(viewState: ContentViewState())
-}

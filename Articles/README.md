@@ -3438,10 +3438,6 @@ struct ContentView: View {
         }
     }
 }
-
-#Preview {
-    ContentView(viewState: ContentViewState())
-}
 ```
 
 ```swift
@@ -3488,13 +3484,84 @@ extension ContentViewState: CLLocationManagerDelegate {
 ### 65. SwiftUIでMapを表示し、自分の位置を表示しつつコンパスを表示（yet）
 
 
-<img src="2023-12-04/image.png" width="300px" alt="SwiftUIでMapを表示し、自分の位置を表示しつつコンパスを表示（yet）">
+<img src="2023-12-04/023-12-04.gif" width="300px" alt="SwiftUIでMapを表示し、自分の位置を表示しつつコンパスを表示（yet）">
 
 <details><summary>解答例</summary>
 <div>
 
 ```swift
+import SwiftUI
+import MapKit
+
+struct ContentView: View {
+    @StateObject var viewState: ContentViewState = ContentViewState()
+
+    var body: some View {
+        ZStack {
+            if let location = viewState.location {
+                Map(
+                    initialPosition:
+                        MapCameraPosition.region(
+                            MKCoordinateRegion(
+                                center: location,
+                                latitudinalMeters: 300,
+                                longitudinalMeters: 300
+                            )
+                        )
+                ) {
+                    MapCircle(center: location, radius: CLLocationDistance(10))
+                        .foregroundStyle(Color.red.opacity(0.6))
+                        .mapOverlayLevel(level: .aboveRoads)
+                }
+                .mapControls {
+                    MapCompass()
+                }
+            } else {
+                Text("Loading...")
+            }
+        }
+        .onAppear {
+            viewState.onAppear()
+        }
+    }
+}
+```
+
+```swift
 import Foundation
+import CoreLocation
+
+class ContentViewState: NSObject, ObservableObject {
+    @Published var location: CLLocationCoordinate2D?
+    private let locationManager = CLLocationManager()
+
+    func onAppear() {
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        let status = locationManager.authorizationStatus
+        switch status {
+        case .authorizedWhenInUse:
+            locationManager.startUpdatingLocation()
+        default:
+            break
+        }
+    }
+}
+
+extension ContentViewState: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        switch status {
+        case .authorizedWhenInUse:
+            locationManager.startUpdatingLocation()
+        default:
+            break
+        }
+    }
+
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        self.location = manager.location?.coordinate
+    }
+}
 ```
 
 </div>
@@ -3658,6 +3725,40 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import SwiftUI
+
+struct CalenderCell<Content: View>: View {
+    let content: Content
+
+    init(@ViewBuilder content: () -> Content) {
+        self.content = content()
+    }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 2) {
+            content
+        }
+        .frame(width: 46, height: 46, alignment: .top)
+        .border(Color.black, width: 0.5)
+    }
+}
+```
+
+```swift
+import SwiftUI
+
+struct DayOfWeekText: View {
+    let text: String
+    var body: some View {
+        Text(text)
+            .font(.system(size: 10).bold())
+            .frame(width: 46, height: 46)
+            .border(Color.black, width: 0.5)
+    }
+}
+```
+
 </div>
 </details>
 
@@ -3665,7 +3766,7 @@ struct ContentView: View {
 ### 68. SwiftUIでアラートのメッセージを出し分ける
 SwiftUIでアラートのメッセージを出し分ける
 
-<img src="2023-12-07/2023-12-06.png" width="300px" alt="SwiftUIでアラートのメッセージを出し分ける">
+<img src="2023-12-07/2023-12-07.gif" width="300px" alt="SwiftUIでアラートのメッセージを出し分ける">
 
 <details><summary>解答例</summary>
 <div>
@@ -3713,7 +3814,7 @@ struct ContentView: View {
 ### 69. SwiftUIでローカル通知を送信する
 SwiftUIでローカル通知を送信する
 
-<img src="2023-12-08/image.png" width="300px" alt="SwiftUIでローカル通知を送信する">
+<img src="2023-12-08/2023-12-08.gif" width="300px" alt="SwiftUIでローカル通知を送信する">
 
 <details><summary>解答例</summary>
 <div>
@@ -3774,7 +3875,7 @@ struct ContentView: View {
 ### 70. Swiftで10進数を2進数に変換する
 Swiftで10進数を2進数に変換する
 
-<img src="2023-12-09/image.png" width="300px" alt="Swiftで10進数を2進数に変換する">
+<img src="2023-12-09/2023-12-09.gif" width="300px" alt="Swiftで10進数を2進数に変換する">
 
 <details><summary>解答例</summary>
 <div>
@@ -3848,7 +3949,7 @@ struct ContentView: View {
 ### 71. SwiftUIでAppDelegateを使用する
 SwiftUIでAppDelegateを使用する方法です。アプリ終了時にUserDefaultsに値を保存しています。
 
-<img src="2023-12-10/image.png" width="300px" alt="SwiftUIでAppDelegateを使用する">
+<img src="2023-12-10/2023-12-10.gif" width="300px" alt="SwiftUIでAppDelegateを使用する">
 
 <details><summary>解答例</summary>
 <div>
@@ -3903,7 +4004,7 @@ struct ContentView: View {
 ### 72. SwiftUIでグラフを表示する
 SwiftUIでグラフを表示する方法です。
 
-<img src="2023-12-11/image.png" width="300px" alt="SwiftUIでグラフを表示する">
+<img src="2023-12-11/2023-12-11.gif" width="300px" alt="SwiftUIでグラフを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -4137,7 +4238,7 @@ struct ContentView: View {
 ### 73. SwiftUIでdelegateを使用する
 SwiftUIでdelegateを使用する
 
-<img src="2023-12-12/image.png" width="300px" alt="SwiftUIでdelegateを使用する">
+<img src="2023-12-12/2023-12-12.gif" width="300px" alt="SwiftUIでdelegateを使用する">
 
 <details><summary>解答例</summary>
 <div>
@@ -4171,7 +4272,7 @@ struct ContentView: View, MyProtocol {
 ### 74. SwiftUIで音楽を再生する
 SwiftUIで音楽を再生する
 
-<img src="2023-12-13/image.png" width="300px" alt="SwiftUIで音楽を再生する">
+<img src="2023-12-13/2023-12-13.gif" width="300px" alt="SwiftUIで音楽を再生する">
 
 <details><summary>解答例</summary>
 <div>
@@ -4229,7 +4330,7 @@ struct ContentView: View {
 ### 75. SwiftUIでテーブルのようなデータを表示する
 SwiftUIでテーブルのようなデータを表示する
 
-<img src="2023-12-14/image.png" width="300px" alt="SwiftUIでテーブルのようなデータを表示する">
+<img src="2023-12-14/2023-12-14.gif" width="300px" alt="SwiftUIでテーブルのようなデータを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -4304,7 +4405,7 @@ struct ContentView: View {
 ### 76. NavigationStackのpathを使って画面遷移する
 NavigationStackのpathを使って画面遷移する
 
-<img src="2023-12-15/image.png" width="300px" alt="NavigationStackのpathを使って画面遷移する">
+<img src="2023-12-15/2023-12-15.gif" width="300px" alt="NavigationStackのpathを使って画面遷移する">
 
 <details><summary>解答例</summary>
 <div>
@@ -4367,7 +4468,7 @@ struct ContentView: View {
 ### 77. SwiftUIでBadgeを表示する
 SwiftUIでBadgeを表示する方法です。
 
-<img src="2023-12-16/image.png" width="300px" alt="SwiftUIでBadgeを表示する">
+<img src="2023-12-16/2023-12-16.gif" width="300px" alt="SwiftUIでBadgeを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -4950,6 +5051,15 @@ Identifiableに適合していないStructでListを使う
 import Foundation
 ```
 
+```swift
+import SwiftUI
+
+struct Pokemon {
+    let name: String
+    let type: String
+}
+```
+
 </div>
 </details>
 
@@ -5020,6 +5130,75 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import SwiftUI
+
+struct TextScrollView: UIViewRepresentable {
+    let text: String
+    @Binding var percent: Double
+
+    func makeUIView(context: Context) -> UITextScrollView {
+        let textScrollView = UITextScrollView()
+        textScrollView.setText(text: text)
+        return textScrollView
+    }
+    
+    func updateUIView(_ uiView: UITextScrollView, context: Context) {
+        uiView.setContentOffset(percent: percent)
+    }
+}
+```
+
+```swift
+import UIKit
+
+public class UITextScrollView: UIView {
+    private lazy var scrollView = UIScrollView()
+    private lazy var textView = UITextView()
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        scrollView.backgroundColor = .white
+        scrollView.isUserInteractionEnabled = false
+        addSubview(scrollView)
+        
+        textView.textColor = UIColor.black
+        textView.font = UIFont.systemFont(ofSize: 20)
+        textView.isEditable = false
+        
+        scrollView.addSubview(textView)
+    }
+    
+    public override func layoutSubviews() {
+        scrollView.frame = frame
+        let textViewSize = textView.sizeThatFits(CGSize(width: frame.size.width, height: 0))
+        textView.frame.size = textViewSize
+        scrollView.contentSize = textViewSize
+    }
+    
+    func setText(text: String) {
+        textView.text = text
+    }
+    
+    func setContentOffset(percent: Double) {
+        let contentHeight = scrollView.contentSize.height
+        let frameHeight = scrollView.bounds.height
+        if contentHeight < frameHeight {
+            return
+        }
+        
+        let diff = contentHeight - frameHeight
+        let offset = diff * percent / 100
+        scrollView.setContentOffset(CGPoint(x: 0.0, y: offset), animated: true)
+    }
+}
+```
+
 </div>
 </details>
 
@@ -5074,6 +5253,54 @@ struct ContentView: View {
     }
 }
 
+```
+
+```swift
+import SwiftUI
+import PhotosUI
+
+struct ImagePicker: UIViewControllerRepresentable {
+    @Environment(\.presentationMode) var presentationMode
+    @Binding var image: UIImage?
+    
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+    
+    func makeUIViewController(context: UIViewControllerRepresentableContext<ImagePicker>) -> PHPickerViewController {
+        var configuration = PHPickerConfiguration()
+        configuration.filter = .images
+        configuration.selectionLimit = 1
+        let picker = PHPickerViewController(configuration: configuration)
+        picker.delegate = context.coordinator
+        return picker
+    }
+    
+    func updateUIViewController(_ uiViewController: PHPickerViewController, context: UIViewControllerRepresentableContext<ImagePicker>) {}
+    
+    class Coordinator: NSObject, UINavigationControllerDelegate, PHPickerViewControllerDelegate {
+        let parent: ImagePicker
+        
+        init(_ parent: ImagePicker) {
+            self.parent = parent
+        }
+        
+        func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+            parent.presentationMode.wrappedValue.dismiss()
+
+            if let itemProvider = results.first?.itemProvider, itemProvider.canLoadObject(ofClass: UIImage.self) {
+                itemProvider.loadObject(ofClass: UIImage.self) { [weak self] image, _ in
+                    guard let image = image as? UIImage else {
+                        return
+                    }
+                    DispatchQueue.main.sync {
+                        self?.parent.image = image
+                    }
+                }
+            }
+        }
+    }
+}
 ```
 
 </div>
@@ -5138,6 +5365,25 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import SwiftUI
+import PDFKit
+
+struct ImageViewerView: UIViewRepresentable {
+    let image: UIImage
+    func makeUIView(context: Context) -> PDFView {
+        let view = PDFView()
+        view.document = PDFDocument()
+        guard let page = PDFPage(image: image) else { return view }
+        view.document?.insert(page, at: 0)
+        view.autoScales = true
+        return view
+    }
+
+    func updateUIView(_ uiView: PDFView, context: Context) {}
+}
+```
+
 </div>
 </details>
 
@@ -5162,6 +5408,20 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+}
+```
+
+```swift
+import SwiftUI
+
+struct ImageViewerView: UIViewRepresentable {
+    let imageName: String
+    func makeUIView(context: Context) -> UIImageViewerView {
+        let view = UIImageViewerView(imageName: imageName)
+        return view
+    }
+
+    func updateUIView(_ uiView: UIImageViewerView, context: Context) {}
 }
 ```
 

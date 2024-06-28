@@ -851,11 +851,11 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "023-12-04.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "ContentViewState.swift"]
         },
         {
             "title": "SwiftUIでImageの色を反転させる",
@@ -881,7 +881,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "CalenderCell.swift", "DayOfWeekText.swift"]
         },
         {
             "title": "SwiftUIでアラートのメッセージを出し分ける",
@@ -1128,7 +1128,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "Pokemon.swift"]
         },
         {
             "title": "SwiftUIでカメラを使う",
@@ -1154,7 +1154,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "TextScrollView.swift", "UITextScrollView.swift"]
         },
         {
             "title": "SwiftUIでPHPickerViewControllerを使って画像を選択する",
@@ -1167,7 +1167,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "ImagePicker.swift"]
         },
         {
             "title": "SwiftUIで画像をピンチで拡大する（MagnificationGesture）",
@@ -1193,7 +1193,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "ImageViewerView.swift"]
         },
         {
             "title": "SwiftUIで画像をピンチで拡大する（UIImageView + UIScrollView）",
@@ -1206,7 +1206,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "ImageViewerView.swift"]
         },
         {
             "title": "SwiftMarkdownを使いマークダウンを表示する",
