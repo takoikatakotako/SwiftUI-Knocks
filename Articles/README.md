@@ -3481,10 +3481,10 @@ extension ContentViewState: CLLocationManagerDelegate {
 </details>
 
 
-### 65. SwiftUIでMapを表示し、自分の位置を表示しつつコンパスを表示（yet）
+### 65. SwiftUIでMapを表示し、自分の位置を表示しつつコンパスを表示
 
 
-<img src="2023-12-04/023-12-04.gif" width="300px" alt="SwiftUIでMapを表示し、自分の位置を表示しつつコンパスを表示（yet）">
+<img src="2023-12-04/2023-12-04.gif" width="300px" alt="SwiftUIでMapを表示し、自分の位置を表示しつつコンパスを表示">
 
 <details><summary>解答例</summary>
 <div>
