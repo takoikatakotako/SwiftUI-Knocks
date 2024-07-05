@@ -7,7 +7,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-10-01.png",
                   "width": 300
               }
             ],
@@ -21,7 +21,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-10-02.png",
                   "width": 300
               }
             ],
@@ -35,7 +35,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-10-03.png",
                   "width": 300
               }
             ],
@@ -44,12 +44,12 @@
         },
         {
             "title": "画像を丸く切り取り、枠を付ける",
-            "description": "",
+            "description": "150✖︎150サイズに画像をリサイズし、丸く切り枠をつけて表示させてください。",
             "directory": "2023-10-04",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-10-04.png",
                   "width": 300
               }
             ],
@@ -63,7 +63,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-10-05.png",
                   "width": 300
               }
             ],
@@ -77,7 +77,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-10-06.png",
                   "width": 300
               }
             ],
@@ -86,12 +86,12 @@
         },
         {
             "title": "Pickerを表示する",
-            "description": "Pickerを使いポケモンを表示してください。",
+            "description": "Pickerを使いポケモンを選択してください。",
             "directory": "2023-10-07",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-10-07.gif",
                   "width": 300
               }
             ],
@@ -104,8 +104,8 @@
             "directory": "2023-10-08",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-10-08.gif",
                   "width": 300
               }
             ],
@@ -119,7 +119,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-10-09.gif",
                   "width": 300
               }
             ],
@@ -128,12 +128,12 @@
         },
         {
             "title": "Listを使ってセクションごとに表示する",
-            "description": "Listを使ってセクションごとに表示する（groupedスタイル）",
+            "description": "Listを使ってセクションごとに表示してください。（groupedスタイル）",
             "directory": "2023-10-10",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-10-10.png",
                   "width": 300
               }
             ],
@@ -147,7 +147,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-10-11.gif",
                   "width": 300
               }
             ],
@@ -161,7 +161,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-10-12.gif",
                   "width": 300
               }
             ],
@@ -175,7 +175,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-10-13.png",
                   "width": 300
               }
             ],
@@ -188,7 +188,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-10-14.gif",
                   "width": 300
               }
             ],
@@ -201,11 +201,11 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-10-15.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "AlertItem.swift"]
         },
         {
             "title": "Button内の画像やテキストの色を変えない",
@@ -214,7 +214,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-10-16.gif",
                   "width": 300
               }
             ],
@@ -227,20 +227,20 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-10-17.gif",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "Buttonからプッシュ遷移をする（NavigationLinkを無効にする）",
-            "description": "Buttonからプッシュ遷移をする方法です。 この方法であれば、NavigationLink を擬似的に無効にすることができます。",
+            "title": "NavigationLinkを使用せずにプッシュ遷移する（.navigationDestination）",
+            "description": "NavigationLinkを使用せずにプッシュ遷移してください。（.navigationDestination）",
             "directory": "2023-10-18",
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-10-18.gif",
                   "width": 300
               }
             ],
@@ -253,7 +253,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-10-19.gif",
                   "width": 300
               }
             ],
@@ -266,7 +266,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-10-20.png",
                   "width": 300
               }
             ],
@@ -279,7 +279,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-10-21.png",
                   "width": 300
               }
             ],
@@ -292,7 +292,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-10-22.png",
                   "width": 300
               }
             ],
@@ -305,7 +305,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-10-23.gif",
                   "width": 300
               }
             ],
@@ -318,11 +318,11 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-10-24.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "Pokemon.swift"]
         },
         {
             "title": "画面遷移先のViewから遷移元のメソッドを呼び出す",
@@ -331,11 +331,11 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-10-25.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "SecondView.swift", "MyProtocol.swift"]
         },
         {
             "title": "ListViewからそれぞれ別のViewに遷移する",
@@ -344,11 +344,11 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-10-26.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "Pokemon.swift"]
         },
         {
             "title": "複数行のPickerを作成する",
@@ -357,7 +357,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-10-27.gif",
                   "width": 300
               }
             ],
@@ -365,16 +365,16 @@
         },
         {
             "title": "Sheetを表示する",
-            "description": "全画面でSheetを表示する",
+            "description": "Sheetを表示する",
             "directory": "2023-10-28",
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-10-28.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "SecondView.swift"]
         },
         {
             "title": "全画面でSheetを表示する",
@@ -382,12 +382,12 @@
             "directory": "2023-10-29",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-10-29.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "SecondView.swift"]
         },
         {
             "title": "NavigationBarを隠す",
@@ -396,7 +396,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-10-30.png",
                   "width": 300
               }
             ],
@@ -408,9 +408,9 @@
             "directory": "2023-10-31",
             "resources": [
               {
-                  "type": "image-raw",
-                  "name": "image.png",
-                  "width": 300
+                  "type": "image",
+                  "name": "2023-10-31.png",
+                  "width": 600
               }
             ],
             "codes": ["ContentView.swift"]
@@ -422,11 +422,11 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-11-01.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "NSNotification+Extension.swift", "UIWindow+Extension.swift"]
         },
         {
             "title": "UICollectionViewのようにViewを並べる",
@@ -435,7 +435,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-11-02.gif",
                   "width": 300
               }
             ],
@@ -448,24 +448,24 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-11-03.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "ContentViewCell.swift"]
         },
         {
             "title": "閉じることができないモーダルを表示する",
-            "description": "",
+            "description": "閉じることができないモーダルを表示する",
             "directory": "2023-11-04",
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-11-04.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "ModalView.swift"]
         },
         {
             "title": "アプリ起動時に画面を遷移させる",
@@ -474,11 +474,11 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "move.mp4",
+                  "name": "2023-11-05.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "ViewType.swift"]
         },
         {
             "title": "ハーフモーダルを表示する",
@@ -487,7 +487,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-11-06.gif",
                   "width": 300
               }
             ],
@@ -500,7 +500,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-11-07.png",
                   "width": 300
               }
             ],
@@ -513,7 +513,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-11-08.png",
                   "width": 300
               }
             ],
@@ -526,7 +526,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-11-09.png",
                   "width": 300
               }
             ],
@@ -538,12 +538,12 @@
             "directory": "2023-11-10",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-11-10.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "GitHubAPIRepository.swift"]
         },
         {
             "title": "GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。",
@@ -552,33 +552,33 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.png",
+                  "name": "2023-11-11.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "GitHubAPIRepository.swift"]
         },
         {
             "title": "GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。Indicator も表示してください。",
-            "description": "",
+            "description": "GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。Indicator も表示してください。",
             "directory": "2023-11-12",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-11-12.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "GitHubAPIRepository.swift"]
         },
         {
             "title": "SwiftUIのTextFieldで編集中と編集完了を検知する",
-            "description": "",
+            "description": "SwiftUIのTextFieldで編集中と編集完了を検知する",
             "directory": "2023-11-13",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-11-13.gif",
                   "width": 300
               }
             ],
@@ -586,12 +586,12 @@
         },
         {
             "title": "SwiftUIでAppStorageを使ってUserDefaultの値を監視する",
-            "description": "",
+            "description": "SwiftUIでAppStorageを使ってUserDefaultの値を監視する",
             "directory": "2023-11-14",
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-11-14.gif",
                   "width": 300
               }
             ],
@@ -604,20 +604,20 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-11-15.png",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "SwiftUIでMapを使う。Mapにピンを立てる(skip)",
-            "description": "",
+            "title": "SwiftUIでMapを使う。Mapに画像や図形を表示する",
+            "description": "SwiftUIでMapを使う。Mapに画像や図形を表示する",
             "directory": "2023-11-16",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-11-16.gif",
                   "width": 300
               }
             ],
@@ -625,77 +625,77 @@
         },
         {
             "title": "SwiftUIを使ったTODOアプリのサンプル",
-            "description": "",
+            "description": "SwiftUIを使ったTODOアプリのサンプル",
             "directory": "2023-11-17",
             "resources": [
               {
                   "type": "movie",
-                  "name": "image.png",
+                  "name": "2023-11-17.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "CalendarView.swift", "ContentViewSheetItem.swift", "InputScheduleView.swift", "InputView.swift", "ScheduleList.swift", "UserDefaultsManager.swift"]
         },
         {
             "title": "SwiftUIでAVAudioPlayerで音楽を再生し、再生終了を検知する",
-            "description": "",
+            "description": "SwiftUIでAVAudioPlayerで音楽を再生し、再生終了を検知する",
             "directory": "2023-11-18",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-11-18.png",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "ContentViewState.swift"]
         },
         {
             "title": "SwiftUIでモーダルを表示する時に値を渡す",
-            "description": "",
+            "description": "SwiftUIでモーダルを表示する時に値を渡す",
             "directory": "2023-11-19",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.png",
+                  "type": "image",
+                  "name": "2023-11-19.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "PokemonView.swift"]
         },
         {
             "title": "SwiftUIでBMIを計算し、結果を別のViewで表示する",
-            "description": "",
+            "description": "SwiftUIでBMIを計算し、結果を別のViewで表示する",
             "directory": "2023-11-20",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-11-20.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "ResultView.swift"]
         },
         {
             "title": "SwiftUIでボタンを押すとポップアップを表示する",
-            "description": "",
+            "description": "SwiftUIでボタンを押すとポップアップを表示する",
             "directory": "2023-11-21",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-11-21.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "PopupView.swift"]
         },
         {
             "title": "SwiftUIでViewを横スクロールで表示する",
-            "description": "",
+            "description": "SwiftUIでViewを横スクロールで表示する",
             "directory": "2023-11-22",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-11-22.gif",
                   "width": 300
               }
             ],
@@ -703,12 +703,12 @@
         },
         {
             "title": "SwiftUIでButtonを有効にしたり無効にしたりする",
-            "description": "",
+            "description": "SwiftUIでButtonを有効にしたり無効にしたりする",
             "directory": "2023-11-23",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-11-23.gif",
                   "width": 300
               }
             ],
@@ -716,12 +716,12 @@
         },
         {
             "title": "SwiftUIのTextFieldで表示するキーボードを指定する",
-            "description": "",
+            "description": "SwiftUIのTextFieldで表示するキーボードを指定する",
             "directory": "2023-11-24",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-11-24.gif",
                   "width": 300
               }
             ],
@@ -729,38 +729,38 @@
         },
         {
             "title": "SwiftUIでシートを表示し、プッシュ遷移後にシートを閉じる",
-            "description": "",
+            "description": "SwiftUIでシートを表示し、プッシュ遷移後にシートを閉じる",
             "directory": "2023-11-25",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-11-25.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "FirstSheet.swift", "SecondSheet.swift"]
         },
         {
             "title": "SwiftUIでListをEditModeにして並び替える",
-            "description": "",
+            "description": "SwiftUIでListをEditModeにして並び替える",
             "directory": "2023-11-26",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-11-26.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "Pokemon.swift"]
         },
         {
             "title": "SwiftUIのListでSpacerの部分にもタップ判定をつける",
-            "description": "",
+            "description": "SwiftUIのListでSpacerの部分にもタップ判定をつける",
             "directory": "2023-11-27",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-11-27.png",
                   "width": 300
               }
             ],
@@ -773,7 +773,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-11-28.png",
                   "width": 300
               }
             ],
@@ -785,21 +785,21 @@
             "directory": "2023-11-29",
             "resources": [
               {
-                  "type": "movie",
-                  "name": "movie.mp4",
+                  "type": "image",
+                  "name": "2023-11-29.gif",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "SwiftUIでSearchBar(TextField)にクリアボタンをつける(skip)",
-            "description": "",
+            "title": "SwiftUIでSearchBar(TextField)にクリアボタンをつける",
+            "description": "SwiftUIでSearchBar(TextField)にクリアボタンをつける",
             "directory": "2023-11-30",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-11-30.gif",
                   "width": 300
               }
             ],
@@ -812,7 +812,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-01.png",
                   "width": 300
               }
             ],
@@ -825,7 +825,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-02.png",
                   "width": 300
               }
             ],
@@ -838,176 +838,176 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-03.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "ContentViewState.swift"]
         },
         {
-            "title": "SwiftUIでMapを表示し、自分の位置を表示しつつコンパスを表示（yet）",
+            "title": "SwiftUIでMapを表示し、自分の位置を表示しつつコンパスを表示",
             "description": "",
             "directory": "2023-12-04",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-04.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "ContentViewState.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIでImageの色を反転させる",
+            "description": "SwiftUIでImageの色を反転させる",
             "directory": "2023-12-05",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-05.png",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIでカレンダーを作成する",
+            "description": "SwiftUIでカレンダーを作成する",
             "directory": "2023-12-06",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-06.png",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "CalenderCell.swift", "DayOfWeekText.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIでアラートのメッセージを出し分ける",
+            "description": "SwiftUIでアラートのメッセージを出し分ける",
             "directory": "2023-12-07",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-07.gif",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIでローカル通知を送信する",
+            "description": "SwiftUIでローカル通知を送信する",
             "directory": "2023-12-08",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-08.gif",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "Swiftで10進数を2進数に変換する",
+            "description": "Swiftで10進数を2進数に変換する",
             "directory": "2023-12-09",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-09.gif",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIでAppDelegateを使用する",
+            "description": "SwiftUIでAppDelegateを使用する方法です。アプリ終了時にUserDefaultsに値を保存しています。",
             "directory": "2023-12-10",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-10.gif",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIでグラフを表示する",
+            "description": "SwiftUIでグラフを表示する方法です。",
             "directory": "2023-12-11",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-11.gif",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIでdelegateを使用する",
+            "description": "SwiftUIでdelegateを使用する",
             "directory": "2023-12-12",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-12.gif",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIで音楽を再生する",
+            "description": "SwiftUIで音楽を再生する",
             "directory": "2023-12-13",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-13.gif",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIでテーブルのようなデータを表示する",
+            "description": "SwiftUIでテーブルのようなデータを表示する",
             "directory": "2023-12-14",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-14.gif",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "NavigationStackのpathを使って画面遷移する",
+            "description": "NavigationStackのpathを使って画面遷移する",
             "directory": "2023-12-15",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-15.gif",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "",
-            "description": "",
+            "title": "SwiftUIでBadgeを表示する",
+            "description": "SwiftUIでBadgeを表示する方法です。",
             "directory": "2023-12-16",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-16.gif",
                   "width": 300
               }
             ],
@@ -1015,25 +1015,25 @@
         },
         {
             "title": "Swiftのasync,awaitを使ってAPIと画像を取得し、全てが揃ってから表示する",
-            "description": "",
+            "description": "wiftのasync,awaitを使ってAPIと画像を取得し、全てが揃ってから表示する",
             "directory": "2023-12-17",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-17.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "Pokemon.swift"]
         },
         {
             "title": "SwiftUIでObservableObjectの@publishedなプロパティとBindingする",
-            "description": "",
+            "description": "SwiftUIでObservableObjectの@publishedなプロパティとBindingする",
             "directory": "2023-12-18",
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.png",
+                  "name": "2023-12-18.gif",
                   "width": 300
               }
             ],
@@ -1041,64 +1041,64 @@
         },
         {
             "title": "iOSのファイルアプリ（UIDocumentPickerViewController）を開いてドキュメントフォルダに保存したファイルを開く",
-            "description": "",
+            "description": "iOSのファイルアプリ（UIDocumentPickerViewController）を開いてドキュメントフォルダに保存したファイルを開く",
             "directory": "2023-12-19",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-19.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "DocumentPickerView.swift"]
         },
         {
             "title": "SwiftUIでUIActivityViewControllerを表示する",
-            "description": "",
+            "description": "SwiftUIでUIActivityViewControllerを表示する",
             "directory": "2023-12-20",
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-12-20.gif",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "SwiftUIでActivityIndicatorを表示する(skip)",
-            "description": "",
+            "title": "SwiftUIでインディケーターを表示する",
+            "description": "SwiftUIでインディケーターを表示する",
             "directory": "2023-12-21",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-21.gif",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "SwiftUIで少しカスタマイズしたActivityIndicatorを表示する(skip)",
-            "description": "",
+            "title": "SwiftUIで少しカスタマイズしたインディケーターを表示する",
+            "description": "SwiftUIで少しカスタマイズしたインディケーターを表示する",
             "directory": "2023-12-22",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-22.gif",
                   "width": 300
               }
             ],
             "codes": ["ContentView.swift"]
         },
         {
-            "title": "SwiftUIでListにButtonを設定してパラメーターの違う画面に遷移する",
-            "description": "",
+            "title": "SwiftUIでListにButtonを設定して異なる画面に遷移する",
+            "description": "SwiftUIでListにButtonを設定して異なる画面に遷移する",
             "directory": "2023-12-23",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-23.gif",
                   "width": 300
               }
             ],
@@ -1106,29 +1106,29 @@
         },
         {
             "title": "SwiftUIのTabViewのタブをコードから動的に切り替える",
-            "description": "",
+            "description": "SwiftUIのTabViewのタブをコードから動的に切り替える",
             "directory": "2023-12-24",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-24.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "FirstView.swift", "SecondView.swift"]
         },
         {
             "title": " Identifiableに適合していないStructでListを使う",
-            "description": "",
+            "description": "Identifiableに適合していないStructでListを使う",
             "directory": "2023-12-25",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-25.png",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "Pokemon.swift"]
         },
         {
             "title": "SwiftUIでカメラを使う",
@@ -1137,7 +1137,7 @@
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-26.png",
                   "width": 300
               }
             ],
@@ -1145,29 +1145,29 @@
         },
         {
             "title": "SwiftUIでスライダーとスクロールを連動させる",
-            "description": "",
+            "description": "SwiftUIでスライダーとスクロールを連動させる",
             "directory": "2023-12-27",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-27.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "TextScrollView.swift", "UITextScrollView.swift"]
         },
         {
             "title": "SwiftUIでPHPickerViewControllerを使って画像を選択する",
-            "description": "",
+            "description": "SwiftUIでPHPickerViewControllerを使って画像を選択する",
             "directory": "2023-12-28",
             "resources": [
               {
                   "type": "image",
-                  "name": "image.png",
+                  "name": "2023-12-28.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "ImagePicker.swift"]
         },
         {
             "title": "SwiftUIで画像をピンチで拡大する（MagnificationGesture）",
@@ -1176,7 +1176,7 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-12-29.gif",
                   "width": 300
               }
             ],
@@ -1189,11 +1189,11 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-12-30.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "ImageViewerView.swift"]
         },
         {
             "title": "SwiftUIで画像をピンチで拡大する（UIImageView + UIScrollView）",
@@ -1202,20 +1202,20 @@
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2023-12-31.gif",
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "ImageViewerView.swift"]
         },
         {
             "title": "SwiftMarkdownを使いマークダウンを表示する",
-            "description": "",
+            "description": "SwiftMarkdownを使いマークダウンを表示する",
             "directory": "2024-01-01",
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2024-01-01.gif",
                   "width": 300
               }
             ],
@@ -1223,12 +1223,25 @@
         },
         {
             "title": "SwiftUIでシートを出し分ける",
-            "description": "",
+            "description": "SwiftUIでシートを出し分ける",
             "directory": "2024-01-02",
             "resources": [
               {
                   "type": "movie",
-                  "name": "movie.mp4",
+                  "name": "2024-01-02.gif",
+                  "width": 300
+              }
+            ],
+            "codes": ["ContentView.swift"]
+        },
+        {
+            "title": "SwiftUIでPageControlを使用する",
+            "description": "SwiftUIでPageControlを使用する",
+            "directory": "2024-01-03",
+            "resources": [
+              {
+                  "type": "movie",
+                  "name": "2024-01-03.gif",
                   "width": 300
               }
             ],

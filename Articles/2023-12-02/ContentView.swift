@@ -3,7 +3,7 @@ import MapKit
 
 struct ContentView: View {
     @StateObject var viewState: ContentViewState = ContentViewState()
-    
+
     var body: some View {
         ZStack {
             if let location = viewState.location {

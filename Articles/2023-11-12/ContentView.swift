@@ -5,9 +5,9 @@ struct ContentView: View {
     @State var page = 1
     @State var isFetching = false
     @State var showingErrorAlert = false
-    
+
     let gitHubAPIRepository = GitHubAPIRepository()
-    
+
     var body: some View {
         List {
             ForEach(repositories) { repository in
@@ -23,7 +23,7 @@ struct ContentView: View {
                     }
                 }
             }
-            
+
             HStack {
                 if isFetching {
                     Spacer()
@@ -41,14 +41,14 @@ struct ContentView: View {
             Text("Failed to Fetch repositories.")
         }
     }
-    
+
     @MainActor
     func fetchRepositories() {
         if isFetching {
             return
         }
         isFetching = true
-        
+
         Task {
             do {
                 repositories += try await gitHubAPIRepository.searchRepos(page: page, perPage: 20)

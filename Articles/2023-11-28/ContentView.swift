@@ -12,8 +12,8 @@ struct ContentView: View {
     }
     var body: some View {
         ScrollView {
-            LazyVStack{
-                TextField("Type your search",text: $text)
+            LazyVStack {
+                TextField("Type your search", text: $text)
                     .padding(8)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 ForEach(filterdPokemons, id: \.self) { pokemon in

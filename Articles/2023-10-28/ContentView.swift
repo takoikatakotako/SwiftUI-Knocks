@@ -1,17 +1,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var showingfullScreenCover = false
+    @State var showingSheet = false
     var body: some View {
         VStack {
             Button(action: {
-                showingfullScreenCover = true
+                showingSheet = true
             }) {
                 Text("Tap me!")
             }
         }
-        .fullScreenCover(isPresented: $showingfullScreenCover) {
-            SecondView()
+        .sheet(isPresented: $showingSheet) {
+            Text("Sheet!!")
         }
     }
 }

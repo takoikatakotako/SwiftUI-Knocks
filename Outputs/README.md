@@ -2,7 +2,7 @@
 150×200サイズに画像をリサイズして表示させてください。
 アスペクト比が異なる場合は余白を赤色で表示してください。
 
-<img src="2023-10-01-0.png" width="300px" alt="画像をリサイズして表示（fit）">
+<img src="2023-10-01/2023-10-01.png" width="300px" alt="画像をリサイズして表示（fit）">
 
 <details><summary>解答例</summary>
 <div>
@@ -33,7 +33,7 @@ struct ContentView: View {
 150×200サイズに画像をリサイズして表示させてください。
 アスペクト比が異なる場合ははみ出た箇所を切り取って表示してください。
 
-<img src="2023-10-02-0.png" width="300px" alt="画像をリサイズして表示（clip）">
+<img src="2023-10-02/2023-10-02.png" width="300px" alt="画像をリサイズして表示（clip）">
 
 <details><summary>解答例</summary>
 <div>
@@ -64,7 +64,7 @@ struct ContentView: View {
 ### 3. 画像を丸く切り取る
 150✖︎150サイズに画像をリサイズし、丸く切り取って表示させてください。
 
-<img src="2023-10-03-0.png" width="300px" alt="画像を丸く切り取る">
+<img src="2023-10-03/2023-10-03.png" width="300px" alt="画像を丸く切り取る">
 
 <details><summary>解答例</summary>
 <div>
@@ -92,9 +92,9 @@ struct ContentView: View {
 
 
 ### 4. 画像を丸く切り取り、枠を付ける
+150✖︎150サイズに画像をリサイズし、丸く切り枠をつけて表示させてください。
 
-
-<img src="2023-10-04-0.png" width="300px" alt="画像を丸く切り取り、枠を付ける">
+<img src="2023-10-04/2023-10-04.png" width="300px" alt="画像を丸く切り取り、枠を付ける">
 
 <details><summary>解答例</summary>
 <div>
@@ -127,7 +127,7 @@ struct ContentView: View {
 ### 5. 画像を等間隔で横に並べる
 画像を等間隔で並べてください。
 
-<img src="2023-10-05-0.png" width="300px" alt="画像を等間隔で横に並べる">
+<img src="2023-10-05/2023-10-05.png" width="300px" alt="画像を等間隔で横に並べる">
 
 <details><summary>解答例</summary>
 <div>
@@ -174,7 +174,7 @@ struct ContentView: View {
 ### 6. NavigationViewを使いラージタイトルを表示する
 NavigationViewを使いラージタイトルを表示してください。
 
-<img src="2023-10-06-0.png" width="300px" alt="NavigationViewを使いラージタイトルを表示する">
+<img src="2023-10-06/2023-10-06.png" width="300px" alt="NavigationViewを使いラージタイトルを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -208,9 +208,9 @@ struct ContentView: View {
 
 
 ### 7. Pickerを表示する
-Pickerを使いポケモンを表示してください。
+Pickerを使いポケモンを選択してください。
 
-<img src="2023-10-07-0.gif" width="300px" alt="Pickerを表示する">
+<img src="2023-10-07/2023-10-07.gif" width="300px" alt="Pickerを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -248,7 +248,7 @@ struct ContentView: View {
 ### 8. TabViewを使って画面を切り替える
 TabViewを使って画面を切り替えてください。
 
-<img src="2023-10-08-0.gif" width="300px" alt="TabViewを使って画面を切り替える">
+<img src="2023-10-08/2023-10-08.gif" width="300px" alt="TabViewを使って画面を切り替える">
 
 <details><summary>解答例</summary>
 <div>
@@ -291,7 +291,7 @@ struct ContentView: View {
 ### 9. Buttonが押されたら文字を変える
 Buttonが押されたら文字を変えてください。
 
-<img src="2023-10-09-0.gif" width="300px" alt="Buttonが押されたら文字を変える">
+<img src="2023-10-09/2023-10-09.gif" width="300px" alt="Buttonが押されたら文字を変える">
 
 <details><summary>解答例</summary>
 <div>
@@ -320,9 +320,9 @@ struct ContentView: View {
 
 
 ### 10. Listを使ってセクションごとに表示する
-Listを使ってセクションごとに表示する（groupedスタイル）
+Listを使ってセクションごとに表示してください。（groupedスタイル）
 
-<img src="2023-10-10-0.png" width="300px" alt="Listを使ってセクションごとに表示する">
+<img src="2023-10-10/2023-10-10.png" width="300px" alt="Listを使ってセクションごとに表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -360,7 +360,7 @@ struct ContentView: View {
 ### 11. 画面遷移時に値を渡す
 画面遷移時に値を渡してください。
 
-<img src="2023-10-11-0.gif" width="300px" alt="画面遷移時に値を渡す">
+<img src="2023-10-11/2023-10-11.gif" width="300px" alt="画面遷移時に値を渡す">
 
 <details><summary>解答例</summary>
 <div>
@@ -410,7 +410,7 @@ struct SecondView: View {
 ### 12. NavigationViewの戻るボタンを非表示にする
 NavigationViewの戻るボタンを非表示にしてください。
 
-<img src="2023-10-12-0.gif" width="300px" alt="NavigationViewの戻るボタンを非表示にする">
+<img src="2023-10-12/2023-10-12.gif" width="300px" alt="NavigationViewの戻るボタンを非表示にする">
 
 <details><summary>解答例</summary>
 <div>
@@ -431,10 +431,6 @@ struct ContentView: View {
         }
     }
 }
-
-#Preview {
-    ContentView()
-}
 ```
 
 ```swift
@@ -448,10 +444,6 @@ struct SecondView: View {
             .navigationBarBackButtonHidden(true)
     }
 }
-
-#Preview {
-    SecondView(fruit: "Apple")
-}
 ```
 
 </div>
@@ -461,7 +453,7 @@ struct SecondView: View {
 ### 13. Listのスタイルを変更する
 ListのスタイルをPlainListStyleに変更してください。
 
-<img src="2023-10-13-0.png" width="300px" alt="Listのスタイルを変更する">
+<img src="2023-10-13/2023-10-13.png" width="300px" alt="Listのスタイルを変更する">
 
 <details><summary>解答例</summary>
 <div>
@@ -499,7 +491,7 @@ struct ContentView: View {
 ### 14. Alertを表示する
 アラートを表示させてください。
 
-<img src="2023-10-14-0.gif" width="300px" alt="Alertを表示する">
+<img src="2023-10-14/2023-10-14.gif" width="300px" alt="Alertを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -543,7 +535,7 @@ struct ContentView: View {
 ### 15. Alertを出し分ける
 ボタン1が押されたらアラート1を、ボタン2が押されたらアラート2を表示してください
 
-<img src="2023-10-15-0.gif" width="300px" alt="Alertを出し分ける">
+<img src="2023-10-15/2023-10-15.gif" width="300px" alt="Alertを出し分ける">
 
 <details><summary>解答例</summary>
 <div>
@@ -586,6 +578,15 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import Foundation
+
+struct AlertItem {
+    let buttonTitle: String
+    let message: String
+}
+```
+
 </div>
 </details>
 
@@ -594,7 +595,7 @@ struct ContentView: View {
 Buttonが押されたら文字を変えてください。
 Button内の画像やテキストの色を変えないでください。
 
-<img src="2023-10-16-0.gif" width="300px" alt="Button内の画像やテキストの色を変えない">
+<img src="2023-10-16/2023-10-16.gif" width="300px" alt="Button内の画像やテキストの色を変えない">
 
 <details><summary>解答例</summary>
 <div>
@@ -603,13 +604,13 @@ Button内の画像やテキストの色を変えないでください。
 import SwiftUI
 
 struct ContentView: View {
-    @State var text = "Snorlax"
+    @State var bool = true
 
     var body: some View {
         VStack {
-            Text(text)
+            Text(bool ? "Snorlax" : "Forever")
             Button(action: {
-                text = "Forever"
+                bool.toggle()
             }) {
                 HStack {
                     Image(.icon)
@@ -625,10 +626,6 @@ struct ContentView: View {
         }
     }
 }
-
-#Preview {
-    ContentView()
-}
 ```
 
 </div>
@@ -639,7 +636,7 @@ struct ContentView: View {
 数字が入力されたらシートを表示してください。
 数字以外が入力されたらアラートを表示してください。
 
-<img src="2023-10-17-0.gif" width="300px" alt="SwiftUIでアラートとシートを出し分ける">
+<img src="2023-10-17/2023-10-17.gif" width="300px" alt="SwiftUIでアラートとシートを出し分ける">
 
 <details><summary>解答例</summary>
 <div>
@@ -681,20 +678,16 @@ struct ContentView: View {
         }
     }
 }
-
-#Preview {
-    ContentView()
-}
 ```
 
 </div>
 </details>
 
 
-### 18. Buttonからプッシュ遷移をする（NavigationLinkを無効にする）
-Buttonからプッシュ遷移をする方法です。 この方法であれば、NavigationLink を擬似的に無効にすることができます。
+### 18. NavigationLinkを使用せずにプッシュ遷移する（.navigationDestination）
+NavigationLinkを使用せずにプッシュ遷移してください。（.navigationDestination）
 
-<img src="2023-10-18-0.gif" width="300px" alt="Buttonからプッシュ遷移をする（NavigationLinkを無効にする）">
+<img src="2023-10-18/2023-10-18.gif" width="300px" alt="NavigationLinkを使用せずにプッシュ遷移する（.navigationDestination）">
 
 <details><summary>解答例</summary>
 <div>
@@ -733,7 +726,7 @@ struct ContentView: View {
 ### 19. 続きを読む。。。ボタンがあるViewを実装する
 SwiftUIで続きを読む。。。ボタンがあるViewを実装してください。
 
-<img src="2023-10-19-0.gif" width="300px" alt="続きを読む。。。ボタンがあるViewを実装する">
+<img src="2023-10-19/2023-10-19.gif" width="300px" alt="続きを読む。。。ボタンがあるViewを実装する">
 
 <details><summary>解答例</summary>
 <div>
@@ -846,7 +839,7 @@ private struct SizePreference: PreferenceKey {
 ### 20. Text中の文字の太さや色を変える
 Text中の文字の太さや色を変えてください。
 
-<img src="2023-10-20-0.png" width="300px" alt="Text中の文字の太さや色を変える">
+<img src="2023-10-20/2023-10-20.png" width="300px" alt="Text中の文字の太さや色を変える">
 
 <details><summary>解答例</summary>
 <div>
@@ -880,10 +873,6 @@ struct ContentView: View {
         }
     }
 }
-
-#Preview {
-    ContentView()
-}
 ```
 
 </div>
@@ -893,7 +882,7 @@ struct ContentView: View {
 ### 21. FunctionBuilderを使ってViewに影をつける
 FunctionBuilderを使ってViewに影をつけてください。
 
-<img src="2023-10-21-0.png" width="300px" alt="FunctionBuilderを使ってViewに影をつける">
+<img src="2023-10-21/2023-10-21.png" width="300px" alt="FunctionBuilderを使ってViewに影をつける">
 
 <details><summary>解答例</summary>
 <div>
@@ -926,11 +915,6 @@ struct ContentView: View {
         }
     }
 }
-
-#Preview {
-    ContentView()
-}
-
 ```
 
 ```swift
@@ -968,7 +952,7 @@ struct CardView<Content>: View where Content: View {
 ### 22. ViewModifierを使ってViewに影をつける
 ViewModifierを使ってViewに影をつけてください。
 
-<img src="2023-10-22-0.png" width="300px" alt="ViewModifierを使ってViewに影をつける">
+<img src="2023-10-22/2023-10-22.png" width="300px" alt="ViewModifierを使ってViewに影をつける">
 
 <details><summary>解答例</summary>
 <div>
@@ -996,10 +980,6 @@ struct ContentView: View {
                     radius: 24)
         }
     }
-}
-
-#Preview {
-    ContentView()
 }
 ```
 
@@ -1039,7 +1019,7 @@ extension View {
 ### 23. リストを編集する
 リストを編集してください。
 
-<img src="2023-10-23-0.gif" width="300px" alt="リストを編集する">
+<img src="2023-10-23/2023-10-23.gif" width="300px" alt="リストを編集する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1079,7 +1059,7 @@ struct ContentView: View {
 ### 24. リストのセルをタップするとアラートが表示させる
 リストのセルをタップするとアラートが表示させてください。
 
-<img src="2023-10-24-0.gif" width="300px" alt="リストのセルをタップするとアラートが表示させる">
+<img src="2023-10-24/2023-10-24.gif" width="300px" alt="リストのセルをタップするとアラートが表示させる">
 
 <details><summary>解答例</summary>
 <div>
@@ -1122,6 +1102,15 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import Foundation
+
+struct Pokemon: Identifiable {
+    let id: Int
+    let name: String
+}
+```
+
 </div>
 </details>
 
@@ -1129,7 +1118,7 @@ struct ContentView: View {
 ### 25. 画面遷移先のViewから遷移元のメソッドを呼び出す
 画面遷移先の View から遷移元のメソッドを呼び出してください。
 
-<img src="2023-10-25-0.gif" width="300px" alt="画面遷移先のViewから遷移元のメソッドを呼び出す">
+<img src="2023-10-25/2023-10-25.gif" width="300px" alt="画面遷移先のViewから遷移元のメソッドを呼び出す">
 
 <details><summary>解答例</summary>
 <div>
@@ -1167,6 +1156,29 @@ struct SecondView: View {
 }
 ```
 
+```swift
+import SwiftUI
+
+struct SecondView: View {
+    var delegate: MyProtocol
+    var body: some View {
+        Button(action: {
+            delegate.myFunc()
+        }) {
+            Text("ChangeText")
+        }
+    }
+}
+```
+
+```swift
+import Foundation
+
+protocol MyProtocol {
+    func myFunc()
+}
+```
+
 </div>
 </details>
 
@@ -1174,7 +1186,89 @@ struct SecondView: View {
 ### 26. ListViewからそれぞれ別のViewに遷移する
 ListViewからそれぞれ別のViewに遷移する
 
-<img src="2023-10-26-0.gif" width="300px" alt="ListViewからそれぞれ別のViewに遷移する">
+<img src="2023-10-26/2023-10-26.gif" width="300px" alt="ListViewからそれぞれ別のViewに遷移する">
+
+<details><summary>解答例</summary>
+<div>
+
+```swift
+import SwiftUI
+
+struct ContentView: View {
+    @State var pokemon: Pokemon?
+    var body: some View {
+        NavigationStack {
+            List (Pokemon.allCases) { pokemon in
+                Button {
+                    self.pokemon = pokemon
+                } label: {
+                    Text(pokemon.description)
+                }
+            }
+            .navigationDestination(item: $pokemon) { pokemon in
+                switch pokemon {
+                case .snorlax:
+                    Image(.snorlax)
+                        .resizable()
+                        .scaledToFit()
+                case .slowpoke:
+                    VStack {
+                        Image(.slowpoke)
+                            .resizable()
+                            .scaledToFit()
+                        Text("Snorlax")
+                    }
+                case .ditto:
+                    HStack {
+                        Image(.ditto)
+                            .resizable()
+                            .scaledToFit()
+                        Text("Ditto")
+                    }
+                case .eevee:
+                    Text("Eevee")
+                }
+            }
+        }
+    }
+}
+```
+
+```swift
+import Foundation
+
+enum Pokemon: Identifiable, CaseIterable, CustomStringConvertible {
+    var id: Int {
+        self.hashValue
+    }
+    case snorlax
+    case slowpoke
+    case ditto
+    case eevee
+    
+    var description : String {
+      switch self {
+      case .snorlax:
+          "Snorlax"
+      case .slowpoke:
+          "Slowpoke"
+      case .ditto:
+          "Ditto"
+      case .eevee:
+          "Eevee"
+      }
+    }
+}
+```
+
+</div>
+</details>
+
+
+### 27. 複数行のPickerを作成する
+複数行のPickerを作成する
+
+<img src="2023-10-27/2023-10-27.gif" width="300px" alt="複数行のPickerを作成する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1221,17 +1315,16 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-}
-```
+}```
 
 </div>
 </details>
 
 
-### 27. 複数行のPickerを作成する
-複数行のPickerを作成する
+### 28. Sheetを表示する
+Sheetを表示する
 
-<img src="2023-10-27-0.gif" width="300px" alt="複数行のPickerを作成する">
+<img src="2023-10-28/2023-10-28.gif" width="300px" alt="Sheetを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1260,39 +1353,27 @@ struct ContentView: View {
 }
 ```
 
-</div>
-</details>
-
-
-### 28. Sheetを表示する
-全画面でSheetを表示する
-
-<img src="2023-10-28-0.gif" width="300px" alt="Sheetを表示する">
-
-<details><summary>解答例</summary>
-<div>
-
 ```swift
 import SwiftUI
 
-struct ContentView: View {
-    @State var showingfullScreenCover = false
+struct SecondView: View {
+    @Environment(\.dismiss) var dismiss
+
     var body: some View {
         VStack {
             Button(action: {
-                showingfullScreenCover = true
+                dismiss()
             }) {
-                Text("Tap me!")
+                Text("Dismiss")
             }
         }
-        .fullScreenCover(isPresented: $showingfullScreenCover) {
-            SecondView()
-        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.white)
     }
 }
 
 #Preview {
-    ContentView()
+    SecondView()
 }
 ```
 
@@ -1303,7 +1384,7 @@ struct ContentView: View {
 ### 29. 全画面でSheetを表示する
 全画面でSheetを表示してください。
 
-<img src="2023-10-29-0.gif" width="300px" alt="全画面でSheetを表示する">
+<img src="2023-10-29/2023-10-29.gif" width="300px" alt="全画面でSheetを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1332,7 +1413,30 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+```
 
+```swift
+import SwiftUI
+
+struct SecondView: View {
+    @Environment(\.dismiss) var dismiss
+
+    var body: some View {
+        VStack {
+            Button(action: {
+                dismiss()
+            }) {
+                Text("Dismiss")
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.white)
+    }
+}
+
+#Preview {
+    SecondView()
+}
 ```
 
 </div>
@@ -1342,7 +1446,7 @@ struct ContentView: View {
 ### 30. NavigationBarを隠す
 TextをNavigationViewの中に入れつつNavigationBarを表示しないでください
 
-<img src="2023-10-30-0.png" width="300px" alt="NavigationBarを隠す">
+<img src="2023-10-30/2023-10-30.png" width="300px" alt="NavigationBarを隠す">
 
 <details><summary>解答例</summary>
 <div>
@@ -1372,7 +1476,7 @@ struct ContentView: View {
 ### 31. Previewを横向きにする
 Previewを横向きにしてください。
 
-<img src="2023-10-31-0.png" width="300px" alt="Previewを横向きにする">
+<img src="2023-10-31/2023-10-31.png" width="600px" alt="Previewを横向きにする">
 
 <details><summary>解答例</summary>
 <div>
@@ -1401,7 +1505,7 @@ struct ContentView_Previews: PreviewProvider {
 ### 32. 端末のシェイクを検知する
 端末のシェイクを検知して@Stateを更新してください
 
-<img src="2023-11-01-0.gif" width="300px" alt="端末のシェイクを検知する">
+<img src="2023-11-01/2023-11-01.gif" width="300px" alt="端末のシェイクを検知する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1425,6 +1529,25 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import Foundation
+
+extension NSNotification.Name {
+    public static let deviceDidShakeNotification = NSNotification.Name("DeviceDidShakeNotification")
+}
+```
+
+```swift
+import Foundation
+
+extension UIWindow {
+    open override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        super.motionEnded(motion, with: event)
+        NotificationCenter.default.post(name: .deviceDidShakeNotification, object: event)
+    }
+}
+```
+
 </div>
 </details>
 
@@ -1432,7 +1555,7 @@ struct ContentView: View {
 ### 33. UICollectionViewのようにViewを並べる
 UICollectionViewのようにViewを並べてください。
 
-<img src="2023-11-02-0.gif" width="300px" alt="UICollectionViewのようにViewを並べる">
+<img src="2023-11-02/2023-11-02.gif" width="300px" alt="UICollectionViewのようにViewを並べる">
 
 <details><summary>解答例</summary>
 <div>
@@ -1470,7 +1593,7 @@ struct ContentView: View {
 ### 34. スワイプで遷移するチュートリアル画面を作る
 画像のような良くあるウェークスルー画面を実装してください。
 
-<img src="2023-11-03-0.gif" width="300px" alt="スワイプで遷移するチュートリアル画面を作る">
+<img src="2023-11-03/2023-11-03.gif" width="300px" alt="スワイプで遷移するチュートリアル画面を作る">
 
 <details><summary>解答例</summary>
 <div>
@@ -1481,21 +1604,32 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            ContentViewCell(imageName: "snorlax")
-            ContentViewCell(imageName: "magnemite")
-            ContentViewCell(imageName: "psyduck")
-            ContentViewCell(imageName: "quagsire")
-            ContentViewCell(imageName: "slowpoke")
+            ContentViewCell(image: Image(.snorlax))
+            ContentViewCell(image: Image(.magnemite))
+            ContentViewCell(image: Image(.psyduck))
+            ContentViewCell(image: Image(.quagsire))
+            ContentViewCell(image: Image(.slowpoke))
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.gray)
         .tabViewStyle(.page)
         .menuIndicator(.visible)
     }
-}
+}```
 
-#Preview {
-    ContentView()
+```swift
+import SwiftUI
+
+struct ContentViewCell: View {
+    let image: Image
+    
+    var body: some View {
+        image
+            .resizable()
+            .scaledToFit()
+            .frame(width: 240, height: 240)
+            .background(Color.white)
+    }
 }
 ```
 
@@ -1506,7 +1640,7 @@ struct ContentView: View {
 ### 35. 閉じることができないモーダルを表示する
 
 
-<img src="2023-11-04-0.gif" width="300px" alt="閉じることができないモーダルを表示する">
+<img src="2023-11-04/2023-11-04.gif" width="300px" alt="閉じることができないモーダルを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1517,7 +1651,7 @@ import SwiftUI
 struct ContentView: View {
     @State var showingSheet = false
     var body: some View {
-        
+
         Button(action: {
             showingSheet = true
         }, label: {
@@ -1534,6 +1668,23 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import SwiftUI
+
+struct ModalView: View {
+    @Environment(\.dismiss) var dismiss
+
+    var body: some View {
+        Button(action: {
+            dismiss()
+        }, label: {
+            Text("Close")
+        })
+        .interactiveDismissDisabled(true)
+    }
+}
+```
+
 </div>
 </details>
 
@@ -1541,7 +1692,7 @@ struct ContentView: View {
 ### 36. アプリ起動時に画面を遷移させる
 ロゴを表示した後に画面遷移を行なってください
 
-<img src="2023-11-05-0.gif" width="300px" alt="アプリ起動時に画面を遷移させる">
+<img src="2023-11-05/2023-11-05.gif" width="300px" alt="アプリ起動時に画面を遷移させる">
 
 <details><summary>解答例</summary>
 <div>
@@ -1551,7 +1702,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var viewType: ViewType = .launch
-    
+
     var body: some View {
         ZStack {
             switch viewType {
@@ -1570,7 +1721,7 @@ struct ContentView: View {
             }
         }
     }
-    
+
     func sleep() async throws {
         // sleep 2sec
         _ = try await Task.sleep(nanoseconds: 2_000_000_000)
@@ -1582,6 +1733,15 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import Foundation
+
+enum ViewType {
+    case launch
+    case home
+}
+```
+
 </div>
 </details>
 
@@ -1589,7 +1749,7 @@ struct ContentView: View {
 ### 37. ハーフモーダルを表示する
 
 
-<img src="2023-11-06-0.gif" width="300px" alt="ハーフモーダルを表示する">
+<img src="2023-11-06/2023-11-06.gif" width="300px" alt="ハーフモーダルを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1600,7 +1760,7 @@ import SwiftUI
 struct ContentView: View {
     @State var showingSheet = false
     var body: some View {
-        
+
         Button(action: {
             showingSheet = true
         }, label: {
@@ -1609,7 +1769,7 @@ struct ContentView: View {
         .sheet(isPresented: $showingSheet) {
             Text("Half Modal")
                 .presentationDetents([.medium])
-            
+
         }
     }
 }
@@ -1626,7 +1786,7 @@ struct ContentView: View {
 ### 38. マークダウンを表示する
 
 
-<img src="2023-11-07-0.png" width="300px" alt="マークダウンを表示する">
+<img src="2023-11-07/2023-11-07.png" width="300px" alt="マークダウンを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1652,7 +1812,7 @@ struct ContentView: View {
 ### 39. 変数に格納したマークダウンを表示する
 
 
-<img src="2023-11-08-0.png" width="300px" alt="変数に格納したマークダウンを表示する">
+<img src="2023-11-08/2023-11-08.png" width="300px" alt="変数に格納したマークダウンを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1662,7 +1822,7 @@ import SwiftUI
 
 struct ContentView: View {
     let markdownText: String = "**Snorlax** is the **most** cute pokemon!\n[About Snorlax](https://en.wikipedia.org/wiki/Snorlax)"
-    
+
     var body: some View {
         Text(LocalizedStringKey(markdownText))
     }
@@ -1671,7 +1831,6 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
 ```
 
 </div>
@@ -1681,7 +1840,7 @@ struct ContentView: View {
 ### 40. マークダウンのリンクの色を赤色に変える
 
 
-<img src="2023-11-09-0.png" width="300px" alt="マークダウンのリンクの色を赤色に変える">
+<img src="2023-11-09/2023-11-09.png" width="300px" alt="マークダウンのリンクの色を赤色に変える">
 
 <details><summary>解答例</summary>
 <div>
@@ -1691,7 +1850,7 @@ import SwiftUI
 
 struct ContentView: View {
     let markdownText: String = "**Snorlax** is the **most** cute pokemon!\n[About Snorlax](https://en.wikipedia.org/wiki/Snorlax)"
-    
+
     var body: some View {
         Text(LocalizedStringKey(markdownText))
             .tint(Color.red)
@@ -1710,7 +1869,7 @@ struct ContentView: View {
 ### 41. GithubのAPIを叩き、リポジトリの情報をリストに表示する（async, await）
 
 
-<img src="2023-11-10-0.gif" width="300px" alt="GithubのAPIを叩き、リポジトリの情報をリストに表示する（async, await）">
+<img src="2023-11-10/2023-11-10.gif" width="300px" alt="GithubのAPIを叩き、リポジトリの情報をリストに表示する（async, await）">
 
 <details><summary>解答例</summary>
 <div>
@@ -1721,9 +1880,9 @@ import SwiftUI
 struct ContentView: View {
     @State var repositories: [Repository] = []
     @State var showingErrorAlert = false
-    
+
     let gitHubAPIRepository = GitHubAPIRepository()
-    
+
     var body: some View {
             List(repositories) { repository in
                 VStack(alignment: .leading) {
@@ -1742,12 +1901,12 @@ struct ContentView: View {
             }
 
     }
-    
+
     @MainActor
     func fetchRepositories() {
         Task {
             do {
-                repositories = try await gitHubAPIRepository.searchRepos(page:1, perPage: 20)
+                repositories = try await gitHubAPIRepository.searchRepos(page: 1, perPage: 20)
             } catch {
                 showingErrorAlert = true
             }
@@ -1760,6 +1919,37 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import Foundation
+
+struct GitHubAPIRepository {
+    func searchRepos(page: Int, perPage: Int) async throws -> [Repository] {
+        let url = URL(string: "https://api.github.com/search/repositories?q=swift&sort=stars&page=\(page)&per_page=\(perPage)")!
+        let (data, _) = try await URLSession.shared.data(from: url)
+        let response = try JSONDecoder().decode(GithubSearchResult.self, from: data)
+        return response.items
+    }
+}
+
+struct GithubSearchResult: Codable {
+    let items: [Repository]
+}
+
+struct Repository: Codable, Identifiable, Equatable {
+    let id: Int
+    let name: String
+    let description: String?
+    let stargazersCount: Int
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case description
+        case stargazersCount = "stargazers_count"
+    }
+}
+```
+
 </div>
 </details>
 
@@ -1767,7 +1957,7 @@ struct ContentView: View {
 ### 42. GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。
 
 
-<img src="2023-11-11-0.gif" width="300px" alt="GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。">
+<img src="2023-11-11/2023-11-11.gif" width="300px" alt="GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。">
 
 <details><summary>解答例</summary>
 <div>
@@ -1782,7 +1972,7 @@ struct ContentView: View {
     @State var showingErrorAlert = false
 
     let gitHubAPIRepository = GitHubAPIRepository()
-    
+
     var body: some View {
             List(repositories) { repository in
                 VStack(alignment: .leading) {
@@ -1806,14 +1996,14 @@ struct ContentView: View {
             }
 
     }
-    
+
     @MainActor
     func fetchRepositories() {
         if isFetching {
             return
         }
         isFetching = true
-        
+
         Task {
             do {
                 repositories += try await gitHubAPIRepository.searchRepos(page: page, perPage: 20)
@@ -1832,14 +2022,45 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import Foundation
+
+struct GitHubAPIRepository {
+    func searchRepos(page: Int, perPage: Int) async throws -> [Repository] {
+        let url = URL(string: "https://api.github.com/search/repositories?q=swift&sort=stars&page=\(page)&per_page=\(perPage)")!
+        let (data, _) = try await URLSession.shared.data(from: url)
+        let response = try JSONDecoder().decode(GithubSearchResult.self, from: data)
+        return response.items
+    }
+}
+
+struct GithubSearchResult: Codable {
+    let items: [Repository]
+}
+
+struct Repository: Codable, Identifiable, Equatable {
+    let id: Int
+    let name: String
+    let description: String?
+    let stargazersCount: Int
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case description
+        case stargazersCount = "stargazers_count"
+    }
+}
+```
+
 </div>
 </details>
 
 
 ### 43. GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。Indicator も表示してください。
+GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。Indicator も表示してください。
 
-
-<img src="2023-11-12-0.gif" width="300px" alt="GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。Indicator も表示してください。">
+<img src="2023-11-12/2023-11-12.gif" width="300px" alt="GithubのAPIを叩き、リポジトリの情報をリストに表示する。一番下までスクロールされたら追加で取得してください。Indicator も表示してください。">
 
 <details><summary>解答例</summary>
 <div>
@@ -1852,9 +2073,9 @@ struct ContentView: View {
     @State var page = 1
     @State var isFetching = false
     @State var showingErrorAlert = false
-    
+
     let gitHubAPIRepository = GitHubAPIRepository()
-    
+
     var body: some View {
         List {
             ForEach(repositories) { repository in
@@ -1870,7 +2091,7 @@ struct ContentView: View {
                     }
                 }
             }
-            
+
             HStack {
                 if isFetching {
                     Spacer()
@@ -1888,14 +2109,14 @@ struct ContentView: View {
             Text("Failed to Fetch repositories.")
         }
     }
-    
+
     @MainActor
     func fetchRepositories() {
         if isFetching {
             return
         }
         isFetching = true
-        
+
         Task {
             do {
                 repositories += try await gitHubAPIRepository.searchRepos(page: page, perPage: 20)
@@ -1914,14 +2135,45 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import Foundation
+
+struct GitHubAPIRepository {
+    func searchRepos(page: Int, perPage: Int) async throws -> [Repository] {
+        let url = URL(string: "https://api.github.com/search/repositories?q=swift&sort=stars&page=\(page)&per_page=\(perPage)")!
+        let (data, _) = try await URLSession.shared.data(from: url)
+        let response = try JSONDecoder().decode(GithubSearchResult.self, from: data)
+        return response.items
+    }
+}
+
+struct GithubSearchResult: Codable {
+    let items: [Repository]
+}
+
+struct Repository: Codable, Identifiable, Equatable {
+    let id: Int
+    let name: String
+    let description: String?
+    let stargazersCount: Int
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case description
+        case stargazersCount = "stargazers_count"
+    }
+}
+```
+
 </div>
 </details>
 
 
 ### 44. SwiftUIのTextFieldで編集中と編集完了を検知する
+SwiftUIのTextFieldで編集中と編集完了を検知する
 
-
-<img src="2023-11-13-0.gif" width="300px" alt="SwiftUIのTextFieldで編集中と編集完了を検知する">
+<img src="2023-11-13/2023-11-13.gif" width="300px" alt="SwiftUIのTextFieldで編集中と編集完了を検知する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1929,14 +2181,14 @@ struct ContentView: View {
 ```swift
 import SwiftUI
 
-struct ContentView : View {
+struct ContentView: View {
     @State var userName: String = ""
     @State var onEditing: Bool = false
-    
+
     var body: some View {
         VStack {
             Text(onEditing ? "On Editing" : "Not On Editing")
-            
+
             TextField("Placeholder", text: $userName, onEditingChanged: { onEditing in
                 print("onEditingChanged: \(onEditing)")
                 self.onEditing = onEditing
@@ -1959,9 +2211,9 @@ struct ContentView : View {
 
 
 ### 45. SwiftUIでAppStorageを使ってUserDefaultの値を監視する
+SwiftUIでAppStorageを使ってUserDefaultの値を監視する
 
-
-<img src="2023-11-14-0.gif" width="300px" alt="SwiftUIでAppStorageを使ってUserDefaultの値を監視する">
+<img src="2023-11-14/2023-11-14.gif" width="300px" alt="SwiftUIでAppStorageを使ってUserDefaultの値を監視する">
 
 <details><summary>解答例</summary>
 <div>
@@ -1979,7 +2231,7 @@ struct ContentView: View {
             Button("Snorlax is my mavorite pokemon.") {
                 favoritePokemonName = "Snorlax"
             }
-            
+
             Button("Slowpoke is my mavorite pokemon.") {
                 UserDefaults.standard.set("Slowpoke", forKey: "FAVORITE_POKEMON_NAME")
             }
@@ -1999,7 +2251,7 @@ struct ContentView: View {
 ### 46. SwiftUIでViewの上にViewを重ねる
 
 
-<img src="2023-11-15-0.png" width="300px" alt="SwiftUIでViewの上にViewを重ねる">
+<img src="2023-11-15/2023-11-15.png" width="300px" alt="SwiftUIでViewの上にViewを重ねる">
 
 <details><summary>解答例</summary>
 <div>
@@ -2032,16 +2284,53 @@ struct ContentView: View {
 </details>
 
 
-### 47. SwiftUIでMapを使う。Mapにピンを立てる(skip)
+### 47. SwiftUIでMapを使う。Mapに画像や図形を表示する
+SwiftUIでMapを使う。Mapに画像や図形を表示する
 
-
-<img src="2023-11-16-0.png" width="300px" alt="SwiftUIでMapを使う。Mapにピンを立てる(skip)">
+<img src="2023-11-16/2023-11-16.gif" width="300px" alt="SwiftUIでMapを使う。Mapに画像や図形を表示する">
 
 <details><summary>解答例</summary>
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+import MapKit
+
+struct ContentView: View {
+    // Tokyo Station(35.6812° N, 139.7671° E)
+    let tokyoStation = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 35.6812, longitude: 139.7671), latitudinalMeters: 10000, longitudinalMeters: 10000)
+
+    var body: some View {
+        Map(initialPosition: .region(tokyoStation)) {
+            // Akihabara Station(35.6984° N, 139.7731° E)
+            MapCircle(center: CLLocationCoordinate2D(latitude: 35.6984, longitude: 139.7731), radius: CLLocationDistance(800))
+                .foregroundStyle(.orange.opacity(0.60))
+                .mapOverlayLevel(level: .aboveLabels)
+
+            // Snorlax at Akihabara Station(35.6984° N, 139.7731° E)
+            Annotation("Snorlax", coordinate: CLLocationCoordinate2D(latitude: 35.6984, longitude: 139.7731)) {
+                Image(.snorlax)
+                    .resizable()
+                    .frame(width: 60, height: 60)
+                    .scaledToFit()
+            }
+
+            // Polygon
+            MapPolygon(coordinates: [
+                // Shibuya Station(35.6580° N, 139.7016° E)
+                CLLocationCoordinate2D(latitude: 35.6580, longitude: 139.7016),
+
+                // Akihabara Station(35.6984° N, 139.7731° E)
+                CLLocationCoordinate2D(latitude: 35.6984, longitude: 139.7731),
+                
+                // Tokyo Station(35.6812° N, 139.139.7671° E)
+                CLLocationCoordinate2D(latitude: 35.6812, longitude: 139.7671)
+            ])
+            .foregroundStyle(.blue.opacity(0.60))
+            .mapOverlayLevel(level: .aboveLabels)
+        }
+    }
+}
 ```
 
 </div>
@@ -2049,9 +2338,9 @@ import Foundation
 
 
 ### 48. SwiftUIを使ったTODOアプリのサンプル
+SwiftUIを使ったTODOアプリのサンプル
 
-
-<img src="2023-11-17-0.gif" width="300px" alt="SwiftUIを使ったTODOアプリのサンプル">
+<img src="2023-11-17/2023-11-17.gif" width="300px" alt="SwiftUIを使ったTODOアプリのサンプル">
 
 <details><summary>解答例</summary>
 <div>
@@ -2059,54 +2348,202 @@ import Foundation
 ```swift
 import SwiftUI
 
-struct ContentView: View, InputViewDelegate {
-    @State var todos: [String] = []
+struct ContentView: View {
+    @State var showingSheet: ContentViewSheetItem?
     
     var body: some View {
-        NavigationView {
-            ZStack(alignment: .bottomTrailing) {
-                List {
-                    ForEach(todos, id: \.self) { user in
-                        Text(user)
-                    }
-                    .onDelete(perform: delete)
+        VStack {
+            CalendarView { dateComponents in
+                guard let year = dateComponents.year,
+                      let month = dateComponents.month,
+                      let day = dateComponents.day else {
+                    return
                 }
-                .listStyle(.plain)
-                
-                NavigationLink(destination: InputView(delegate: self, text: "")) {
-                    Text("Add")
-                        .foregroundColor(Color.white)
-                        .font(Font.system(size: 20))
-                }
-                .frame(width: 60, height: 60)
-                .background(Color.orange)
-                .cornerRadius(30)
-                .padding()
-                
+                showingSheet = .showScheduleList(year: year, month: month, day: day)
             }
-            .onAppear {
-                if let todos = UserDefaults.standard.array(forKey: "TODO") as? [String] {
-                    self.todos = todos
-                }
+            .padding()
+            .navigationTitle("UICalendarView")
+            
+            Button {
+                showingSheet = .showInputSchedule
+            } label: {
+                Text("Add Schedule")
+                    .font(Font.system(size: 20))
+                    .fontWeight(.bold)
+                    .padding(16)
+                    .border(Color.black, width: 1)
             }
-            .navigationTitle("TODO")
-            .navigationBarItems(trailing: EditButton())
+        }
+        .sheet(item: $showingSheet, content: { item in
+            switch item {
+            case .showScheduleList(let year, let month, let day):
+                ScheduleList(year: year, month: month, day: day)
+            case .showInputSchedule:
+                InputScheduleView()
+            }
+        })
+    }
+}
+```
+
+```swift
+import SwiftUI
+
+struct CalendarView: UIViewRepresentable {
+    let didSelectDate: (_ dateComponents: DateComponents) -> Void
+    
+    final public class Coordinator: NSObject, UICalendarSelectionSingleDateDelegate {
+        let didSelectDate: (_ dateComponents: DateComponents) -> Void
+        
+        init(
+            didSelectDate: @escaping (_ dateComponents: DateComponents) -> Void
+        ) {
+            self.didSelectDate = didSelectDate
+        }
+        
+        public func dateSelection(_ selection: UICalendarSelectionSingleDate, didSelectDate dateComponents: DateComponents?) {
+            guard let dateComponents = dateComponents else {
+                return
+            }
+            didSelectDate(dateComponents)
         }
     }
     
-    func delete(at offsets: IndexSet) {
-        todos.remove(atOffsets: offsets)
-        UserDefaults.standard.setValue(todos, forKey: "TODO")
+    public func makeCoordinator() -> Coordinator {
+        Coordinator(didSelectDate: didSelectDate)
     }
     
-    func addTodo(text: String) {
-        todos.append(text)
-        UserDefaults.standard.setValue(todos, forKey: "TODO")
+    func makeUIView(context: Context) -> some UIView {
+        let selection = UICalendarSelectionSingleDate(delegate: context.coordinator)
+        
+        let calendarView = UICalendarView()
+        calendarView.selectionBehavior = selection
+        return calendarView
+    }
+    
+    func updateUIView(_ uiView: UIViewType, context: Context) {}
+}
+```
+
+```swift
+import Foundation
+
+enum ContentViewSheetItem: Hashable, Identifiable {
+    var id: Self {
+        return self
+    }
+    case showInputSchedule
+    case showScheduleList(year: Int, month: Int, day: Int)
+}
+```
+
+```swift
+import SwiftUI
+
+struct InputScheduleView: View {
+    @Environment(\.dismiss) private var dismiss
+    
+    @State var schedule = ""
+    @State var date = Date()
+    
+    var body: some View {
+        VStack {
+            TextField("Schedule", text: $schedule)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+            
+            DatePicker(selection: $date, label: { Text("") })
+                .environment(\.locale, Locale(identifier: "ja_JP"))
+            
+            Button {
+                let calendar = Calendar.current
+                let components = calendar.dateComponents([.year, .month, .day], from: date)
+                guard let year = components.year, let month = components.month, let day = components.day else {
+                    return
+                }
+                
+                // Add Schedules
+                var schedules = UserDefaultsManager.getSchedules(year: year, month: month, day: day)
+                schedules.append(schedule)
+                
+                UserDefaultsManager.setSchedules(year: year, month: month, day: day, schedules: schedules)
+                
+                dismiss()
+            } label: {
+                Text("Add")
+                    .font(Font.system(size: 20))
+                    .fontWeight(.bold)
+                    .padding(16)
+                    .border(Color.black, width: 1)
+            }
+        }
+        .padding()
+    }
+}
+```
+
+```swift
+import SwiftUI
+
+protocol InputViewDelegate {
+    func addTodo(text: String)
+}
+
+struct InputView: View {
+    @Environment(\.presentationMode) var presentation
+    let delegate: InputViewDelegate
+    @State var text: String
+
+    var body: some View {
+        VStack(spacing: 16) {
+            TextField("Input Your TODO", text: $text)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+            Button("Add") {
+                delegate.addTodo(text: text)
+                presentation.wrappedValue.dismiss()
+            }
+        }
+        .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    InputView()
+}
+```
+
+```swift
+import SwiftUI
+
+struct ScheduleList: View {
+    @State var year: Int
+    @State var month: Int
+    @State var day: Int
+    @State var schedules: [String] = []
+    
+    var body: some View {
+        List(schedules, id: \.self) { schedule in
+            Text(schedule)
+        }
+        .onAppear {
+            schedules = UserDefaultsManager.getSchedules(year: year, month: month, day: day)
+        }
+    }
+}
+```
+
+```swift
+import Foundation
+
+struct UserDefaultsManager {
+    static func getSchedules(year: Int, month: Int, day: Int) -> [String] {
+        if let schedules = UserDefaults.standard.object(forKey: "\(year)-\(month)-\(day)") as? [String] {
+            return schedules
+        }
+        return []
+    }
+    static func setSchedules(year: Int, month: Int, day: Int, schedules: [String]) {
+        UserDefaults.standard.set(schedules, forKey: "\(year)-\(month)-\(day)")
+    }
 }
 ```
 
@@ -2117,7 +2554,7 @@ struct ContentView: View, InputViewDelegate {
 ### 49. SwiftUIでAVAudioPlayerで音楽を再生し、再生終了を検知する
 
 
-<img src="2023-11-18-0.png" width="300px" alt="SwiftUIでAVAudioPlayerで音楽を再生し、再生終了を検知する">
+<img src="2023-11-18/2023-11-18.png" width="300px" alt="SwiftUIでAVAudioPlayerで音楽を再生し、再生終了を検知する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2148,7 +2585,7 @@ struct ContentView: View {
 ### 50. SwiftUIでモーダルを表示する時に値を渡す
 
 
-<img src="2023-11-19-0.gif" width="300px" alt="SwiftUIでモーダルを表示する時に値を渡す">
+<img src="2023-11-19/2023-11-19.png" width="300px" alt="SwiftUIでモーダルを表示する時に値を渡す">
 
 <details><summary>解答例</summary>
 <div>
@@ -2159,7 +2596,7 @@ import SwiftUI
 struct ContentView: View {
     @State var name = ""
     @State var showingSheet = false
-    
+
     var body: some View {
         VStack(spacing: 16) {
             TextField("Input Name", text: $name)
@@ -2196,7 +2633,7 @@ struct ContentView: View {
 ### 51. SwiftUIでBMIを計算し、結果を別のViewで表示する
 
 
-<img src="2023-11-20-0.gif" width="300px" alt="SwiftUIでBMIを計算し、結果を別のViewで表示する">
+<img src="2023-11-20/2023-11-20.gif" width="300px" alt="SwiftUIでBMIを計算し、結果を別のViewで表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2209,7 +2646,7 @@ struct ContentView: View {
     @State var weight: String = ""
     @State var bmi: Double = 0
     @State var showingSheet = false
-    
+
     var body: some View {
         VStack {
             VStack(alignment: .leading) {
@@ -2220,7 +2657,7 @@ struct ContentView: View {
                     .border(Color.black, width: 1)
             }
             .padding()
-            
+
             VStack(alignment: .leading) {
                 Text("Height")
                 TextField("Input Your Weight", text: $weight)
@@ -2229,17 +2666,17 @@ struct ContentView: View {
                     .border(Color.black, width: 1)
             }
             .padding()
-            
+
             Button(action: {
                 guard let height = Double(self.height),
                       let weight = Double(self.weight) else {
                     print("Fail to Calc BMI")
                     return
                 }
-                
+
                 // Calc BMI
                 bmi = weight / (height / 100) / (height / 100)
-                
+
                 // Show Sheet
                 showingSheet = true
             }, label: {
@@ -2269,7 +2706,7 @@ struct ContentView: View {
 ### 52. SwiftUIでボタンを押すとポップアップを表示する
 
 
-<img src="2023-11-21-0.gif" width="300px" alt="SwiftUIでボタンを押すとポップアップを表示する">
+<img src="2023-11-21/2023-11-21.gif" width="300px" alt="SwiftUIでボタンを押すとポップアップを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2291,7 +2728,7 @@ struct ContentView: View {
                     .background(Color.white)
                     .cornerRadius(12)
             })
-            
+
             if showingPopUp {
                 PopupView(isPresent: $showingPopUp)
             }
@@ -2314,7 +2751,7 @@ struct ContentView: View {
 ### 53. SwiftUIでViewを横スクロールで表示する
 
 
-<img src="2023-11-22-0.gif" width="300px" alt="SwiftUIでViewを横スクロールで表示する">
+<img src="2023-11-22/2023-11-22.gif" width="300px" alt="SwiftUIでViewを横スクロールで表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2325,7 +2762,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         let pokemons = ["pikachu", "slowpoke", "bellsprout", "ditto", "snorlax", "eevee", "magikarp"]
-        
+
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack(spacing: 12) {
                 ForEach(pokemons, id: \.self) { pokemon in
@@ -2353,7 +2790,7 @@ struct ContentView: View {
 ### 54. SwiftUIでButtonを有効にしたり無効にしたりする
 
 
-<img src="2023-11-23-0.gif" width="300px" alt="SwiftUIでButtonを有効にしたり無効にしたりする">
+<img src="2023-11-23/2023-11-23.gif" width="300px" alt="SwiftUIでButtonを有効にしたり無効にしたりする">
 
 <details><summary>解答例</summary>
 <div>
@@ -2363,13 +2800,13 @@ import SwiftUI
 
 struct ContentView: View {
     @State var enable: Bool = true
-    
+
     var body: some View {
         VStack {
             Toggle(isOn: $enable) {
                 Text("isEnable: \(enable.description)")
             }
-            
+
             Button {
                 print("Tapped!!")
             } label: {
@@ -2395,7 +2832,7 @@ struct ContentView: View {
 ### 55. SwiftUIのTextFieldで表示するキーボードを指定する
 
 
-<img src="2023-11-24-0.gif" width="300px" alt="SwiftUIのTextFieldで表示するキーボードを指定する">
+<img src="2023-11-24/2023-11-24.gif" width="300px" alt="SwiftUIのTextFieldで表示するキーボードを指定する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2405,7 +2842,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var numberString = ""
-    
+
     var body: some View {
         TextField("Input Number", text: $numberString)
             .keyboardType(.decimalPad)
@@ -2426,7 +2863,7 @@ struct ContentView: View {
 ### 56. SwiftUIでシートを表示し、プッシュ遷移後にシートを閉じる
 
 
-<img src="2023-11-25-0.gif" width="300px" alt="SwiftUIでシートを表示し、プッシュ遷移後にシートを閉じる">
+<img src="2023-11-25/2023-11-25.gif" width="300px" alt="SwiftUIでシートを表示し、プッシュ遷移後にシートを閉じる">
 
 <details><summary>解答例</summary>
 <div>
@@ -2435,15 +2872,15 @@ struct ContentView: View {
 import SwiftUI
 
 struct ContentView: View {
-    @State var showingSheet : Bool = false
-    
+    @State var showingSheet: Bool = false
+
     var body: some View {
         Button(action: {
             showingSheet = true
         }, label: {
             Text("ShowSheet")
         })
-        .sheet(isPresented: $showingSheet){
+        .sheet(isPresented: $showingSheet) {
             FirstSheet(showingSheet: $showingSheet)
         }
     }
@@ -2461,7 +2898,7 @@ struct ContentView: View {
 ### 57. SwiftUIでListをEditModeにして並び替える
 
 
-<img src="2023-11-26-0.gif" width="300px" alt="SwiftUIでListをEditModeにして並び替える">
+<img src="2023-11-26/2023-11-26.gif" width="300px" alt="SwiftUIでListをEditModeにして並び替える">
 
 <details><summary>解答例</summary>
 <div>
@@ -2473,9 +2910,9 @@ struct ContentView: View {
     @State var pokemons: [Pokemon] = [
         Pokemon(id: 143, name: "Snorlax"),
         Pokemon(id: 52, name: "Meowth"),
-        Pokemon(id: 25, name: "Pikachu"),
+        Pokemon(id: 25, name: "Pikachu")
     ]
-    
+
     var body: some View {
         NavigationStack {
             List {
@@ -2503,7 +2940,7 @@ struct ContentView: View {
 ### 58. SwiftUIのListでSpacerの部分にもタップ判定をつける
 
 
-<img src="2023-11-27-0.png" width="300px" alt="SwiftUIのListでSpacerの部分にもタップ判定をつける">
+<img src="2023-11-27/2023-11-27.png" width="300px" alt="SwiftUIのListでSpacerの部分にもタップ判定をつける">
 
 <details><summary>解答例</summary>
 <div>
@@ -2539,7 +2976,7 @@ struct ContentView: View {
 ### 59. SwiftUIのListの中にボタンを複数設置する
 
 
-<img src="2023-11-28-0.png" width="300px" alt="SwiftUIのListの中にボタンを複数設置する">
+<img src="2023-11-28/2023-11-28.png" width="300px" alt="SwiftUIのListの中にボタンを複数設置する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2559,8 +2996,8 @@ struct ContentView: View {
     }
     var body: some View {
         ScrollView {
-            LazyVStack{
-                TextField("Type your search",text: $text)
+            LazyVStack {
+                TextField("Type your search", text: $text)
                     .padding(8)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 ForEach(filterdPokemons, id: \.self) { pokemon in
@@ -2587,7 +3024,7 @@ struct ContentView: View {
 ### 60. SwiftUIでSearchBar(TextField)を使って検索する
 
 
-<img src="2023-11-29-0.gif" width="300px" alt="SwiftUIでSearchBar(TextField)を使って検索する">
+<img src="2023-11-29/2023-11-29.gif" width="300px" alt="SwiftUIでSearchBar(TextField)を使って検索する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2608,8 +3045,8 @@ struct ContentView: View {
 
     var body: some View {
         ScrollView {
-            LazyVStack{
-                TextField("Type your search",text: $text)
+            LazyVStack {
+                TextField("Type your search", text: $text)
                     .padding(8)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 ForEach(filterdPokemons, id: \.self) { pokemon in
@@ -2636,7 +3073,7 @@ struct ContentView: View {
 ### 61. SwiftUIでSearchBar(TextField)にクリアボタンをつける(skip)
 
 
-<img src="2023-11-30-0.png" width="300px" alt="SwiftUIでSearchBar(TextField)にクリアボタンをつける(skip)">
+<img src="2023-11-30/image.png" width="300px" alt="SwiftUIでSearchBar(TextField)にクリアボタンをつける(skip)">
 
 <details><summary>解答例</summary>
 <div>
@@ -2652,7 +3089,7 @@ import Foundation
 ### 62. SwiftUIでMapを表示する
 SwiftUIを使ってMapを表示してください。秋葉原UDX（35.7005° N, 139.7726° E）を中心として、300mの範囲を表示しています。
 
-<img src="2023-12-01-0.png" width="300px" alt="SwiftUIでMapを表示する">
+<img src="2023-12-01/image.png" width="300px" alt="SwiftUIでMapを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -2688,7 +3125,7 @@ struct ContentView: View {
 ### 63. SwiftUIでMapを表示し、自分の位置を中心にする
 SwiftUIでMapを表示し、自分の位置を中心にする方法です。
 
-<img src="2023-12-02-0.png" width="300px" alt="SwiftUIでMapを表示し、自分の位置を中心にする">
+<img src="2023-12-02/image.png" width="300px" alt="SwiftUIでMapを表示し、自分の位置を中心にする">
 
 <details><summary>解答例</summary>
 <div>
@@ -2699,7 +3136,7 @@ import MapKit
 
 struct ContentView: View {
     @StateObject var viewState: ContentViewState = ContentViewState()
-    
+
     var body: some View {
         ZStack {
             if let location = viewState.location {
@@ -2735,7 +3172,7 @@ import CoreLocation
 class ContentViewState: NSObject, ObservableObject {
     @Published var location: CLLocationCoordinate2D?
     private let locationManager = CLLocationManager()
-    
+
     func onAppear() {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
@@ -2758,7 +3195,7 @@ extension ContentViewState: CLLocationManagerDelegate {
             break
         }
     }
-    
+
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         self.location = manager.location?.coordinate
     }
@@ -2772,7 +3209,7 @@ extension ContentViewState: CLLocationManagerDelegate {
 ### 64. SwiftUIでMapを表示し、自分の位置を赤丸でマークする
 SwiftUIでMapを表示し、自分の位置を赤丸でマークする方法です。
 
-<img src="2023-12-03-0.png" width="300px" alt="SwiftUIでMapを表示し、自分の位置を赤丸でマークする">
+<img src="2023-12-03/image.png" width="300px" alt="SwiftUIでMapを表示し、自分の位置を赤丸でマークする">
 
 <details><summary>解答例</summary>
 <div>
@@ -2823,7 +3260,7 @@ struct ContentView: View {
 ### 65. SwiftUIでMapを表示し、自分の位置を表示しつつコンパスを表示（yet）
 
 
-<img src="2023-12-04-0.png" width="300px" alt="SwiftUIでMapを表示し、自分の位置を表示しつつコンパスを表示（yet）">
+<img src="2023-12-04/image.png" width="300px" alt="SwiftUIでMapを表示し、自分の位置を表示しつつコンパスを表示（yet）">
 
 <details><summary>解答例</summary>
 <div>
@@ -2839,7 +3276,7 @@ import Foundation
 ### 66. 
 
 
-<img src="2023-12-05-0.png" width="300px" alt="">
+<img src="2023-12-05/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -2855,7 +3292,7 @@ import Foundation
 ### 67. 
 
 
-<img src="2023-12-06-0.png" width="300px" alt="">
+<img src="2023-12-06/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -2871,7 +3308,7 @@ import Foundation
 ### 68. 
 
 
-<img src="2023-12-07-0.png" width="300px" alt="">
+<img src="2023-12-07/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -2887,7 +3324,7 @@ import Foundation
 ### 69. 
 
 
-<img src="2023-12-08-0.png" width="300px" alt="">
+<img src="2023-12-08/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -2903,7 +3340,7 @@ import Foundation
 ### 70. 
 
 
-<img src="2023-12-09-0.png" width="300px" alt="">
+<img src="2023-12-09/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -2919,7 +3356,7 @@ import Foundation
 ### 71. 
 
 
-<img src="2023-12-10-0.png" width="300px" alt="">
+<img src="2023-12-10/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -2935,7 +3372,7 @@ import Foundation
 ### 72. 
 
 
-<img src="2023-12-11-0.png" width="300px" alt="">
+<img src="2023-12-11/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -2951,7 +3388,7 @@ import Foundation
 ### 73. 
 
 
-<img src="2023-12-12-0.png" width="300px" alt="">
+<img src="2023-12-12/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -2967,7 +3404,7 @@ import Foundation
 ### 74. 
 
 
-<img src="2023-12-13-0.png" width="300px" alt="">
+<img src="2023-12-13/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -2983,7 +3420,7 @@ import Foundation
 ### 75. 
 
 
-<img src="2023-12-14-0.png" width="300px" alt="">
+<img src="2023-12-14/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -2999,7 +3436,7 @@ import Foundation
 ### 76. 
 
 
-<img src="2023-12-15-0.png" width="300px" alt="">
+<img src="2023-12-15/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -3015,7 +3452,7 @@ import Foundation
 ### 77. 
 
 
-<img src="2023-12-16-0.png" width="300px" alt="">
+<img src="2023-12-16/image.png" width="300px" alt="">
 
 <details><summary>解答例</summary>
 <div>
@@ -3031,7 +3468,7 @@ import Foundation
 ### 78. Swiftのasync,awaitを使ってAPIと画像を取得し、全てが揃ってから表示する
 
 
-<img src="2023-12-17-0.png" width="300px" alt="Swiftのasync,awaitを使ってAPIと画像を取得し、全てが揃ってから表示する">
+<img src="2023-12-17/image.png" width="300px" alt="Swiftのasync,awaitを使ってAPIと画像を取得し、全てが揃ってから表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -3041,7 +3478,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var pokemons: [Pokemon] = []
-    
+
     var body: some View {
         VStack {
             ForEach(pokemons) { pokemon in
@@ -3068,13 +3505,13 @@ struct ContentView: View {
             }
         }
     }
-    
-    private func fetchPokemons() async throws -> [Pokemon]{
+
+    private func fetchPokemons() async throws -> [Pokemon] {
         let host = "https://swiswiswift.com/2022-06-16"
         let url = URL(string: "\(host)/pokemons.json")!
         let (data, _) = try await URLSession.shared.data(from: url)
         let pokemonResponses = try JSONDecoder().decode([PokemonResponse].self, from: data)
-        
+
         var pokemons: [Pokemon] = []
         for pokemonResponse in pokemonResponses {
             let imageUrl = URL(string: "\(host)/\(pokemonResponse.imageName)")!
@@ -3099,7 +3536,7 @@ struct ContentView: View {
 ### 79. SwiftUIでObservableObjectの@publishedなプロパティとBindingする
 
 
-<img src="2023-12-18-0.gif" width="300px" alt="SwiftUIでObservableObjectの@publishedなプロパティとBindingする">
+<img src="2023-12-18/movie.png" width="300px" alt="SwiftUIでObservableObjectの@publishedなプロパティとBindingする">
 
 <details><summary>解答例</summary>
 <div>
@@ -3110,11 +3547,11 @@ import SwiftUI
 struct ContentView: View {
     @State var items: [String] = []
     @State var showingSheet: Bool = false
-    
+
     var body: some View {
         VStack {
             Text("Count: \(items.count)")
-            
+
             Button {
                 showingSheet = true
             } label: {
@@ -3135,7 +3572,7 @@ struct ContentView: View {
 ### 80. iOSのファイルアプリ（UIDocumentPickerViewController）を開いてドキュメントフォルダに保存したファイルを開く
 
 
-<img src="2023-12-19-0.png" width="300px" alt="iOSのファイルアプリ（UIDocumentPickerViewController）を開いてドキュメントフォルダに保存したファイルを開く">
+<img src="2023-12-19/image.png" width="300px" alt="iOSのファイルアプリ（UIDocumentPickerViewController）を開いてドキュメントフォルダに保存したファイルを開く">
 
 <details><summary>解答例</summary>
 <div>
@@ -3146,7 +3583,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var fileUrl: URL?
     @State private var showingPicker = false
-    
+
     var body: some View {
         VStack {
             Button {
@@ -3156,13 +3593,13 @@ struct ContentView: View {
             } label: {
                 Text("Save File to Document")
             }
-            
+
             Button {
                 showingPicker = true
             } label: {
                 Text("Show File Picker")
             }
-            
+
             Text("FileUrl: \(fileUrl?.description ?? "nil")")
         }
         .sheet(isPresented: $showingPicker) {
@@ -3183,7 +3620,7 @@ struct ContentView: View {
 ### 81. SwiftUIでUIActivityViewControllerを表示する
 
 
-<img src="2023-12-20-0.gif" width="300px" alt="SwiftUIでUIActivityViewControllerを表示する">
+<img src="2023-12-20/movie.mp4" width="300px" alt="SwiftUIでUIActivityViewControllerを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -3215,7 +3652,7 @@ struct ContentView: View {
 ### 82. SwiftUIでActivityIndicatorを表示する(skip)
 
 
-<img src="2023-12-21-0.png" width="300px" alt="SwiftUIでActivityIndicatorを表示する(skip)">
+<img src="2023-12-21/image.png" width="300px" alt="SwiftUIでActivityIndicatorを表示する(skip)">
 
 <details><summary>解答例</summary>
 <div>
@@ -3231,7 +3668,7 @@ import Foundation
 ### 83. SwiftUIで少しカスタマイズしたActivityIndicatorを表示する(skip)
 
 
-<img src="2023-12-22-0.png" width="300px" alt="SwiftUIで少しカスタマイズしたActivityIndicatorを表示する(skip)">
+<img src="2023-12-22/image.png" width="300px" alt="SwiftUIで少しカスタマイズしたActivityIndicatorを表示する(skip)">
 
 <details><summary>解答例</summary>
 <div>
@@ -3247,7 +3684,7 @@ import Foundation
 ### 84. SwiftUIでListにButtonを設定してパラメーターの違う画面に遷移する
 
 
-<img src="2023-12-23-0.png" width="300px" alt="SwiftUIでListにButtonを設定してパラメーターの違う画面に遷移する">
+<img src="2023-12-23/image.png" width="300px" alt="SwiftUIでListにButtonを設定してパラメーターの違う画面に遷移する">
 
 <details><summary>解答例</summary>
 <div>
@@ -3263,7 +3700,7 @@ import Foundation
 ### 85. SwiftUIのTabViewのタブをコードから動的に切り替える
 
 
-<img src="2023-12-24-0.png" width="300px" alt="SwiftUIのTabViewのタブをコードから動的に切り替える">
+<img src="2023-12-24/image.png" width="300px" alt="SwiftUIのTabViewのタブをコードから動的に切り替える">
 
 <details><summary>解答例</summary>
 <div>
@@ -3279,7 +3716,7 @@ import Foundation
 ### 86.  Identifiableに適合していないStructでListを使う
 
 
-<img src="2023-12-25-0.png" width="300px" alt=" Identifiableに適合していないStructでListを使う">
+<img src="2023-12-25/image.png" width="300px" alt=" Identifiableに適合していないStructでListを使う">
 
 <details><summary>解答例</summary>
 <div>
@@ -3295,7 +3732,7 @@ import Foundation
 ### 87. SwiftUIでカメラを使う
 
 
-<img src="2023-12-26-0.png" width="300px" alt="SwiftUIでカメラを使う">
+<img src="2023-12-26/image.png" width="300px" alt="SwiftUIでカメラを使う">
 
 <details><summary>解答例</summary>
 <div>
@@ -3311,7 +3748,7 @@ import Foundation
 ### 88. SwiftUIでスライダーとスクロールを連動させる
 
 
-<img src="2023-12-27-0.png" width="300px" alt="SwiftUIでスライダーとスクロールを連動させる">
+<img src="2023-12-27/image.png" width="300px" alt="SwiftUIでスライダーとスクロールを連動させる">
 
 <details><summary>解答例</summary>
 <div>
@@ -3327,7 +3764,7 @@ import Foundation
 ### 89. SwiftUIでPHPickerViewControllerを使って画像を選択する
 
 
-<img src="2023-12-28-0.png" width="300px" alt="SwiftUIでPHPickerViewControllerを使って画像を選択する">
+<img src="2023-12-28/image.png" width="300px" alt="SwiftUIでPHPickerViewControllerを使って画像を選択する">
 
 <details><summary>解答例</summary>
 <div>
@@ -3343,7 +3780,7 @@ import Foundation
 ### 90. SwiftUIで画像をピンチで拡大する（MagnificationGesture）
 
 
-<img src="2023-12-29-0.gif" width="300px" alt="SwiftUIで画像をピンチで拡大する（MagnificationGesture）">
+<img src="2023-12-29/2023-12-29.gif" width="300px" alt="SwiftUIで画像をピンチで拡大する（MagnificationGesture）">
 
 <details><summary>解答例</summary>
 <div>
@@ -3353,7 +3790,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var scale: CGFloat = 1.0
-    
+
     var body: some View {
         Image(.icon)
             .resizable()
@@ -3379,7 +3816,7 @@ struct ContentView: View {
 ### 91. SwiftUIで画像をピンチで拡大する（PDFView）
 
 
-<img src="2023-12-30-0.gif" width="300px" alt="SwiftUIで画像をピンチで拡大する（PDFView）">
+<img src="2023-12-30/2023-12-30.gif" width="300px" alt="SwiftUIで画像をピンチで拡大する（PDFView）">
 
 <details><summary>解答例</summary>
 <div>
@@ -3405,7 +3842,7 @@ struct ContentView: View {
 ### 92. SwiftUIで画像をピンチで拡大する（UIImageView + UIScrollView）
 
 
-<img src="2023-12-31-0.gif" width="300px" alt="SwiftUIで画像をピンチで拡大する（UIImageView + UIScrollView）">
+<img src="2023-12-31/2023-12-31.gif" width="300px" alt="SwiftUIで画像をピンチで拡大する（UIImageView + UIScrollView）">
 
 <details><summary>解答例</summary>
 <div>
@@ -3432,7 +3869,7 @@ struct ContentView: View {
 ### 93. SwiftMarkdownを使いマークダウンを表示する
 
 
-<img src="2024-01-01-0.gif" width="300px" alt="SwiftMarkdownを使いマークダウンを表示する">
+<img src="2024-01-01/2024-01-01.gif" width="300px" alt="SwiftMarkdownを使いマークダウンを表示する">
 
 <details><summary>解答例</summary>
 <div>
@@ -3442,49 +3879,49 @@ import SwiftUI
 import Markdown
 
 struct ContentView: View {
-    
+
     let markdown = """
     # 東京タワー
-    
+
     東京タワー（とうきょうタワー、英: Tokyo Tower）は、東京都港区芝公園にある総合電波塔である。日本電波塔（にっぽんでんぱとう）とも呼ばれる。
     1958年（昭和33年）12月23日竣工。東京のシンボル、観光名所である。
     2018年度グッドデザイン賞受賞。
-    
+
     ## 概要
-    
+
     創設者は前田久吉で、日本の「塔博士」とも称される内藤多仲らが設計（詳細は設計を参照）。
     高さは333メートルと広報されており、海抜では351メートル。塔脚の中心を基準とした塔脚の間隔は88.0メートル。
     総工費約30億円、1年半（197万4,015時間/543日間）と延べ21万9,335人の人員を要して完成した。
     地上125メートル（海抜約150メートル）と223.55メートル（海抜約250メートル）に展望台を有するトラス構造の電波塔である。
-    
+
     昼間障害標識として、頂点より黄赤色（インターナショナルオレンジ）と白色を交互に配した塗装となっている。
     テレビおよびFMラジオのアンテナとして放送電波を送出（#送信周波数・出力を参照）、また東日本旅客鉄道（JR東日本）の防護無線用アンテナとして緊急信号を発信するほか、東京都環境局の各種測定器なども設置されている。
-    
+
     完成当初は日本一高い建造物だったが、高さが日本一だったのは1968年6月26日に小笠原諸島が日本に返還され南鳥島ロランタワーと硫黄島ロランタワーに抜かれるまでの約9年半と、対馬（長崎県）のオメガタワーが解体されてから東京スカイツリーに抜かれるまでの約11年間である。
     自立式鉄塔に限れば、東京スカイツリーに抜かれるまでの約51年半は日本一の高さだった。
     2020年現在は、東京スカイツリーに次ぐ日本で2番目に高い建造物である。
     なお、重量については約4,000トンとされる。
-    
+
     ## 運営会社
-    
+
     株式会社 TOKYO TOWER（英: TOKYO TOWER Co.,Ltd）は、東京都港区芝公園に本社を置く東京タワーの建主であり、管理ならびに運営を行っている。
-    
+
     ### 法人概要
-    
+
     1957年5月、「大阪の新聞王」と呼ばれ、当時、産業経済新聞社、大阪放送（ラジオ大阪）各社の社長を務め、後に関西テレビ放送の社長にも就く前田久吉が日本電波塔株式会社（にっぽんでんぱとう、英: NIPPON TELEVISION CITY CORPORATION）を設立。
     久吉はタワーの完成とほぼ同時の1958年、産経新聞社を国策パルプ工業（現・日本製紙）社長の水野成夫に譲渡してその経営から手を引いたが、日本電波塔（東京タワー）とラジオ大阪の経営には引き続き携わった。
     この結果、日本電波塔は当時の産経新聞グループはもちろん、その後のフジサンケイグループからも完全に切り離されて前田家主導の同族企業となった。
     その名残で産経新聞グループから離脱する直前の1957年10月、文化放送やニッポン放送などと共に発足した、中央ラジオ・テレビ健康保険組合に基幹会社の一社として2019年現在でも加入している。
     また、ラジオ大阪も2005年にフジサンケイグループ入りするまで、前田家主導で独自の経営をしていた。
     """
-    
+
     var body: some View {
         ScrollView {
             Text(getAttributedString(markdown: markdown))
                 .padding()
         }
     }
-    
+
     func getAttributedString(markdown: String) -> AttributedString {
         var attributedString = AttributedString()
         for block in Document(parsing: markdown).blockChildren {
@@ -3509,7 +3946,6 @@ struct ContentView: View {
     }
 }
 
-
 #Preview {
     ContentView()
 }
@@ -3522,7 +3958,7 @@ struct ContentView: View {
 ### 94. SwiftUIでシートを出し分ける
 
 
-<img src="2024-01-02-0.gif" width="300px" alt="SwiftUIでシートを出し分ける">
+<img src="2024-01-02/2024-01-02.gif" width="300px" alt="SwiftUIでシートを出し分ける">
 
 <details><summary>解答例</summary>
 <div>
@@ -3533,7 +3969,7 @@ import SwiftUI
 struct ContentView: View {
     @State var showingSnorlaxView = false
     @State var showingSlowpokeView = false
-    
+
     var body: some View {
         VStack {
             Button(action: {
@@ -3541,7 +3977,7 @@ struct ContentView: View {
             }) {
                 Text("Show Snorlax")
             }
-            
+
             Button(action: {
                 showingSlowpokeView = true
             }) {

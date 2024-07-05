@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct FirstSheet: View {
-    @Binding var showingSheet : Bool
+    @Binding var showingSheet: Bool
 
     var body: some View {
         NavigationStack {
