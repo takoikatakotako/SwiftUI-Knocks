@@ -8,7 +8,7 @@ struct InputView: View {
     @Environment(\.presentationMode) var presentation
     let delegate: InputViewDelegate
     @State var text: String
-    
+
     var body: some View {
         VStack(spacing: 16) {
             TextField("Input Your TODO", text: $text)

@@ -8,7 +8,3 @@ struct SecondView: View {
             .navigationBarBackButtonHidden(true)
     }
 }
-
-#Preview {
-    SecondView(fruit: "Apple")
-}

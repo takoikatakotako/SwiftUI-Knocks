@@ -10,7 +10,7 @@ struct ContentView: View {
             Button("Snorlax is my mavorite pokemon.") {
                 favoritePokemonName = "Snorlax"
             }
-            
+
             Button("Slowpoke is my mavorite pokemon.") {
                 UserDefaults.standard.set("Slowpoke", forKey: "FAVORITE_POKEMON_NAME")
             }

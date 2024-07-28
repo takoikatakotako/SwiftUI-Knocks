@@ -1,13 +1,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var text = "Snorlax"
+    @State var bool = true
 
     var body: some View {
         VStack {
-            Text(text)
+            Text(bool ? "Snorlax" : "Forever")
             Button(action: {
-                text = "Forever"
+                bool.toggle()
             }) {
                 HStack {
                     Image(.icon)
@@ -22,8 +22,4 @@ struct ContentView: View {
             .buttonStyle(PlainButtonStyle())
         }
     }
-}
-
-#Preview {
-    ContentView()
 }

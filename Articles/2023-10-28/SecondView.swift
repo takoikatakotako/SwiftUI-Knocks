@@ -4,12 +4,18 @@ struct SecondView: View {
     @Environment(\.dismiss) var dismiss
 
     var body: some View {
-        Button {
-            dismiss()
-        } label: {
-            Text("Dismiss")
+        VStack {
+            Button(action: {
+                dismiss()
+            }) {
+                Text("Dismiss")
+            }
         }
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-        .background(Color.gray)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.white)
     }
+}
+
+#Preview {
+    SecondView()
 }

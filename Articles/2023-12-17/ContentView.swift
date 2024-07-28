@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var pokemons: [Pokemon] = []
-    
+
     var body: some View {
         VStack {
             ForEach(pokemons) { pokemon in
@@ -29,13 +29,13 @@ struct ContentView: View {
             }
         }
     }
-    
-    private func fetchPokemons() async throws -> [Pokemon]{
+
+    private func fetchPokemons() async throws -> [Pokemon] {
         let host = "https://swiswiswift.com/2022-06-16"
         let url = URL(string: "\(host)/pokemons.json")!
         let (data, _) = try await URLSession.shared.data(from: url)
         let pokemonResponses = try JSONDecoder().decode([PokemonResponse].self, from: data)
-        
+
         var pokemons: [Pokemon] = []
         for pokemonResponse in pokemonResponses {
             let imageUrl = URL(string: "\(host)/\(pokemonResponse.imageName)")!

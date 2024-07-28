@@ -3,7 +3,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var fileUrl: URL?
     @State private var showingPicker = false
-    
+
     var body: some View {
         VStack {
             Button {
@@ -13,13 +13,13 @@ struct ContentView: View {
             } label: {
                 Text("Save File to Document")
             }
-            
+
             Button {
                 showingPicker = true
             } label: {
                 Text("Show File Picker")
             }
-            
+
             Text("FileUrl: \(fileUrl?.description ?? "nil")")
         }
         .sheet(isPresented: $showingPicker) {
