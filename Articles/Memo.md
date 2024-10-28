@@ -402,6 +402,9 @@ ffmpeg -i 2023-12-24/2023-12-24.mp4 -vf pad=w=iw+148:h=ih+120:x=85:y=70:color=wh
 ffmpeg -i 2023-12-24/movie-padding.mp4 -i phone-frame.png -filter_complex overlay=10:10 2023-12-24/movie-frame.mp4
 ffmpeg -i 2023-12-24/movie-frame.mp4 -crf 35 -vf scale=400:-1 2023-12-24/2023-12-24.gif
 
+# 2023-12-25
+convert -size 1326x2676 xc:none 2023-12-25/image.png -geometry +74+59 -composite phone-frame.png -geometry +0+0 -composite 2023-12-25/2023-12-25.png
+
 # 2023-12-26
 ffmpeg -i 2023-12-26/2023-12-26.mp4 -vf pad=w=iw+148:h=ih+120:x=85:y=70:color=white 2023-12-26/movie-padding.mp4
 ffmpeg -i 2023-12-26/movie-padding.mp4 -i phone-frame.png -filter_complex overlay=10:10 2023-12-26/movie-frame.mp4

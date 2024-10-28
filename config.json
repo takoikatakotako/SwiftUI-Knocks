@@ -1102,7 +1102,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "Pokemon.swift"]
         },
         {
             "title": "SwiftUIのTabViewのタブをコードから動的に切り替える",
