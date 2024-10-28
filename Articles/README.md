@@ -1315,7 +1315,8 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-}```
+}
+```
 
 </div>
 </details>
@@ -5089,8 +5090,10 @@ struct ContentView: View {
     ]
     
     var body: some View {
-        List(pokemons, id: \.name) { pokemon in
-            Text("\(pokemon.name)")
+        List {
+            ForEach(0..<pokemons.count, id: \.self) { index in
+                Text("\(pokemons[index].name)")
+            }
         }
     }
 }
