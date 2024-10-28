@@ -1615,7 +1615,8 @@ struct ContentView: View {
         .tabViewStyle(.page)
         .menuIndicator(.visible)
     }
-}```
+}
+```
 
 ```swift
 import SwiftUI
@@ -4265,6 +4266,25 @@ struct ContentView: View, MyProtocol {
 }
 ```
 
+```swift
+import SwiftUI
+
+protocol MyProtocol {
+    func myFunc()
+}
+
+struct SecondView: View {
+    var delegate: MyProtocol
+    var body: some View {
+        Button(action: {
+            self.delegate.myFunc()
+        }) {
+            Text("ChangeText")
+        }
+    }
+}
+```
+
 </div>
 </details>
 
@@ -4960,6 +4980,16 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import SwiftUI
+
+enum Pokemon: Hashable {
+    case snorlax
+    case slowpoke
+    case eevee
+}
+```
+
 </div>
 </details>
 
@@ -5048,7 +5078,22 @@ Identifiableに適合していないStructでListを使う
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+
+struct ContentView: View {
+    let pokemons: [Pokemon] = [
+        Pokemon(name: "snorlax", type: "normal"),
+        Pokemon(name: "ditto", type: "normal"),
+        Pokemon(name: "psyduck", type: "water"),
+        Pokemon(name: "pikachu", type: "electric"),
+    ]
+    
+    var body: some View {
+        List(pokemons, id: \.name) { pokemon in
+            Text("\(pokemon.name)")
+        }
+    }
+}
 ```
 
 ```swift
