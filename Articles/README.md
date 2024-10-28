@@ -1615,7 +1615,8 @@ struct ContentView: View {
         .tabViewStyle(.page)
         .menuIndicator(.visible)
     }
-}```
+}
+```
 
 ```swift
 import SwiftUI
@@ -4265,6 +4266,25 @@ struct ContentView: View, MyProtocol {
 }
 ```
 
+```swift
+import SwiftUI
+
+protocol MyProtocol {
+    func myFunc()
+}
+
+struct SecondView: View {
+    var delegate: MyProtocol
+    var body: some View {
+        Button(action: {
+            self.delegate.myFunc()
+        }) {
+            Text("ChangeText")
+        }
+    }
+}
+```
+
 </div>
 </details>
 
@@ -4960,6 +4980,16 @@ struct ContentView: View {
 }
 ```
 
+```swift
+import SwiftUI
+
+enum Pokemon: Hashable {
+    case snorlax
+    case slowpoke
+    case eevee
+}
+```
+
 </div>
 </details>
 
@@ -5048,7 +5078,22 @@ Identifiableに適合していないStructでListを使う
 <div>
 
 ```swift
-import Foundation
+import SwiftUI
+
+struct ContentView: View {
+    let pokemons: [Pokemon] = [
+        Pokemon(name: "snorlax", type: "normal"),
+        Pokemon(name: "ditto", type: "normal"),
+        Pokemon(name: "psyduck", type: "water"),
+        Pokemon(name: "pikachu", type: "electric"),
+    ]
+    
+    var body: some View {
+        List(pokemons, id: \.name) { pokemon in
+            Text("\(pokemon.name)")
+        }
+    }
+}
 ```
 
 ```swift
@@ -5065,7 +5110,7 @@ struct Pokemon {
 
 
 ### 87. SwiftUIでカメラを使う
-
+SwiftUIでカメラを使う
 
 <img src="2023-12-26/2023-12-26.png" width="300px" alt="SwiftUIでカメラを使う">
 
@@ -5076,10 +5121,76 @@ struct Pokemon {
 import SwiftUI
 
 struct ContentView: View {
-    let pokemons = [Pokemon(name: "Snorlax", type: "Normal"), Pokemon(name: "Eevee", type: "Normal")]
+    @State var images: [UIImage] = []
+    @State var showingSheet = false
+    
     var body: some View {
-        List(pokemons, id: \.name) { pokemon in
-            Text(pokemon.name)
+        VStack {
+            ScrollView(.horizontal) {
+                HStack {
+                    ForEach(0..<images.count, id: \.self) { index in
+                        Image(uiImage: images[index])
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(height: 160)
+                            .clipped()
+                    }
+                }
+            }
+            
+            Button {
+                showingSheet = true
+            } label: {
+                Text("Take Photo!")
+            }
+        }
+        .sheet(isPresented: $showingSheet) {
+            CameraView(images: $images)
+        }
+    }
+}
+```
+
+```swift
+import SwiftUI
+
+public struct CameraView: UIViewControllerRepresentable {
+    @Environment(\.dismiss) private var dismiss
+    @Binding var images: [UIImage]
+
+    public func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+
+    public func makeUIViewController(context: Context) -> UIImagePickerController {
+        let viewController = UIImagePickerController()
+        viewController.delegate = context.coordinator
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            viewController.sourceType = .camera
+        }
+
+        return viewController
+    }
+    public func updateUIViewController(_ uiViewController: UIImagePickerController, context: Context) {}
+}
+
+extension CameraView {
+    public class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+        let parent: CameraView
+
+        init(_ parent: CameraView) {
+            self.parent = parent
+        }
+
+        public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+            if let uiImage = info[.originalImage] as? UIImage {
+                self.parent.images.append(uiImage)
+            }
+            self.parent.dismiss()
+        }
+
+        public func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+            self.parent.dismiss()
         }
     }
 }
