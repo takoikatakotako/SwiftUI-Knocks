@@ -1132,7 +1132,7 @@
         },
         {
             "title": "SwiftUIでカメラを使う",
-            "description": "",
+            "description": "SwiftUIでカメラを使う",
             "directory": "2023-12-26",
             "resources": [
               {
@@ -1141,7 +1141,7 @@
                   "width": 300
               }
             ],
-            "codes": ["ContentView.swift"]
+            "codes": ["ContentView.swift", "CameraView.swift"]
         },
         {
             "title": "SwiftUIでスライダーとスクロールを連動させる",

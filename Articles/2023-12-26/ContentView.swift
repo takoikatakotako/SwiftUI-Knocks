@@ -1,10 +1,31 @@
 import SwiftUI
 
 struct ContentView: View {
-    let pokemons = [Pokemon(name: "Snorlax", type: "Normal"), Pokemon(name: "Eevee", type: "Normal")]
+    @State var images: [UIImage] = []
+    @State var showingSheet = false
+    
     var body: some View {
-        List(pokemons, id: \.name) { pokemon in
-            Text(pokemon.name)
+        VStack {
+            ScrollView(.horizontal) {
+                HStack {
+                    ForEach(0..<images.count, id: \.self) { index in
+                        Image(uiImage: images[index])
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(height: 160)
+                            .clipped()
+                    }
+                }
+            }
+            
+            Button {
+                showingSheet = true
+            } label: {
+                Text("Take Photo!")
+            }
+        }
+        .sheet(isPresented: $showingSheet) {
+            CameraView(images: $images)
         }
     }
 }
